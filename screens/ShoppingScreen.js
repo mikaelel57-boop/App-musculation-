@@ -1,8 +1,9 @@
 import React, { useMemo, useState } from 'react';
-import { FlatList, View, Text, TextInput, Pressable, Alert } from 'react-native';
+import { FlatList, View, Text, TextInput, Pressable } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import recipes from '../data/recipes.json';
 import { fmtGrams } from '../utils/nutrition';
+import { confirmAction } from '../utils/feedback';
 import { useStore } from '../store/useStore';
 import { s, colors } from '../theme';
 
@@ -39,10 +40,7 @@ export default function ShoppingScreen() {
   };
 
   const askClear = () =>
-    Alert.alert('Nouvelle liste ?', 'Les recettes sélectionnées et les articles ajoutés seront retirés.', [
-      { text: 'Annuler', style: 'cancel' },
-      { text: 'Vider', style: 'destructive', onPress: clearShopping },
-    ]);
+    confirmAction('Nouvelle liste ?', 'Les recettes sélectionnées et les articles ajoutés seront retirés.', 'Vider', clearShopping);
 
   return (
     <FlatList

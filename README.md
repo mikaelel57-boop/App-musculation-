@@ -11,25 +11,29 @@ Application mobile (Expo / React Native) pour le sport :
 
 Toutes les données restent sur le téléphone.
 
-## Installer sur un téléphone Android
+## Installer sur iPhone (web app)
 
-1. Sur le téléphone, ouvre la page **Releases** du dépôt GitHub (colonne de droite sur la page du dépôt, ou ajoute `/releases/latest` à l'adresse du dépôt).
-2. Télécharge **FitApp.apk**.
-3. Ouvre le fichier. Android demande d'autoriser l'installation d'applis provenant de cette source (Chrome / Fichiers) : accepte.
-4. Lance FitApp et autorise les notifications (pour l'alerte de fin de repos).
+L'appli est publiée sur **https://mikaelel57-boop.github.io/App-musculation-/**
 
-Chaque modification poussée sur GitHub recompile automatiquement une nouvelle version
-(onglet **Actions**, workflow *Build Android APK*). Pour mettre à jour, il suffit
-d'installer le nouvel APK par-dessus : les données sont conservées.
+Mise en route (une seule fois, sur github.com) :
+1. **Settings → General → Danger Zone → Change visibility → Public** (GitHub Pages gratuit = dépôt public).
+2. **Settings → Pages → Build and deployment** : Source *Deploy from a branch*, branche **gh-pages**, dossier **/ (root)**, puis *Save*.
+3. Attends 1–2 minutes que la page soit en ligne.
 
-## Sur iPhone (ou pour tester rapidement)
+Sur l'iPhone :
+1. Ouvre l'adresse ci-dessus **dans Safari**.
+2. Bouton **Partager** (carré avec une flèche) → **Sur l'écran d'accueil** → *Ajouter*.
+3. Lance FitApp depuis l'icône : elle s'ouvre en plein écran, comme une appli.
 
-Apple n'autorise pas l'installation d'un fichier comme sur Android. Le plus simple :
+Bon à savoir :
+- Les données restent sur le téléphone (dans l'appli de l'écran d'accueil). Ne supprime pas l'icône si tu veux les garder.
+- Fin de repos : son + bandeau. L'écran reste allumé pendant le repos ; si tu verrouilles le téléphone, pas d'alerte (limite d'iOS pour les web apps).
+- Mode silencieux activé = pas de son.
+- Chaque modification poussée sur GitHub met l'appli à jour automatiquement (workflow *Deploy web app*).
 
-1. Installe **Expo Go** depuis l'App Store / le Play Store.
-2. Sur un ordinateur avec Node.js : `npm install` puis `npx expo start`.
-3. Scanne le QR code affiché avec l'appareil photo (iPhone) ou avec Expo Go (Android).
-   Le téléphone et l'ordinateur doivent être sur le même Wi-Fi.
+## Android (APK)
+
+Onglet **Actions → Build Android APK → Run workflow**, puis télécharge `FitApp.apk` dans les **Releases**.
 
 ## Développement
 

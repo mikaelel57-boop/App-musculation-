@@ -2,6 +2,7 @@ import { create } from 'zustand';
 import { persist, createJSONStorage } from 'zustand/middleware';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { scheduleRestEnd, cancelRestEnd } from '../utils/restTimer';
+import { unlockAudio } from '../utils/feedback';
 
 export const useStore = create(
   persist(
@@ -44,6 +45,7 @@ export const useStore = create(
 
       setTimerDuration: (duration) => set((st) => ({ timer: { ...st.timer, duration } })),
       startTimer: async (duration) => {
+        unlockAudio(); // doit rester synchrone dans le geste (Safari)
         const st = useStore.getState();
         const d = duration ?? st.timer.duration;
         await cancelRestEnd(st.timer.notifId);

@@ -1,0 +1,41 @@
+name: Deploy web app (iPhone)
+
+# Construit la version web de FitApp et la publie sur GitHub Pages (branche gh-pages).
+on:
+  push:
+    branches: [main, master, "claude/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: deploy-web
+  cancel-in-progress: true
+
+jobs:
+  web:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Construire la web app
+        run: npx expo export --platform web --output-dir dist
+        env:
+          CI: 1
+
+      - name: Publier sur la branche gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ github.token }}
+          publish_dir: ./dist
+          publish_branch: gh-pages
+          force_orphan: true

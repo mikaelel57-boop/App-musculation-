@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { NavigationContainer, DarkTheme } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -11,6 +11,7 @@ import WorkoutScreen from './screens/WorkoutScreen';
 import TimerScreen from './screens/TimerScreen';
 import DailyScreen from './screens/DailyScreen';
 import LogScreen from './screens/LogScreen';
+import RestWatcher from './components/RestWatcher';
 import { colors } from './theme';
 
 const Tab = createBottomTabNavigator();
@@ -31,9 +32,14 @@ const theme = {
 };
 
 export default function App() {
+  const [tab, setTab] = useState(TABS[0].name);
   return (
     <SafeAreaProvider>
-      <NavigationContainer theme={theme}>
+      <NavigationContainer
+        theme={theme}
+        documentTitle={{ formatter: () => 'FitApp' }}
+        onStateChange={(st) => st && setTab(st.routes[st.index]?.name)}
+      >
         <StatusBar style="light" />
         <Tab.Navigator
           screenOptions={{
@@ -56,6 +62,7 @@ export default function App() {
             />
           ))}
         </Tab.Navigator>
+        <RestWatcher hidePill={tab === 'Minuteur'} />
       </NavigationContainer>
     </SafeAreaProvider>
   );

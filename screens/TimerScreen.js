@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, Pressable, Alert, Vibration } from 'react-native';
-import * as Haptics from 'expo-haptics';
-import { activateKeepAwakeAsync, deactivateKeepAwake } from 'expo-keep-awake';
+import { View, Text, Pressable, Platform } from 'react-native';
 import { useStore } from '../store/useStore';
 import { s, colors } from '../theme';
 
@@ -20,33 +18,14 @@ export default function TimerScreen() {
   const running = endAt !== null;
   const [left, setLeft] = useState(running ? remaining(endAt) : duration);
 
-  // Basé sur l'heure de fin : pas de dérive, et le décompte reprend juste après une mise en arrière-plan.
+  // Affichage du temps restant (la fin du repos est gérée par RestWatcher, quel que soit l'onglet)
   useEffect(() => {
     if (!running) { setLeft(duration); return; }
-    const tick = () => {
-      const r = remaining(endAt);
-      setLeft(r);
-      if (r > 0) return;
-      const late = Date.now() - endAt > 2000; // fini pendant que l'appli était en fond : la notification a déjà prévenu
-      stopTimer(false);
-      if (!late) {
-        Vibration.vibrate([0, 500, 200, 500, 200, 500]);
-        Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
-        Alert.alert('Repos terminé 💪', "C'est reparti pour la prochaine série !");
-      }
-    };
+    const tick = () => setLeft(remaining(endAt));
     tick();
     const id = setInterval(tick, 250);
     return () => clearInterval(id);
   }, [endAt, duration]);
-
-  useEffect(() => {
-    // Garde l'écran allumé pendant le repos (échec sans gravité : on ignore)
-    const off = () => Promise.resolve().then(() => deactivateKeepAwake('timer')).catch(() => {});
-    if (running) activateKeepAwakeAsync('timer').catch(() => {});
-    else off();
-    return () => { off(); };
-  }, [running]);
 
   const pick = (sec) => { if (!running) setTimerDuration(Math.min(MAX, Math.max(MIN, sec))); };
 
@@ -76,7 +55,9 @@ export default function TimerScreen() {
       </Pressable>
 
       <Text style={[s.sub, { marginTop: 16, textAlign: 'center' }]}>
-        Une notification te prévient aussi si le téléphone est verrouillé.
+        {Platform.OS === 'web'
+          ? "Un son et un bandeau te préviennent à la fin. L'écran reste allumé pendant le repos."
+          : 'Une notification te prévient aussi si le téléphone est verrouillé.'}
       </Text>
     </View>
   );

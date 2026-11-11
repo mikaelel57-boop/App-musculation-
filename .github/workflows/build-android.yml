@@ -1,9 +1,8 @@
 name: Build Android APK
 
 # Compile l'application Android (.apk) et la publie dans les "Releases" du dépôt.
+# Lancement manuel : onglet Actions > Build Android APK > Run workflow.
 on:
-  push:
-    branches: [main, master, "claude/**"]
   workflow_dispatch:
 
 permissions:
