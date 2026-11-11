@@ -1,0 +1,22 @@
+[
+  {
+    "id": "r1",
+    "name": "Poulet riz brocoli",
+    "ingredients": [
+      { "name": "Blanc de poulet", "grams": 180, "per100g": { "kcal": 110, "p": 23, "c": 0, "f": 1.5 } },
+      { "name": "Riz basmati (cru)", "grams": 90, "per100g": { "kcal": 350, "p": 8, "c": 77, "f": 0.8 } },
+      { "name": "Brocoli", "grams": 150, "per100g": { "kcal": 34, "p": 2.8, "c": 7, "f": 0.4 } },
+      { "name": "Huile d'olive", "grams": 10, "per100g": { "kcal": 884, "p": 0, "c": 0, "f": 100 } }
+    ]
+  },
+  {
+    "id": "r2",
+    "name": "Porridge protéiné",
+    "ingredients": [
+      { "name": "Flocons d'avoine", "grams": 60, "per100g": { "kcal": 370, "p": 13, "c": 60, "f": 7 } },
+      { "name": "Lait demi-écrémé", "grams": 200, "per100g": { "kcal": 46, "p": 3.3, "c": 4.8, "f": 1.6 } },
+      { "name": "Whey", "grams": 30, "per100g": { "kcal": 400, "p": 80, "c": 8, "f": 6 } },
+      { "name": "Banane", "grams": 100, "per100g": { "kcal": 89, "p": 1.1, "c": 23, "f": 0.3 } }
+    ]
+  }
+]

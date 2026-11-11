@@ -1,0 +1,64 @@
+name: Build Android APK
+
+# Compile l'application Android (.apk) et la publie dans les "Releases" du dépôt.
+on:
+  push:
+    branches: [main, master, "claude/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: apk-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - uses: gradle/actions/setup-gradle@v4
+
+      - name: Installer les dépendances
+        run: npm ci
+
+      - name: Générer le projet Android
+        run: npx expo prebuild --platform android --no-install
+        env:
+          CI: 1
+
+      - name: Compiler l'APK
+        working-directory: android
+        run: ./gradlew assembleRelease --no-daemon -PreactNativeArchitectures=arm64-v8a,armeabi-v7a
+
+      - name: Renommer l'APK
+        run: cp android/app/build/outputs/apk/release/app-release.apk FitApp.apk
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: FitApp-apk
+          path: FitApp.apk
+
+      - name: Publier dans les Releases
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG="build-${{ github.run_number }}"
+          gh release create "$TAG" FitApp.apk \
+            --target "${{ github.sha }}" \
+            --title "FitApp – version ${{ github.run_number }}" \
+            --notes "APK Android à installer sur le téléphone (télécharge FitApp.apk). Commit ${{ github.sha }}." \
+            --latest

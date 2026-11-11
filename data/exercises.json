@@ -1,0 +1,70 @@
+{
+  "muscles": [
+    {
+      "id": "pecs",
+      "label": "Pectoraux",
+      "exercises": [
+        {
+          "id": "bench",
+          "name": "Développé couché",
+          "equipment": "Barre",
+          "video": null,
+          "image": null,
+          "tips": "Omoplates serrées, barre à hauteur du bas des pecs, pieds ancrés."
+        },
+        {
+          "id": "fly",
+          "name": "Écarté poulie",
+          "equipment": "Poulie",
+          "video": null,
+          "image": null,
+          "tips": "Légère flexion des coudes, mouvement en arc, contrôle à la descente."
+        }
+      ]
+    },
+    {
+      "id": "back",
+      "label": "Dos",
+      "exercises": [
+        {
+          "id": "pullup",
+          "name": "Tractions",
+          "equipment": "Barre fixe",
+          "video": null,
+          "image": null,
+          "tips": "Tire les coudes vers les hanches, menton au-dessus de la barre."
+        },
+        {
+          "id": "row",
+          "name": "Rowing barre",
+          "equipment": "Barre",
+          "video": null,
+          "image": null,
+          "tips": "Dos plat, buste incliné à 45°, tirage vers le nombril."
+        }
+      ]
+    },
+    {
+      "id": "legs",
+      "label": "Jambes",
+      "exercises": [
+        {
+          "id": "squat",
+          "name": "Squat",
+          "equipment": "Barre",
+          "video": null,
+          "image": null,
+          "tips": "Genoux dans l'axe des pieds, descente sous la parallèle si possible."
+        },
+        {
+          "id": "legpress",
+          "name": "Presse à cuisses",
+          "equipment": "Machine",
+          "video": null,
+          "image": null,
+          "tips": "Ne verrouille pas les genoux en haut, bassin collé au dossier."
+        }
+      ]
+    }
+  ]
+}
