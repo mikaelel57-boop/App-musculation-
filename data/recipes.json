@@ -1,22 +1,1510 @@
 [
-  {
-    "id": "r1",
-    "name": "Poulet riz brocoli",
-    "ingredients": [
-      { "name": "Blanc de poulet", "grams": 180, "per100g": { "kcal": 110, "p": 23, "c": 0, "f": 1.5 } },
-      { "name": "Riz basmati (cru)", "grams": 90, "per100g": { "kcal": 350, "p": 8, "c": 77, "f": 0.8 } },
-      { "name": "Brocoli", "grams": 150, "per100g": { "kcal": 34, "p": 2.8, "c": 7, "f": 0.4 } },
-      { "name": "Huile d'olive", "grams": 10, "per100g": { "kcal": 884, "p": 0, "c": 0, "f": 100 } }
-    ]
-  },
-  {
-    "id": "r2",
-    "name": "Porridge protéiné",
-    "ingredients": [
-      { "name": "Flocons d'avoine", "grams": 60, "per100g": { "kcal": 370, "p": 13, "c": 60, "f": 7 } },
-      { "name": "Lait demi-écrémé", "grams": 200, "per100g": { "kcal": 46, "p": 3.3, "c": 4.8, "f": 1.6 } },
-      { "name": "Whey", "grams": 30, "per100g": { "kcal": 400, "p": 80, "c": 8, "f": 6 } },
-      { "name": "Banane", "grams": 100, "per100g": { "kcal": 89, "p": 1.1, "c": 23, "f": 0.3 } }
-    ]
-  }
+ {
+  "id": "r1",
+  "name": "Poulet, riz et brocoli",
+  "category": "Plat",
+  "minutes": 25,
+  "servings": 1,
+  "budget": true,
+  "ingredients": [
+   {
+    "food": "poulet",
+    "g": 180.0
+   },
+   {
+    "food": "riz",
+    "g": 90.0
+   },
+   {
+    "food": "brocoli",
+    "g": 150.0
+   },
+   {
+    "food": "huile-olive",
+    "g": 10.0
+   }
+  ],
+  "steps": [
+   "Cuis le riz dans l'eau bouillante salée (10-12 min)",
+   "Fais cuire le brocoli à la vapeur ou à l'eau 6 min",
+   "Coupe le poulet en dés et saisis-le 6-8 min à la poêle avec l'huile",
+   "Sers le tout, assaisonne (sel, poivre, épices)"
+  ]
+ },
+ {
+  "id": "r2",
+  "name": "Porridge protéiné banane",
+  "category": "Petit-déjeuner",
+  "minutes": 10,
+  "servings": 1,
+  "budget": true,
+  "ingredients": [
+   {
+    "food": "avoine",
+    "g": 60.0
+   },
+   {
+    "food": "lait",
+    "g": 200.0
+   },
+   {
+    "food": "whey",
+    "g": 30.0
+   },
+   {
+    "food": "banane",
+    "g": 100.0
+   }
+  ],
+  "steps": [
+   "Fais chauffer les flocons d'avoine avec le lait 3-4 min en remuant",
+   "Hors du feu, ajoute la whey et mélange bien",
+   "Ajoute la banane en rondelles"
+  ]
+ },
+ {
+  "id": "r3",
+  "name": "Omelette jambon fromage",
+  "category": "Petit-déjeuner",
+  "minutes": 10,
+  "servings": 1,
+  "budget": true,
+  "ingredients": [
+   {
+    "food": "oeuf",
+    "g": 165.0
+   },
+   {
+    "food": "jambon",
+    "g": 45.0
+   },
+   {
+    "food": "emmental",
+    "g": 20.0
+   },
+   {
+    "food": "beurre",
+    "g": 5.0
+   }
+  ],
+  "steps": [
+   "Bats les œufs avec sel et poivre",
+   "Fais fondre le beurre dans une poêle, verse les œufs",
+   "Ajoute le jambon en lanières et le fromage, plie l'omelette quand elle est prise"
+  ]
+ },
+ {
+  "id": "r4",
+  "name": "Skyr, fruits rouges et muesli",
+  "category": "Petit-déjeuner",
+  "minutes": 3,
+  "servings": 1,
+  "budget": true,
+  "ingredients": [
+   {
+    "food": "skyr",
+    "g": 200.0
+   },
+   {
+    "food": "fruits-rouges",
+    "g": 100.0
+   },
+   {
+    "food": "muesli",
+    "g": 40.0
+   },
+   {
+    "food": "miel",
+    "g": 10.0
+   }
+  ],
+  "steps": [
+   "Verse le skyr dans un bol",
+   "Ajoute les fruits rouges et le muesli",
+   "Termine avec le miel"
+  ]
+ },
+ {
+  "id": "r5",
+  "name": "Pancakes avoine-banane",
+  "category": "Petit-déjeuner",
+  "minutes": 15,
+  "servings": 1,
+  "budget": true,
+  "ingredients": [
+   {
+    "food": "avoine",
+    "g": 60.0
+   },
+   {
+    "food": "oeuf",
+    "g": 110.0
+   },
+   {
+    "food": "banane",
+    "g": 100.0
+   },
+   {
+    "food": "whey",
+    "g": 15.0
+   }
+  ],
+  "steps": [
+   "Mixe tous les ingrédients jusqu'à obtenir une pâte lisse",
+   "Fais cuire des petits pancakes 1-2 min de chaque côté dans une poêle antiadhésive",
+   "Sers avec des fruits ou un peu de miel"
+  ]
+ },
+ {
+  "id": "r6",
+  "name": "Tartines avocat et œufs",
+  "category": "Petit-déjeuner",
+  "minutes": 10,
+  "servings": 1,
+  "budget": false,
+  "ingredients": [
+   {
+    "food": "pain-complet",
+    "g": 80.0
+   },
+   {
+    "food": "avocat",
+    "g": 100.0
+   },
+   {
+    "food": "oeuf",
+    "g": 110.0
+   },
+   {
+    "food": "citron",
+    "g": 10.0
+   }
+  ],
+  "steps": [
+   "Fais griller le pain",
+   "Écrase l'avocat avec le citron, sel et poivre, et tartine",
+   "Ajoute les œufs au plat ou mollets par-dessus"
+  ]
+ },
+ {
+  "id": "r7",
+  "name": "Overnight oats chocolat",
+  "category": "Petit-déjeuner",
+  "minutes": 5,
+  "servings": 1,
+  "budget": true,
+  "ingredients": [
+   {
+    "food": "avoine",
+    "g": 60.0
+   },
+   {
+    "food": "lait",
+    "g": 200.0
+   },
+   {
+    "food": "cacao",
+    "g": 10.0
+   },
+   {
+    "food": "whey",
+    "g": 30.0
+   },
+   {
+    "food": "chia",
+    "g": 10.0
+   }
+  ],
+  "steps": [
+   "Mélange tous les ingrédients dans un bocal",
+   "Laisse au frigo toute la nuit",
+   "Le matin, ajoute des fruits si tu veux et déguste froid"
+  ]
+ },
+ {
+  "id": "r8",
+  "name": "Bol de fromage blanc gourmand",
+  "category": "Petit-déjeuner",
+  "minutes": 3,
+  "servings": 1,
+  "budget": true,
+  "ingredients": [
+   {
+    "food": "fromage-blanc-0",
+    "g": 250.0
+   },
+   {
+    "food": "banane",
+    "g": 100.0
+   },
+   {
+    "food": "amandes",
+    "g": 20.0
+   },
+   {
+    "food": "miel",
+    "g": 10.0
+   }
+  ],
+  "steps": [
+   "Verse le fromage blanc dans un bol",
+   "Ajoute la banane en rondelles et les amandes concassées",
+   "Arrose de miel"
+  ]
+ },
+ {
+  "id": "r9",
+  "name": "Brouillade d'œufs et épinards",
+  "category": "Petit-déjeuner",
+  "minutes": 10,
+  "servings": 1,
+  "budget": true,
+  "ingredients": [
+   {
+    "food": "oeuf",
+    "g": 165.0
+   },
+   {
+    "food": "epinards",
+    "g": 100.0
+   },
+   {
+    "food": "pain-complet",
+    "g": 40.0
+   },
+   {
+    "food": "huile-olive",
+    "g": 5.0
+   }
+  ],
+  "steps": [
+   "Fais revenir les épinards 2 min avec l'huile",
+   "Ajoute les œufs battus et remue doucement jusqu'à ce qu'ils soient crémeux",
+   "Sers avec le pain grillé"
+  ]
+ },
+ {
+  "id": "r10",
+  "name": "Bœuf haché, patate douce et haricots verts",
+  "category": "Plat",
+  "minutes": 30,
+  "servings": 1,
+  "budget": true,
+  "ingredients": [
+   {
+    "food": "steak-5",
+    "g": 150.0
+   },
+   {
+    "food": "patate-douce",
+    "g": 250.0
+   },
+   {
+    "food": "haricots-verts",
+    "g": 150.0
+   },
+   {
+    "food": "huile-olive",
+    "g": 5.0
+   }
+  ],
+  "steps": [
+   "Coupe la patate douce en cubes et rôtis-la au four 25 min à 200 °C avec l'huile",
+   "Cuis les haricots verts 8 min",
+   "Fais cuire la viande hachée à la poêle avec épices",
+   "Assemble le tout"
+  ]
+ },
+ {
+  "id": "r11",
+  "name": "Pâtes bolognaise maison",
+  "category": "Plat",
+  "minutes": 25,
+  "servings": 2,
+  "budget": true,
+  "ingredients": [
+   {
+    "food": "pates",
+    "g": 180.0
+   },
+   {
+    "food": "steak-5",
+    "g": 250.0
+   },
+   {
+    "food": "sauce-tomate",
+    "g": 300.0
+   },
+   {
+    "food": "oignon",
+    "g": 80.0
+   },
+   {
+    "food": "ail",
+    "g": 5.0
+   },
+   {
+    "food": "huile-olive",
+    "g": 10.0
+   },
+   {
+    "food": "parmesan",
+    "g": 20.0
+   }
+  ],
+  "steps": [
+   "Fais revenir l'oignon et l'ail émincés dans l'huile",
+   "Ajoute la viande, fais-la dorer puis la sauce tomate, laisse mijoter 15 min",
+   "Cuis les pâtes, mélange et parsème de parmesan"
+  ]
+ },
+ {
+  "id": "r12",
+  "name": "Saumon, quinoa et courgettes",
+  "category": "Plat",
+  "minutes": 25,
+  "servings": 1,
+  "budget": false,
+  "ingredients": [
+   {
+    "food": "saumon",
+    "g": 125.0
+   },
+   {
+    "food": "quinoa",
+    "g": 70.0
+   },
+   {
+    "food": "courgette",
+    "g": 200.0
+   },
+   {
+    "food": "citron",
+    "g": 20.0
+   }
+  ],
+  "steps": [
+   "Cuis le quinoa 12-15 min dans l'eau salée",
+   "Coupe la courgette et fais-la sauter 5 min",
+   "Cuis le saumon 4 min de chaque côté à la poêle, arrose de citron"
+  ]
+ },
+ {
+  "id": "r13",
+  "name": "Wok de poulet aux légumes",
+  "category": "Plat",
+  "minutes": 20,
+  "servings": 1,
+  "budget": true,
+  "ingredients": [
+   {
+    "food": "poulet",
+    "g": 160.0
+   },
+   {
+    "food": "legumes-wok",
+    "g": 250.0
+   },
+   {
+    "food": "riz",
+    "g": 80.0
+   },
+   {
+    "food": "sauce-soja",
+    "g": 20.0
+   },
+   {
+    "food": "huile-colza",
+    "g": 10.0
+   }
+  ],
+  "steps": [
+   "Cuis le riz",
+   "Saisis le poulet en lanières dans l'huile très chaude 5 min",
+   "Ajoute les légumes, fais sauter 5 min, puis la sauce soja"
+  ]
+ },
+ {
+  "id": "r14",
+  "name": "Chili con carne",
+  "category": "Batch cooking",
+  "minutes": 45,
+  "servings": 4,
+  "budget": true,
+  "ingredients": [
+   {
+    "food": "steak-5",
+    "g": 500.0
+   },
+   {
+    "food": "haricots-rouges",
+    "g": 400.0
+   },
+   {
+    "food": "sauce-tomate",
+    "g": 400.0
+   },
+   {
+    "food": "oignon",
+    "g": 150.0
+   },
+   {
+    "food": "poivron",
+    "g": 150.0
+   },
+   {
+    "food": "riz",
+    "g": 320.0
+   },
+   {
+    "food": "curry",
+    "g": 5.0
+   },
+   {
+    "food": "huile-olive",
+    "g": 15.0
+   }
+  ],
+  "steps": [
+   "Fais revenir l'oignon et le poivron dans l'huile",
+   "Ajoute la viande et les épices, fais dorer",
+   "Ajoute la sauce tomate et les haricots, laisse mijoter 30 min",
+   "Sers avec le riz ; se garde 3 jours au frigo"
+  ]
+ },
+ {
+  "id": "r15",
+  "name": "Curry de poulet au lait de coco",
+  "category": "Batch cooking",
+  "minutes": 35,
+  "servings": 4,
+  "budget": false,
+  "ingredients": [
+   {
+    "food": "poulet",
+    "g": 600.0
+   },
+   {
+    "food": "lait-coco",
+    "g": 200.0
+   },
+   {
+    "food": "oignon",
+    "g": 150.0
+   },
+   {
+    "food": "epinards",
+    "g": 200.0
+   },
+   {
+    "food": "riz",
+    "g": 320.0
+   },
+   {
+    "food": "curry",
+    "g": 8.0
+   },
+   {
+    "food": "huile-colza",
+    "g": 15.0
+   }
+  ],
+  "steps": [
+   "Fais revenir l'oignon dans l'huile avec le curry",
+   "Ajoute le poulet en morceaux, fais dorer 5 min",
+   "Verse le lait de coco, laisse mijoter 15 min, ajoute les épinards à la fin",
+   "Sers avec le riz"
+  ]
+ },
+ {
+  "id": "r16",
+  "name": "Dahl de lentilles corail",
+  "category": "Batch cooking",
+  "minutes": 30,
+  "servings": 4,
+  "budget": true,
+  "ingredients": [
+   {
+    "food": "lentilles-corail",
+    "g": 280.0
+   },
+   {
+    "food": "lait-coco",
+    "g": 200.0
+   },
+   {
+    "food": "tomate",
+    "g": 240.0
+   },
+   {
+    "food": "oignon",
+    "g": 120.0
+   },
+   {
+    "food": "curry",
+    "g": 8.0
+   },
+   {
+    "food": "riz",
+    "g": 240.0
+   }
+  ],
+  "steps": [
+   "Fais revenir l'oignon et les épices",
+   "Ajoute les lentilles, les tomates et 700 ml d'eau, cuis 20 min",
+   "Ajoute le lait de coco et sers avec le riz"
+  ]
+ },
+ {
+  "id": "r17",
+  "name": "Bowl thon, riz et avocat",
+  "category": "Plat",
+  "minutes": 15,
+  "servings": 1,
+  "budget": false,
+  "ingredients": [
+   {
+    "food": "thon-boite",
+    "g": 140.0
+   },
+   {
+    "food": "riz",
+    "g": 80.0
+   },
+   {
+    "food": "avocat",
+    "g": 100.0
+   },
+   {
+    "food": "concombre",
+    "g": 100.0
+   },
+   {
+    "food": "mais",
+    "g": 50.0
+   },
+   {
+    "food": "sauce-soja",
+    "g": 10.0
+   }
+  ],
+  "steps": [
+   "Cuis le riz et laisse-le tiédir",
+   "Dispose dans un bol le riz, le thon, l'avocat et le concombre en dés, le maïs",
+   "Arrose de sauce soja"
+  ]
+ },
+ {
+  "id": "r18",
+  "name": "Wrap poulet crudités",
+  "category": "Plat",
+  "minutes": 10,
+  "servings": 1,
+  "budget": true,
+  "ingredients": [
+   {
+    "food": "tortilla",
+    "g": 120.0
+   },
+   {
+    "food": "poulet",
+    "g": 120.0
+   },
+   {
+    "food": "salade",
+    "g": 40.0
+   },
+   {
+    "food": "tomate",
+    "g": 100.0
+   },
+   {
+    "food": "fromage-blanc-0",
+    "g": 50.0
+   }
+  ],
+  "steps": [
+   "Fais cuire le poulet en lanières (ou utilise un reste)",
+   "Mélange le fromage blanc avec sel, poivre et herbes et tartine les tortillas",
+   "Garnis de poulet, salade et tomate, roule"
+  ]
+ },
+ {
+  "id": "r19",
+  "name": "Steak, pommes de terre et salade",
+  "category": "Plat",
+  "minutes": 30,
+  "servings": 1,
+  "budget": true,
+  "ingredients": [
+   {
+    "food": "boeuf",
+    "g": 150.0
+   },
+   {
+    "food": "pdt",
+    "g": 250.0
+   },
+   {
+    "food": "salade",
+    "g": 50.0
+   },
+   {
+    "food": "huile-olive",
+    "g": 10.0
+   }
+  ],
+  "steps": [
+   "Fais cuire les pommes de terre à l'eau 20 min ou au four",
+   "Cuis le steak à la poêle selon ta préférence",
+   "Sers avec la salade assaisonnée"
+  ]
+ },
+ {
+  "id": "r20",
+  "name": "Cabillaud, semoule et légumes",
+  "category": "Plat",
+  "minutes": 20,
+  "servings": 1,
+  "budget": false,
+  "ingredients": [
+   {
+    "food": "cabillaud",
+    "g": 180.0
+   },
+   {
+    "food": "semoule",
+    "g": 70.0
+   },
+   {
+    "food": "courgette",
+    "g": 150.0
+   },
+   {
+    "food": "carotte",
+    "g": 100.0
+   },
+   {
+    "food": "huile-olive",
+    "g": 10.0
+   }
+  ],
+  "steps": [
+   "Verse de l'eau bouillante sur la semoule, couvre 5 min",
+   "Fais sauter les légumes en dés",
+   "Cuis le cabillaud 3-4 min de chaque côté et sers"
+  ]
+ },
+ {
+  "id": "r21",
+  "name": "Salade de pois chiches feta",
+  "category": "Plat",
+  "minutes": 10,
+  "servings": 1,
+  "budget": true,
+  "ingredients": [
+   {
+    "food": "pois-chiches",
+    "g": 200.0
+   },
+   {
+    "food": "feta",
+    "g": 50.0
+   },
+   {
+    "food": "tomate",
+    "g": 120.0
+   },
+   {
+    "food": "concombre",
+    "g": 100.0
+   },
+   {
+    "food": "huile-olive",
+    "g": 10.0
+   },
+   {
+    "food": "citron",
+    "g": 15.0
+   }
+  ],
+  "steps": [
+   "Rince les pois chiches",
+   "Coupe tomate, concombre et feta en dés",
+   "Mélange avec l'huile, le citron, sel et poivre"
+  ]
+ },
+ {
+  "id": "r22",
+  "name": "Gratin de pâtes au thon",
+  "category": "Batch cooking",
+  "minutes": 35,
+  "servings": 3,
+  "budget": true,
+  "ingredients": [
+   {
+    "food": "pates",
+    "g": 270.0
+   },
+   {
+    "food": "thon-boite",
+    "g": 280.0
+   },
+   {
+    "food": "sauce-tomate",
+    "g": 300.0
+   },
+   {
+    "food": "emmental",
+    "g": 60.0
+   },
+   {
+    "food": "oignon",
+    "g": 80.0
+   }
+  ],
+  "steps": [
+   "Cuis les pâtes al dente",
+   "Mélange-les avec le thon émietté, la sauce tomate et l'oignon revenu",
+   "Verse dans un plat, couvre de fromage et passe 15 min au four à 200 °C"
+  ]
+ },
+ {
+  "id": "r23",
+  "name": "Poulet rôti, quinoa et poivrons",
+  "category": "Batch cooking",
+  "minutes": 40,
+  "servings": 4,
+  "budget": true,
+  "ingredients": [
+   {
+    "food": "poulet",
+    "g": 640.0
+   },
+   {
+    "food": "quinoa",
+    "g": 280.0
+   },
+   {
+    "food": "poivron",
+    "g": 450.0
+   },
+   {
+    "food": "huile-olive",
+    "g": 20.0
+   },
+   {
+    "food": "curry",
+    "g": 6.0
+   }
+  ],
+  "steps": [
+   "Coupe les poivrons et le poulet, mélange avec l'huile et les épices",
+   "Enfourne 25 min à 200 °C",
+   "Cuis le quinoa et répartis le tout dans 4 boîtes"
+  ]
+ },
+ {
+  "id": "r24",
+  "name": "Riz cantonais protéiné",
+  "category": "Plat",
+  "minutes": 20,
+  "servings": 2,
+  "budget": true,
+  "ingredients": [
+   {
+    "food": "riz",
+    "g": 160.0
+   },
+   {
+    "food": "oeuf",
+    "g": 165.0
+   },
+   {
+    "food": "jambon",
+    "g": 90.0
+   },
+   {
+    "food": "petits-pois",
+    "g": 150.0
+   },
+   {
+    "food": "sauce-soja",
+    "g": 20.0
+   },
+   {
+    "food": "huile-colza",
+    "g": 10.0
+   }
+  ],
+  "steps": [
+   "Cuis le riz la veille idéalement",
+   "Fais une omelette, coupe-la en lanières",
+   "Fais sauter le riz avec l'huile, les petits pois, le jambon, l'omelette et la sauce soja"
+  ]
+ },
+ {
+  "id": "r25",
+  "name": "Tofu sauté aux légumes",
+  "category": "Plat",
+  "minutes": 20,
+  "servings": 1,
+  "budget": true,
+  "ingredients": [
+   {
+    "food": "tofu",
+    "g": 200.0
+   },
+   {
+    "food": "legumes-wok",
+    "g": 250.0
+   },
+   {
+    "food": "riz",
+    "g": 70.0
+   },
+   {
+    "food": "sauce-soja",
+    "g": 20.0
+   },
+   {
+    "food": "huile-colza",
+    "g": 10.0
+   }
+  ],
+  "steps": [
+   "Coupe le tofu en cubes et dore-le dans l'huile",
+   "Ajoute les légumes et fais sauter 5 min",
+   "Ajoute la sauce soja et sers avec le riz"
+  ]
+ },
+ {
+  "id": "r26",
+  "name": "Escalope de dinde et pâtes au pesto",
+  "category": "Plat",
+  "minutes": 15,
+  "servings": 1,
+  "budget": true,
+  "ingredients": [
+   {
+    "food": "dinde",
+    "g": 150.0
+   },
+   {
+    "food": "pates",
+    "g": 90.0
+   },
+   {
+    "food": "pesto",
+    "g": 20.0
+   },
+   {
+    "food": "tomates-cerise",
+    "g": 100.0
+   }
+  ],
+  "steps": [
+   "Cuis les pâtes",
+   "Cuis l'escalope 3-4 min de chaque côté",
+   "Mélange les pâtes avec le pesto et les tomates cerises coupées"
+  ]
+ },
+ {
+  "id": "r27",
+  "name": "Soupe de lentilles et carottes",
+  "category": "Batch cooking",
+  "minutes": 35,
+  "servings": 4,
+  "budget": true,
+  "ingredients": [
+   {
+    "food": "lentilles-corail",
+    "g": 240.0
+   },
+   {
+    "food": "carotte",
+    "g": 300.0
+   },
+   {
+    "food": "oignon",
+    "g": 120.0
+   },
+   {
+    "food": "bouillon",
+    "g": 1000.0
+   },
+   {
+    "food": "creme",
+    "g": 60.0
+   }
+  ],
+  "steps": [
+   "Fais revenir l'oignon",
+   "Ajoute les carottes en rondelles, les lentilles et le bouillon, cuis 25 min",
+   "Mixe et ajoute la crème"
+  ]
+ },
+ {
+  "id": "r28",
+  "name": "Burger maison",
+  "category": "Plat",
+  "minutes": 20,
+  "servings": 1,
+  "budget": false,
+  "ingredients": [
+   {
+    "food": "steak-15",
+    "g": 125.0
+   },
+   {
+    "food": "baguette",
+    "g": 80.0
+   },
+   {
+    "food": "emmental",
+    "g": 20.0
+   },
+   {
+    "food": "salade",
+    "g": 20.0
+   },
+   {
+    "food": "tomate",
+    "g": 60.0
+   },
+   {
+    "food": "oignon",
+    "g": 20.0
+   }
+  ],
+  "steps": [
+   "Cuis le steak à la poêle et pose le fromage dessus en fin de cuisson",
+   "Toaste le pain",
+   "Monte le burger avec salade, tomate et oignon"
+  ]
+ },
+ {
+  "id": "r29",
+  "name": "Pizza tortilla express",
+  "category": "Plat",
+  "minutes": 15,
+  "servings": 1,
+  "budget": true,
+  "ingredients": [
+   {
+    "food": "tortilla",
+    "g": 60.0
+   },
+   {
+    "food": "sauce-tomate",
+    "g": 60.0
+   },
+   {
+    "food": "mozzarella",
+    "g": 60.0
+   },
+   {
+    "food": "jambon",
+    "g": 45.0
+   },
+   {
+    "food": "champignons",
+    "g": 50.0
+   }
+  ],
+  "steps": [
+   "Étale la sauce tomate sur la tortilla",
+   "Ajoute jambon, champignons et mozzarella",
+   "Passe 8-10 min au four à 220 °C"
+  ]
+ },
+ {
+  "id": "r30",
+  "name": "Crevettes sautées à l'ail et riz",
+  "category": "Plat",
+  "minutes": 15,
+  "servings": 1,
+  "budget": false,
+  "ingredients": [
+   {
+    "food": "crevettes",
+    "g": 150.0
+   },
+   {
+    "food": "riz",
+    "g": 80.0
+   },
+   {
+    "food": "ail",
+    "g": 10.0
+   },
+   {
+    "food": "brocoli",
+    "g": 150.0
+   },
+   {
+    "food": "huile-olive",
+    "g": 10.0
+   }
+  ],
+  "steps": [
+   "Cuis le riz et le brocoli",
+   "Fais revenir l'ail dans l'huile, ajoute les crevettes 3 min",
+   "Sers le tout avec un filet de citron"
+  ]
+ },
+ {
+  "id": "r31",
+  "name": "Shaker whey banane",
+  "category": "Collation",
+  "minutes": 2,
+  "servings": 1,
+  "budget": true,
+  "ingredients": [
+   {
+    "food": "whey",
+    "g": 30.0
+   },
+   {
+    "food": "lait",
+    "g": 250.0
+   },
+   {
+    "food": "banane",
+    "g": 120.0
+   }
+  ],
+  "steps": [
+   "Mets tous les ingrédients dans un blender ou un shaker",
+   "Mixe ou secoue 30 secondes"
+  ]
+ },
+ {
+  "id": "r32",
+  "name": "Galettes de riz beurre de cacahuète",
+  "category": "Collation",
+  "minutes": 2,
+  "servings": 1,
+  "budget": true,
+  "ingredients": [
+   {
+    "food": "galette-riz",
+    "g": 27.0
+   },
+   {
+    "food": "beurre-cacahuete",
+    "g": 20.0
+   },
+   {
+    "food": "banane",
+    "g": 60.0
+   }
+  ],
+  "steps": [
+   "Tartine les galettes de beurre de cacahuète",
+   "Ajoute des rondelles de banane"
+  ]
+ },
+ {
+  "id": "r33",
+  "name": "Cottage cheese et fruits",
+  "category": "Collation",
+  "minutes": 2,
+  "servings": 1,
+  "budget": true,
+  "ingredients": [
+   {
+    "food": "cottage",
+    "g": 200.0
+   },
+   {
+    "food": "ananas",
+    "g": 100.0
+   }
+  ],
+  "steps": [
+   "Verse le cottage cheese dans un bol",
+   "Ajoute l'ananas en morceaux"
+  ]
+ },
+ {
+  "id": "r34",
+  "name": "Œufs durs et crudités",
+  "category": "Collation",
+  "minutes": 12,
+  "servings": 1,
+  "budget": true,
+  "ingredients": [
+   {
+    "food": "oeuf",
+    "g": 110.0
+   },
+   {
+    "food": "carotte",
+    "g": 100.0
+   },
+   {
+    "food": "concombre",
+    "g": 100.0
+   }
+  ],
+  "steps": [
+   "Cuis les œufs 10 min dans l'eau bouillante",
+   "Coupe les crudités en bâtonnets"
+  ]
+ },
+ {
+  "id": "r35",
+  "name": "Energy balls dattes-amandes",
+  "category": "Collation",
+  "minutes": 15,
+  "servings": 6,
+  "budget": false,
+  "ingredients": [
+   {
+    "food": "dattes",
+    "g": 150.0
+   },
+   {
+    "food": "amandes",
+    "g": 90.0
+   },
+   {
+    "food": "avoine",
+    "g": 60.0
+   },
+   {
+    "food": "cacao",
+    "g": 10.0
+   }
+  ],
+  "steps": [
+   "Mixe tous les ingrédients jusqu'à obtenir une pâte",
+   "Forme 18 boules",
+   "Conserve-les au frais (3 boules par portion)"
+  ]
+ },
+ {
+  "id": "r36",
+  "name": "Smoothie vert protéiné",
+  "category": "Collation",
+  "minutes": 5,
+  "servings": 1,
+  "budget": true,
+  "ingredients": [
+   {
+    "food": "epinards",
+    "g": 50.0
+   },
+   {
+    "food": "banane",
+    "g": 120.0
+   },
+   {
+    "food": "whey",
+    "g": 30.0
+   },
+   {
+    "food": "lait-amande",
+    "g": 250.0
+   }
+  ],
+  "steps": [
+   "Mets tout dans un blender",
+   "Mixe jusqu'à ce que ce soit bien lisse"
+  ]
+ },
+ {
+  "id": "r37",
+  "name": "Tartine jambon fromage blanc",
+  "category": "Collation",
+  "minutes": 5,
+  "servings": 1,
+  "budget": true,
+  "ingredients": [
+   {
+    "food": "pain-complet",
+    "g": 40.0
+   },
+   {
+    "food": "fromage-blanc-0",
+    "g": 60.0
+   },
+   {
+    "food": "jambon",
+    "g": 45.0
+   }
+  ],
+  "steps": [
+   "Fais griller le pain",
+   "Tartine de fromage blanc assaisonné",
+   "Ajoute le jambon"
+  ]
+ },
+ {
+  "id": "r38",
+  "name": "Mug cake protéiné",
+  "category": "Dessert",
+  "minutes": 5,
+  "servings": 1,
+  "budget": true,
+  "ingredients": [
+   {
+    "food": "oeuf",
+    "g": 55.0
+   },
+   {
+    "food": "whey",
+    "g": 30.0
+   },
+   {
+    "food": "cacao",
+    "g": 10.0
+   },
+   {
+    "food": "lait",
+    "g": 30.0
+   },
+   {
+    "food": "avoine",
+    "g": 20.0
+   }
+  ],
+  "steps": [
+   "Mélange tous les ingrédients dans un grand mug",
+   "Cuis 60-90 secondes au micro-ondes",
+   "Laisse tiédir avant de déguster"
+  ]
+ },
+ {
+  "id": "r39",
+  "name": "Fromage blanc caséine chocolat",
+  "category": "Dessert",
+  "minutes": 3,
+  "servings": 1,
+  "budget": true,
+  "ingredients": [
+   {
+    "food": "fromage-blanc-0",
+    "g": 200.0
+   },
+   {
+    "food": "caseine",
+    "g": 30.0
+   },
+   {
+    "food": "chocolat-noir",
+    "g": 10.0
+   }
+  ],
+  "steps": [
+   "Mélange le fromage blanc et la caséine",
+   "Ajoute le chocolat râpé ; parfait avant de dormir"
+  ]
+ },
+ {
+  "id": "r40",
+  "name": "Pommes au four cannelle",
+  "category": "Dessert",
+  "minutes": 25,
+  "servings": 2,
+  "budget": true,
+  "ingredients": [
+   {
+    "food": "pomme",
+    "g": 300.0
+   },
+   {
+    "food": "skyr",
+    "g": 200.0
+   },
+   {
+    "food": "amandes",
+    "g": 20.0
+   },
+   {
+    "food": "miel",
+    "g": 10.0
+   }
+  ],
+  "steps": [
+   "Coupe les pommes en quartiers, saupoudre-les de cannelle et cuis-les 20 min au four à 180 °C",
+   "Sers avec le skyr, les amandes concassées et le miel"
+  ]
+ },
+ {
+  "id": "r41",
+  "name": "Crème de riz protéinée",
+  "category": "Petit-déjeuner",
+  "minutes": 5,
+  "servings": 1,
+  "budget": true,
+  "ingredients": [
+   {
+    "food": "creme-riz",
+    "g": 60.0
+   },
+   {
+    "food": "lait",
+    "g": 250.0
+   },
+   {
+    "food": "whey",
+    "g": 30.0
+   },
+   {
+    "food": "myrtilles",
+    "g": 100.0
+   }
+  ],
+  "steps": [
+   "Fais chauffer la crème de riz avec le lait en remuant 3 min",
+   "Hors du feu, ajoute la whey",
+   "Garnis de myrtilles"
+  ]
+ },
+ {
+  "id": "r42",
+  "name": "Salade complète poulet quinoa",
+  "category": "Plat",
+  "minutes": 20,
+  "servings": 1,
+  "budget": true,
+  "ingredients": [
+   {
+    "food": "poulet",
+    "g": 150.0
+   },
+   {
+    "food": "quinoa",
+    "g": 60.0
+   },
+   {
+    "food": "tomate",
+    "g": 120.0
+   },
+   {
+    "food": "concombre",
+    "g": 100.0
+   },
+   {
+    "food": "mais",
+    "g": 50.0
+   },
+   {
+    "food": "huile-olive",
+    "g": 10.0
+   }
+  ],
+  "steps": [
+   "Cuis le quinoa et le poulet",
+   "Coupe les légumes",
+   "Mélange le tout avec l'huile, sel et poivre"
+  ]
+ },
+ {
+  "id": "r43",
+  "name": "Chakchouka aux œufs",
+  "category": "Plat",
+  "minutes": 25,
+  "servings": 2,
+  "budget": true,
+  "ingredients": [
+   {
+    "food": "oeuf",
+    "g": 220.0
+   },
+   {
+    "food": "poivron",
+    "g": 300.0
+   },
+   {
+    "food": "tomate",
+    "g": 400.0
+   },
+   {
+    "food": "oignon",
+    "g": 100.0
+   },
+   {
+    "food": "huile-olive",
+    "g": 15.0
+   },
+   {
+    "food": "pain-complet",
+    "g": 80.0
+   }
+  ],
+  "steps": [
+   "Fais revenir l'oignon et les poivrons dans l'huile 10 min",
+   "Ajoute les tomates, laisse compoter 10 min",
+   "Casse les œufs dessus, couvre jusqu'à ce qu'ils soient pris, sers avec le pain"
+  ]
+ },
+ {
+  "id": "r44",
+  "name": "Porc, riz complet et carottes glacées",
+  "category": "Plat",
+  "minutes": 30,
+  "servings": 1,
+  "budget": true,
+  "ingredients": [
+   {
+    "food": "porc",
+    "g": 150.0
+   },
+   {
+    "food": "riz-complet",
+    "g": 80.0
+   },
+   {
+    "food": "carotte",
+    "g": 200.0
+   },
+   {
+    "food": "miel",
+    "g": 5.0
+   },
+   {
+    "food": "huile-olive",
+    "g": 5.0
+   }
+  ],
+  "steps": [
+   "Cuis le riz complet (25 min)",
+   "Fais glacer les carottes à la poêle avec un peu d'eau et le miel",
+   "Saisis le filet mignon en médaillons 4 min de chaque côté"
+  ]
+ },
+ {
+  "id": "r45",
+  "name": "Sardines, pommes de terre et salade",
+  "category": "Plat",
+  "minutes": 25,
+  "servings": 1,
+  "budget": true,
+  "ingredients": [
+   {
+    "food": "sardines",
+    "g": 90.0
+   },
+   {
+    "food": "pdt",
+    "g": 250.0
+   },
+   {
+    "food": "salade",
+    "g": 50.0
+   },
+   {
+    "food": "citron",
+    "g": 15.0
+   }
+  ],
+  "steps": [
+   "Cuis les pommes de terre à l'eau 20 min",
+   "Égoutte les sardines",
+   "Sers avec la salade et le citron"
+  ]
+ }
 ]

@@ -30,7 +30,7 @@ export default function TimerScreen() {
   const pick = (sec) => { if (!running) setTimerDuration(Math.min(MAX, Math.max(MIN, sec))); };
 
   return (
-    <View style={[s.screen, { alignItems: 'center' }]}>
+    <View style={[s.screen, { alignItems: 'center', padding: 16 }]}>
       <Text style={{ color: running ? colors.accent : colors.text, fontSize: 84, fontWeight: '800', marginTop: 32, fontVariant: ['tabular-nums'] }}>
         {mmss(left)}
       </Text>

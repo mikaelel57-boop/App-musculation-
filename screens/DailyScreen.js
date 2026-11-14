@@ -43,10 +43,10 @@ export default function DailyScreen() {
 
   const set = (k, v) => { setSaved(false); setForm((f) => ({ ...f, [k]: v })); };
   const isEmpty = Object.values(form).every((v) => String(v).trim() === '');
-  const history = Object.keys(daily).sort().reverse().slice(0, 7);
+  const history = Object.keys(daily).sort().reverse().slice(0, 14);
 
   return (
-    <ScrollView style={s.screen} keyboardShouldPersistTaps="handled">
+    <ScrollView style={s.screen} contentContainerStyle={s.content} keyboardShouldPersistTaps="handled">
       <Text style={s.h1}>Aujourd'hui · {fmtDate(day)}</Text>
 
       {FIELDS.map(([k, label, unit, ph]) => (
@@ -73,7 +73,7 @@ export default function DailyScreen() {
         <Text style={s.btnText}>{saved ? 'Enregistré ✓' : 'Enregistrer'}</Text>
       </Pressable>
 
-      <Text style={[s.h1, { marginTop: 24, marginBottom: 8 }]}>7 derniers jours</Text>
+      <Text style={[s.h1, { marginTop: 24, marginBottom: 8 }]}>14 derniers jours</Text>
       {history.length === 0 && <Text style={s.sub}>Aucune donnée pour l'instant.</Text>}
       {history.map((d) => (
         <View key={d} style={s.card}>
@@ -83,7 +83,6 @@ export default function DailyScreen() {
           </Text>
         </View>
       ))}
-      <View style={{ height: 40 }} />
-    </ScrollView>
+          </ScrollView>
   );
 }

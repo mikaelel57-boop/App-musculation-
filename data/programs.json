@@ -1,0 +1,157 @@
+[
+  {
+    "id": "fullbody3",
+    "name": "Full body débutant",
+    "summary": "3 séances par semaine, tout le corps à chaque fois. Idéal pour démarrer ou reprendre.",
+    "perWeek": 3,
+    "level": "Débutant",
+    "days": [
+      { "name": "Full body A", "items": [
+        { "ex": "barbell-squat", "sets": 3, "reps": "8-10", "rest": 120 },
+        { "ex": "barbell-bench-press-medium-grip", "sets": 3, "reps": "8-10", "rest": 120 },
+        { "ex": "bent-over-barbell-row", "sets": 3, "reps": "8-10", "rest": 90 },
+        { "ex": "dumbbell-shoulder-press", "sets": 3, "reps": "10-12", "rest": 90 },
+        { "ex": "lying-leg-curls", "sets": 3, "reps": "10-12", "rest": 60 },
+        { "ex": "plank", "sets": 3, "reps": "30-45 s", "rest": 45 }
+      ]},
+      { "name": "Full body B", "items": [
+        { "ex": "romanian-deadlift", "sets": 3, "reps": "8-10", "rest": 120 },
+        { "ex": "incline-dumbbell-press", "sets": 3, "reps": "10-12", "rest": 90 },
+        { "ex": "wide-grip-lat-pulldown", "sets": 3, "reps": "10-12", "rest": 90 },
+        { "ex": "dumbbell-lunges", "sets": 3, "reps": "10 / jambe", "rest": 90 },
+        { "ex": "side-lateral-raise", "sets": 3, "reps": "12-15", "rest": 60 },
+        { "ex": "crunches", "sets": 3, "reps": "15-20", "rest": 45 }
+      ]}
+    ]
+  },
+  {
+    "id": "upperlower4",
+    "name": "Haut / Bas",
+    "summary": "4 séances par semaine en alternant haut et bas du corps. Bon équilibre volume / récupération.",
+    "perWeek": 4,
+    "level": "Intermédiaire",
+    "days": [
+      { "name": "Haut du corps A", "items": [
+        { "ex": "barbell-bench-press-medium-grip", "sets": 4, "reps": "6-8", "rest": 150 },
+        { "ex": "bent-over-barbell-row", "sets": 4, "reps": "6-8", "rest": 120 },
+        { "ex": "dumbbell-shoulder-press", "sets": 3, "reps": "8-10", "rest": 90 },
+        { "ex": "wide-grip-lat-pulldown", "sets": 3, "reps": "10-12", "rest": 90 },
+        { "ex": "barbell-curl", "sets": 3, "reps": "10-12", "rest": 60 },
+        { "ex": "triceps-pushdown-rope-attachment", "sets": 3, "reps": "10-12", "rest": 60 }
+      ]},
+      { "name": "Bas du corps A", "items": [
+        { "ex": "barbell-squat", "sets": 4, "reps": "6-8", "rest": 150 },
+        { "ex": "romanian-deadlift", "sets": 3, "reps": "8-10", "rest": 120 },
+        { "ex": "leg-press", "sets": 3, "reps": "10-12", "rest": 90 },
+        { "ex": "lying-leg-curls", "sets": 3, "reps": "10-12", "rest": 60 },
+        { "ex": "standing-calf-raises", "sets": 4, "reps": "12-15", "rest": 60 },
+        { "ex": "hanging-leg-raise", "sets": 3, "reps": "10-15", "rest": 60 }
+      ]},
+      { "name": "Haut du corps B", "items": [
+        { "ex": "incline-dumbbell-press", "sets": 4, "reps": "8-10", "rest": 120 },
+        { "ex": "pullups", "sets": 4, "reps": "6-10", "rest": 120 },
+        { "ex": "seated-cable-rows", "sets": 3, "reps": "10-12", "rest": 90 },
+        { "ex": "side-lateral-raise", "sets": 3, "reps": "12-15", "rest": 60 },
+        { "ex": "face-pull", "sets": 3, "reps": "12-15", "rest": 60 },
+        { "ex": "hammer-curls", "sets": 3, "reps": "10-12", "rest": 60 },
+        { "ex": "ez-bar-skullcrusher", "sets": 3, "reps": "10-12", "rest": 60 }
+      ]},
+      { "name": "Bas du corps B", "items": [
+        { "ex": "barbell-deadlift", "sets": 3, "reps": "5", "rest": 180 },
+        { "ex": "split-squat-with-dumbbells", "sets": 3, "reps": "8-10 / jambe", "rest": 90 },
+        { "ex": "barbell-hip-thrust", "sets": 3, "reps": "10-12", "rest": 90 },
+        { "ex": "leg-extensions", "sets": 3, "reps": "12-15", "rest": 60 },
+        { "ex": "seated-calf-raise", "sets": 4, "reps": "12-15", "rest": 60 },
+        { "ex": "cable-crunch", "sets": 3, "reps": "12-15", "rest": 60 }
+      ]}
+    ]
+  },
+  {
+    "id": "ppl6",
+    "name": "Push / Pull / Legs",
+    "summary": "6 séances par semaine (poussée, tirage, jambes, deux fois). Pour les pratiquants réguliers.",
+    "perWeek": 6,
+    "level": "Confirmé",
+    "days": [
+      { "name": "Push (pecs, épaules, triceps)", "items": [
+        { "ex": "barbell-bench-press-medium-grip", "sets": 4, "reps": "6-8", "rest": 150 },
+        { "ex": "incline-dumbbell-press", "sets": 3, "reps": "8-10", "rest": 120 },
+        { "ex": "standing-military-press", "sets": 3, "reps": "8-10", "rest": 120 },
+        { "ex": "cable-crossover", "sets": 3, "reps": "12-15", "rest": 60 },
+        { "ex": "side-lateral-raise", "sets": 4, "reps": "12-15", "rest": 60 },
+        { "ex": "triceps-pushdown-rope-attachment", "sets": 3, "reps": "10-12", "rest": 60 },
+        { "ex": "standing-dumbbell-triceps-extension", "sets": 3, "reps": "10-12", "rest": 60 }
+      ]},
+      { "name": "Pull (dos, biceps)", "items": [
+        { "ex": "barbell-deadlift", "sets": 3, "reps": "5", "rest": 180 },
+        { "ex": "pullups", "sets": 4, "reps": "6-10", "rest": 120 },
+        { "ex": "bent-over-barbell-row", "sets": 3, "reps": "8-10", "rest": 120 },
+        { "ex": "seated-cable-rows", "sets": 3, "reps": "10-12", "rest": 90 },
+        { "ex": "face-pull", "sets": 3, "reps": "12-15", "rest": 60 },
+        { "ex": "barbell-curl", "sets": 3, "reps": "8-10", "rest": 60 },
+        { "ex": "incline-dumbbell-curl", "sets": 3, "reps": "10-12", "rest": 60 }
+      ]},
+      { "name": "Legs (jambes, abdos)", "items": [
+        { "ex": "barbell-squat", "sets": 4, "reps": "6-8", "rest": 150 },
+        { "ex": "romanian-deadlift", "sets": 3, "reps": "8-10", "rest": 120 },
+        { "ex": "leg-press", "sets": 3, "reps": "10-12", "rest": 90 },
+        { "ex": "seated-leg-curl", "sets": 3, "reps": "10-12", "rest": 60 },
+        { "ex": "leg-extensions", "sets": 3, "reps": "12-15", "rest": 60 },
+        { "ex": "standing-calf-raises", "sets": 4, "reps": "10-15", "rest": 60 },
+        { "ex": "hanging-leg-raise", "sets": 3, "reps": "10-15", "rest": 60 }
+      ]}
+    ]
+  },
+  {
+    "id": "home-bodyweight",
+    "name": "Maison · poids du corps",
+    "summary": "3 séances par semaine sans matériel (juste une chaise ou un banc).",
+    "perWeek": 3,
+    "level": "Débutant",
+    "days": [
+      { "name": "Corps entier A", "items": [
+        { "ex": "bodyweight-squat", "sets": 4, "reps": "15-20", "rest": 60 },
+        { "ex": "pushups", "sets": 4, "reps": "max", "rest": 90 },
+        { "ex": "bodyweight-walking-lunge", "sets": 3, "reps": "12 / jambe", "rest": 60 },
+        { "ex": "bench-dips", "sets": 3, "reps": "10-15", "rest": 60 },
+        { "ex": "butt-lift-bridge", "sets": 3, "reps": "15-20", "rest": 45 },
+        { "ex": "plank", "sets": 3, "reps": "30-60 s", "rest": 45 }
+      ]},
+      { "name": "Corps entier B", "items": [
+        { "ex": "freehand-jump-squat", "sets": 3, "reps": "12", "rest": 60 },
+        { "ex": "push-ups-with-feet-elevated", "sets": 3, "reps": "max", "rest": 90 },
+        { "ex": "inverted-row", "sets": 3, "reps": "8-12", "rest": 90 },
+        { "ex": "single-leg-glute-bridge", "sets": 3, "reps": "12 / jambe", "rest": 45 },
+        { "ex": "push-ups-close-triceps-position", "sets": 3, "reps": "max", "rest": 60 },
+        { "ex": "mountain-climbers", "sets": 3, "reps": "30 s", "rest": 45 },
+        { "ex": "dead-bug", "sets": 3, "reps": "10 / côté", "rest": 45 }
+      ]}
+    ]
+  },
+  {
+    "id": "home-dumbbells",
+    "name": "Maison · haltères",
+    "summary": "3 séances par semaine avec une paire d'haltères et un banc (ou une chaise solide).",
+    "perWeek": 3,
+    "level": "Débutant",
+    "days": [
+      { "name": "Haltères A", "items": [
+        { "ex": "goblet-squat", "sets": 4, "reps": "10-12", "rest": 90 },
+        { "ex": "dumbbell-bench-press", "sets": 4, "reps": "8-12", "rest": 90 },
+        { "ex": "one-arm-dumbbell-row", "sets": 4, "reps": "10 / bras", "rest": 60 },
+        { "ex": "dumbbell-shoulder-press", "sets": 3, "reps": "10-12", "rest": 60 },
+        { "ex": "dumbbell-bicep-curl", "sets": 3, "reps": "10-12", "rest": 60 },
+        { "ex": "russian-twist", "sets": 3, "reps": "20", "rest": 45 }
+      ]},
+      { "name": "Haltères B", "items": [
+        { "ex": "stiff-legged-dumbbell-deadlift", "sets": 4, "reps": "10-12", "rest": 90 },
+        { "ex": "split-squat-with-dumbbells", "sets": 3, "reps": "10 / jambe", "rest": 90 },
+        { "ex": "incline-dumbbell-press", "sets": 3, "reps": "10-12", "rest": 90 },
+        { "ex": "bent-over-two-dumbbell-row", "sets": 3, "reps": "10-12", "rest": 60 },
+        { "ex": "side-lateral-raise", "sets": 3, "reps": "12-15", "rest": 45 },
+        { "ex": "standing-dumbbell-triceps-extension", "sets": 3, "reps": "10-12", "rest": 60 },
+        { "ex": "standing-dumbbell-calf-raise", "sets": 3, "reps": "15", "rest": 45 }
+      ]}
+    ]
+  }
+]

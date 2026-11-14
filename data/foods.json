@@ -1,0 +1,1407 @@
+[
+ {
+  "id": "poulet",
+  "name": "Blanc de poulet",
+  "aisle": "Viandes & poissons",
+  "kcal": 110.0,
+  "p": 23.0,
+  "c": 0.0,
+  "f": 1.5,
+  "portion": {
+   "g": 150.0,
+   "label": "1 filet"
+  }
+ },
+ {
+  "id": "cuisse-poulet",
+  "name": "Cuisse de poulet (sans peau)",
+  "aisle": "Viandes & poissons",
+  "kcal": 160.0,
+  "p": 19.0,
+  "c": 0.0,
+  "f": 9.5,
+  "portion": {
+   "g": 150.0,
+   "label": "1 cuisse"
+  }
+ },
+ {
+  "id": "dinde",
+  "name": "Escalope de dinde",
+  "aisle": "Viandes & poissons",
+  "kcal": 105.0,
+  "p": 23.0,
+  "c": 0.0,
+  "f": 1.2,
+  "portion": {
+   "g": 120.0,
+   "label": "1 escalope"
+  }
+ },
+ {
+  "id": "steak-5",
+  "name": "Steak haché 5 %",
+  "aisle": "Viandes & poissons",
+  "kcal": 125.0,
+  "p": 21.0,
+  "c": 0.0,
+  "f": 4.5,
+  "portion": {
+   "g": 100.0,
+   "label": "1 steak"
+  }
+ },
+ {
+  "id": "steak-15",
+  "name": "Steak haché 15 %",
+  "aisle": "Viandes & poissons",
+  "kcal": 210.0,
+  "p": 18.0,
+  "c": 0.0,
+  "f": 15.0,
+  "portion": {
+   "g": 100.0,
+   "label": "1 steak"
+  }
+ },
+ {
+  "id": "boeuf",
+  "name": "Bœuf à griller (rumsteck)",
+  "aisle": "Viandes & poissons",
+  "kcal": 125.0,
+  "p": 22.0,
+  "c": 0.0,
+  "f": 4.0,
+  "portion": {
+   "g": 150.0,
+   "label": "1 pièce"
+  }
+ },
+ {
+  "id": "porc",
+  "name": "Filet mignon de porc",
+  "aisle": "Viandes & poissons",
+  "kcal": 120.0,
+  "p": 22.0,
+  "c": 0.0,
+  "f": 3.5,
+  "portion": {
+   "g": 150.0,
+   "label": "1 portion"
+  }
+ },
+ {
+  "id": "jambon",
+  "name": "Jambon blanc",
+  "aisle": "Viandes & poissons",
+  "kcal": 115.0,
+  "p": 20.0,
+  "c": 1.0,
+  "f": 3.5,
+  "portion": {
+   "g": 45.0,
+   "label": "1 tranche"
+  }
+ },
+ {
+  "id": "blanc-dinde",
+  "name": "Blanc de dinde (tranches)",
+  "aisle": "Viandes & poissons",
+  "kcal": 105.0,
+  "p": 21.0,
+  "c": 1.5,
+  "f": 1.5,
+  "portion": {
+   "g": 30.0,
+   "label": "1 tranche"
+  }
+ },
+ {
+  "id": "saumon",
+  "name": "Saumon",
+  "aisle": "Viandes & poissons",
+  "kcal": 200.0,
+  "p": 20.0,
+  "c": 0.0,
+  "f": 13.0,
+  "portion": {
+   "g": 125.0,
+   "label": "1 pavé"
+  }
+ },
+ {
+  "id": "cabillaud",
+  "name": "Cabillaud",
+  "aisle": "Viandes & poissons",
+  "kcal": 80.0,
+  "p": 18.0,
+  "c": 0.0,
+  "f": 0.7,
+  "portion": {
+   "g": 150.0,
+   "label": "1 dos"
+  }
+ },
+ {
+  "id": "thon-boite",
+  "name": "Thon au naturel (égoutté)",
+  "aisle": "Viandes & poissons",
+  "kcal": 115.0,
+  "p": 26.0,
+  "c": 0.0,
+  "f": 1.0,
+  "portion": {
+   "g": 140.0,
+   "label": "1 boîte"
+  }
+ },
+ {
+  "id": "thon",
+  "name": "Thon frais",
+  "aisle": "Viandes & poissons",
+  "kcal": 130.0,
+  "p": 24.0,
+  "c": 0.0,
+  "f": 4.0,
+  "portion": {
+   "g": 150.0,
+   "label": "1 steak"
+  }
+ },
+ {
+  "id": "sardines",
+  "name": "Sardines à l'huile (égouttées)",
+  "aisle": "Viandes & poissons",
+  "kcal": 210.0,
+  "p": 24.0,
+  "c": 0.0,
+  "f": 13.0,
+  "portion": {
+   "g": 90.0,
+   "label": "1 boîte"
+  }
+ },
+ {
+  "id": "crevettes",
+  "name": "Crevettes cuites décortiquées",
+  "aisle": "Viandes & poissons",
+  "kcal": 95.0,
+  "p": 21.0,
+  "c": 0.0,
+  "f": 1.2,
+  "portion": {
+   "g": 100.0,
+   "label": "1 portion"
+  }
+ },
+ {
+  "id": "lardons",
+  "name": "Lardons",
+  "aisle": "Viandes & poissons",
+  "kcal": 270.0,
+  "p": 15.0,
+  "c": 0.5,
+  "f": 23.0
+ },
+ {
+  "id": "oeuf",
+  "name": "Œuf",
+  "aisle": "Œufs & produits laitiers",
+  "kcal": 140.0,
+  "p": 12.5,
+  "c": 0.7,
+  "f": 9.5,
+  "portion": {
+   "g": 55.0,
+   "label": "1 œuf"
+  }
+ },
+ {
+  "id": "blanc-oeuf",
+  "name": "Blanc d'œuf",
+  "aisle": "Œufs & produits laitiers",
+  "kcal": 48.0,
+  "p": 10.5,
+  "c": 0.7,
+  "f": 0.2,
+  "portion": {
+   "g": 33.0,
+   "label": "1 blanc"
+  }
+ },
+ {
+  "id": "lait",
+  "name": "Lait demi-écrémé",
+  "aisle": "Œufs & produits laitiers",
+  "kcal": 46.0,
+  "p": 3.3,
+  "c": 4.8,
+  "f": 1.6,
+  "portion": {
+   "g": 250.0,
+   "label": "1 verre"
+  }
+ },
+ {
+  "id": "lait-ecreme",
+  "name": "Lait écrémé",
+  "aisle": "Œufs & produits laitiers",
+  "kcal": 34.0,
+  "p": 3.4,
+  "c": 4.9,
+  "f": 0.1,
+  "portion": {
+   "g": 250.0,
+   "label": "1 verre"
+  }
+ },
+ {
+  "id": "skyr",
+  "name": "Skyr nature",
+  "aisle": "Œufs & produits laitiers",
+  "kcal": 60.0,
+  "p": 11.0,
+  "c": 4.0,
+  "f": 0.2,
+  "portion": {
+   "g": 150.0,
+   "label": "1 pot"
+  }
+ },
+ {
+  "id": "fromage-blanc-0",
+  "name": "Fromage blanc 0 %",
+  "aisle": "Œufs & produits laitiers",
+  "kcal": 45.0,
+  "p": 7.5,
+  "c": 4.0,
+  "f": 0.1,
+  "portion": {
+   "g": 100.0,
+   "label": "1 portion"
+  }
+ },
+ {
+  "id": "fromage-blanc",
+  "name": "Fromage blanc 3 %",
+  "aisle": "Œufs & produits laitiers",
+  "kcal": 75.0,
+  "p": 7.0,
+  "c": 4.0,
+  "f": 3.2,
+  "portion": {
+   "g": 100.0,
+   "label": "1 portion"
+  }
+ },
+ {
+  "id": "yaourt",
+  "name": "Yaourt nature",
+  "aisle": "Œufs & produits laitiers",
+  "kcal": 55.0,
+  "p": 4.2,
+  "c": 5.5,
+  "f": 1.5,
+  "portion": {
+   "g": 125.0,
+   "label": "1 pot"
+  }
+ },
+ {
+  "id": "yaourt-grec",
+  "name": "Yaourt à la grecque",
+  "aisle": "Œufs & produits laitiers",
+  "kcal": 120.0,
+  "p": 5.0,
+  "c": 4.0,
+  "f": 10.0,
+  "portion": {
+   "g": 150.0,
+   "label": "1 pot"
+  }
+ },
+ {
+  "id": "cottage",
+  "name": "Cottage cheese",
+  "aisle": "Œufs & produits laitiers",
+  "kcal": 98.0,
+  "p": 11.0,
+  "c": 3.4,
+  "f": 4.3,
+  "portion": {
+   "g": 200.0,
+   "label": "1 pot"
+  }
+ },
+ {
+  "id": "emmental",
+  "name": "Emmental râpé",
+  "aisle": "Œufs & produits laitiers",
+  "kcal": 380.0,
+  "p": 28.0,
+  "c": 0.5,
+  "f": 29.5,
+  "portion": {
+   "g": 20.0,
+   "label": "1 poignée"
+  }
+ },
+ {
+  "id": "mozzarella",
+  "name": "Mozzarella",
+  "aisle": "Œufs & produits laitiers",
+  "kcal": 250.0,
+  "p": 18.0,
+  "c": 1.0,
+  "f": 19.5,
+  "portion": {
+   "g": 125.0,
+   "label": "1 boule"
+  }
+ },
+ {
+  "id": "feta",
+  "name": "Feta",
+  "aisle": "Œufs & produits laitiers",
+  "kcal": 270.0,
+  "p": 16.0,
+  "c": 1.0,
+  "f": 22.0
+ },
+ {
+  "id": "parmesan",
+  "name": "Parmesan",
+  "aisle": "Œufs & produits laitiers",
+  "kcal": 400.0,
+  "p": 33.0,
+  "c": 0.0,
+  "f": 30.0,
+  "portion": {
+   "g": 10.0,
+   "label": "1 cuillère"
+  }
+ },
+ {
+  "id": "creme",
+  "name": "Crème fraîche légère 15 %",
+  "aisle": "Œufs & produits laitiers",
+  "kcal": 160.0,
+  "p": 2.5,
+  "c": 4.0,
+  "f": 15.0,
+  "portion": {
+   "g": 30.0,
+   "label": "1 cuillère"
+  }
+ },
+ {
+  "id": "beurre",
+  "name": "Beurre",
+  "aisle": "Œufs & produits laitiers",
+  "kcal": 740.0,
+  "p": 0.6,
+  "c": 0.6,
+  "f": 82.0,
+  "portion": {
+   "g": 10.0,
+   "label": "1 noisette"
+  }
+ },
+ {
+  "id": "riz",
+  "name": "Riz basmati (cru)",
+  "aisle": "Féculents & céréales",
+  "kcal": 350.0,
+  "p": 8.0,
+  "c": 77.0,
+  "f": 0.8,
+  "portion": {
+   "g": 80.0,
+   "label": "1 portion"
+  }
+ },
+ {
+  "id": "riz-complet",
+  "name": "Riz complet (cru)",
+  "aisle": "Féculents & céréales",
+  "kcal": 350.0,
+  "p": 7.5,
+  "c": 74.0,
+  "f": 2.5,
+  "portion": {
+   "g": 80.0,
+   "label": "1 portion"
+  }
+ },
+ {
+  "id": "pates",
+  "name": "Pâtes (crues)",
+  "aisle": "Féculents & céréales",
+  "kcal": 355.0,
+  "p": 12.5,
+  "c": 71.0,
+  "f": 1.8,
+  "portion": {
+   "g": 90.0,
+   "label": "1 portion"
+  }
+ },
+ {
+  "id": "pates-completes",
+  "name": "Pâtes complètes (crues)",
+  "aisle": "Féculents & céréales",
+  "kcal": 340.0,
+  "p": 13.0,
+  "c": 64.0,
+  "f": 2.5,
+  "portion": {
+   "g": 90.0,
+   "label": "1 portion"
+  }
+ },
+ {
+  "id": "quinoa",
+  "name": "Quinoa (cru)",
+  "aisle": "Féculents & céréales",
+  "kcal": 370.0,
+  "p": 14.0,
+  "c": 64.0,
+  "f": 6.0,
+  "portion": {
+   "g": 70.0,
+   "label": "1 portion"
+  }
+ },
+ {
+  "id": "semoule",
+  "name": "Semoule (crue)",
+  "aisle": "Féculents & céréales",
+  "kcal": 360.0,
+  "p": 12.0,
+  "c": 73.0,
+  "f": 1.5,
+  "portion": {
+   "g": 70.0,
+   "label": "1 portion"
+  }
+ },
+ {
+  "id": "avoine",
+  "name": "Flocons d'avoine",
+  "aisle": "Féculents & céréales",
+  "kcal": 370.0,
+  "p": 13.0,
+  "c": 60.0,
+  "f": 7.0,
+  "portion": {
+   "g": 50.0,
+   "label": "1 bol"
+  }
+ },
+ {
+  "id": "pain-complet",
+  "name": "Pain complet",
+  "aisle": "Féculents & céréales",
+  "kcal": 240.0,
+  "p": 9.0,
+  "c": 41.0,
+  "f": 3.0,
+  "portion": {
+   "g": 40.0,
+   "label": "1 tranche"
+  }
+ },
+ {
+  "id": "pain-mie",
+  "name": "Pain de mie complet",
+  "aisle": "Féculents & céréales",
+  "kcal": 250.0,
+  "p": 9.0,
+  "c": 43.0,
+  "f": 4.0,
+  "portion": {
+   "g": 28.0,
+   "label": "1 tranche"
+  }
+ },
+ {
+  "id": "baguette",
+  "name": "Baguette",
+  "aisle": "Féculents & céréales",
+  "kcal": 270.0,
+  "p": 9.0,
+  "c": 56.0,
+  "f": 1.2,
+  "portion": {
+   "g": 60.0,
+   "label": "1/4 baguette"
+  }
+ },
+ {
+  "id": "pdt",
+  "name": "Pomme de terre",
+  "aisle": "Féculents & céréales",
+  "kcal": 80.0,
+  "p": 2.0,
+  "c": 17.0,
+  "f": 0.1,
+  "portion": {
+   "g": 200.0,
+   "label": "2 moyennes"
+  }
+ },
+ {
+  "id": "patate-douce",
+  "name": "Patate douce",
+  "aisle": "Féculents & céréales",
+  "kcal": 85.0,
+  "p": 1.6,
+  "c": 18.0,
+  "f": 0.1,
+  "portion": {
+   "g": 200.0,
+   "label": "1 moyenne"
+  }
+ },
+ {
+  "id": "galette-riz",
+  "name": "Galette de riz soufflé",
+  "aisle": "Féculents & céréales",
+  "kcal": 380.0,
+  "p": 8.0,
+  "c": 80.0,
+  "f": 3.0,
+  "portion": {
+   "g": 9.0,
+   "label": "1 galette"
+  }
+ },
+ {
+  "id": "tortilla",
+  "name": "Tortilla de blé",
+  "aisle": "Féculents & céréales",
+  "kcal": 300.0,
+  "p": 8.5,
+  "c": 50.0,
+  "f": 7.0,
+  "portion": {
+   "g": 60.0,
+   "label": "1 tortilla"
+  }
+ },
+ {
+  "id": "creme-riz",
+  "name": "Crème de riz",
+  "aisle": "Féculents & céréales",
+  "kcal": 370.0,
+  "p": 7.0,
+  "c": 82.0,
+  "f": 1.0,
+  "portion": {
+   "g": 50.0,
+   "label": "1 portion"
+  }
+ },
+ {
+  "id": "muesli",
+  "name": "Muesli sans sucre ajouté",
+  "aisle": "Féculents & céréales",
+  "kcal": 360.0,
+  "p": 10.0,
+  "c": 60.0,
+  "f": 7.0,
+  "portion": {
+   "g": 50.0,
+   "label": "1 bol"
+  }
+ },
+ {
+  "id": "farine",
+  "name": "Farine de blé",
+  "aisle": "Féculents & céréales",
+  "kcal": 350.0,
+  "p": 10.0,
+  "c": 73.0,
+  "f": 1.0
+ },
+ {
+  "id": "lentilles-corail",
+  "name": "Lentilles corail (crues)",
+  "aisle": "Légumineuses & tofu",
+  "kcal": 340.0,
+  "p": 24.0,
+  "c": 50.0,
+  "f": 1.5,
+  "portion": {
+   "g": 70.0,
+   "label": "1 portion"
+  }
+ },
+ {
+  "id": "lentilles",
+  "name": "Lentilles vertes (cuites)",
+  "aisle": "Légumineuses & tofu",
+  "kcal": 115.0,
+  "p": 9.0,
+  "c": 17.0,
+  "f": 0.5,
+  "portion": {
+   "g": 200.0,
+   "label": "1 portion"
+  }
+ },
+ {
+  "id": "pois-chiches",
+  "name": "Pois chiches (cuits)",
+  "aisle": "Légumineuses & tofu",
+  "kcal": 120.0,
+  "p": 7.0,
+  "c": 15.0,
+  "f": 2.5,
+  "portion": {
+   "g": 200.0,
+   "label": "1/2 boîte"
+  }
+ },
+ {
+  "id": "haricots-rouges",
+  "name": "Haricots rouges (cuits)",
+  "aisle": "Légumineuses & tofu",
+  "kcal": 100.0,
+  "p": 8.0,
+  "c": 12.0,
+  "f": 0.5,
+  "portion": {
+   "g": 200.0,
+   "label": "1/2 boîte"
+  }
+ },
+ {
+  "id": "tofu",
+  "name": "Tofu nature",
+  "aisle": "Légumineuses & tofu",
+  "kcal": 120.0,
+  "p": 13.0,
+  "c": 1.0,
+  "f": 7.0,
+  "portion": {
+   "g": 100.0,
+   "label": "1 portion"
+  }
+ },
+ {
+  "id": "edamame",
+  "name": "Edamame",
+  "aisle": "Légumineuses & tofu",
+  "kcal": 120.0,
+  "p": 11.0,
+  "c": 9.0,
+  "f": 5.0,
+  "portion": {
+   "g": 100.0,
+   "label": "1 portion"
+  }
+ },
+ {
+  "id": "brocoli",
+  "name": "Brocoli",
+  "aisle": "Légumes",
+  "kcal": 34.0,
+  "p": 2.8,
+  "c": 4.5,
+  "f": 0.4,
+  "portion": {
+   "g": 150.0,
+   "label": "1 portion"
+  }
+ },
+ {
+  "id": "haricots-verts",
+  "name": "Haricots verts",
+  "aisle": "Légumes",
+  "kcal": 30.0,
+  "p": 2.0,
+  "c": 4.0,
+  "f": 0.2,
+  "portion": {
+   "g": 150.0,
+   "label": "1 portion"
+  }
+ },
+ {
+  "id": "epinards",
+  "name": "Épinards",
+  "aisle": "Légumes",
+  "kcal": 23.0,
+  "p": 2.9,
+  "c": 1.4,
+  "f": 0.4,
+  "portion": {
+   "g": 100.0,
+   "label": "1 portion"
+  }
+ },
+ {
+  "id": "courgette",
+  "name": "Courgette",
+  "aisle": "Légumes",
+  "kcal": 18.0,
+  "p": 1.3,
+  "c": 2.2,
+  "f": 0.3,
+  "portion": {
+   "g": 200.0,
+   "label": "1 courgette"
+  }
+ },
+ {
+  "id": "tomate",
+  "name": "Tomate",
+  "aisle": "Légumes",
+  "kcal": 18.0,
+  "p": 0.9,
+  "c": 3.0,
+  "f": 0.2,
+  "portion": {
+   "g": 120.0,
+   "label": "1 tomate"
+  }
+ },
+ {
+  "id": "tomates-cerise",
+  "name": "Tomates cerises",
+  "aisle": "Légumes",
+  "kcal": 20.0,
+  "p": 0.9,
+  "c": 3.5,
+  "f": 0.2,
+  "portion": {
+   "g": 100.0,
+   "label": "1 poignée"
+  }
+ },
+ {
+  "id": "poivron",
+  "name": "Poivron",
+  "aisle": "Légumes",
+  "kcal": 30.0,
+  "p": 1.0,
+  "c": 5.5,
+  "f": 0.3,
+  "portion": {
+   "g": 150.0,
+   "label": "1 poivron"
+  }
+ },
+ {
+  "id": "carotte",
+  "name": "Carotte",
+  "aisle": "Légumes",
+  "kcal": 38.0,
+  "p": 0.8,
+  "c": 7.5,
+  "f": 0.2,
+  "portion": {
+   "g": 100.0,
+   "label": "1 carotte"
+  }
+ },
+ {
+  "id": "oignon",
+  "name": "Oignon",
+  "aisle": "Légumes",
+  "kcal": 40.0,
+  "p": 1.2,
+  "c": 7.0,
+  "f": 0.2,
+  "portion": {
+   "g": 80.0,
+   "label": "1 oignon"
+  }
+ },
+ {
+  "id": "champignons",
+  "name": "Champignons de Paris",
+  "aisle": "Légumes",
+  "kcal": 22.0,
+  "p": 3.0,
+  "c": 0.5,
+  "f": 0.3,
+  "portion": {
+   "g": 100.0,
+   "label": "1 portion"
+  }
+ },
+ {
+  "id": "salade",
+  "name": "Salade verte",
+  "aisle": "Légumes",
+  "kcal": 15.0,
+  "p": 1.3,
+  "c": 1.5,
+  "f": 0.2,
+  "portion": {
+   "g": 50.0,
+   "label": "1 bol"
+  }
+ },
+ {
+  "id": "concombre",
+  "name": "Concombre",
+  "aisle": "Légumes",
+  "kcal": 13.0,
+  "p": 0.6,
+  "c": 2.0,
+  "f": 0.1,
+  "portion": {
+   "g": 150.0,
+   "label": "1/2 concombre"
+  }
+ },
+ {
+  "id": "avocat",
+  "name": "Avocat",
+  "aisle": "Légumes",
+  "kcal": 160.0,
+  "p": 2.0,
+  "c": 1.5,
+  "f": 15.0,
+  "portion": {
+   "g": 100.0,
+   "label": "1/2 avocat"
+  }
+ },
+ {
+  "id": "chou-fleur",
+  "name": "Chou-fleur",
+  "aisle": "Légumes",
+  "kcal": 25.0,
+  "p": 2.0,
+  "c": 3.0,
+  "f": 0.3,
+  "portion": {
+   "g": 150.0,
+   "label": "1 portion"
+  }
+ },
+ {
+  "id": "petits-pois",
+  "name": "Petits pois",
+  "aisle": "Légumes",
+  "kcal": 80.0,
+  "p": 5.5,
+  "c": 10.0,
+  "f": 0.4,
+  "portion": {
+   "g": 100.0,
+   "label": "1 portion"
+  }
+ },
+ {
+  "id": "mais",
+  "name": "Maïs doux (égoutté)",
+  "aisle": "Légumes",
+  "kcal": 90.0,
+  "p": 2.9,
+  "c": 15.5,
+  "f": 1.5,
+  "portion": {
+   "g": 70.0,
+   "label": "1/2 boîte"
+  }
+ },
+ {
+  "id": "ail",
+  "name": "Ail",
+  "aisle": "Légumes",
+  "kcal": 130.0,
+  "p": 6.0,
+  "c": 25.0,
+  "f": 0.5,
+  "portion": {
+   "g": 5.0,
+   "label": "1 gousse"
+  }
+ },
+ {
+  "id": "legumes-wok",
+  "name": "Mélange de légumes pour wok",
+  "aisle": "Légumes",
+  "kcal": 35.0,
+  "p": 2.0,
+  "c": 5.0,
+  "f": 0.3,
+  "portion": {
+   "g": 200.0,
+   "label": "1 portion"
+  }
+ },
+ {
+  "id": "banane",
+  "name": "Banane",
+  "aisle": "Fruits",
+  "kcal": 90.0,
+  "p": 1.1,
+  "c": 20.0,
+  "f": 0.3,
+  "portion": {
+   "g": 120.0,
+   "label": "1 banane"
+  }
+ },
+ {
+  "id": "pomme",
+  "name": "Pomme",
+  "aisle": "Fruits",
+  "kcal": 54.0,
+  "p": 0.3,
+  "c": 11.5,
+  "f": 0.2,
+  "portion": {
+   "g": 150.0,
+   "label": "1 pomme"
+  }
+ },
+ {
+  "id": "orange",
+  "name": "Orange",
+  "aisle": "Fruits",
+  "kcal": 47.0,
+  "p": 0.9,
+  "c": 9.0,
+  "f": 0.2,
+  "portion": {
+   "g": 150.0,
+   "label": "1 orange"
+  }
+ },
+ {
+  "id": "fruits-rouges",
+  "name": "Fruits rouges (surgelés)",
+  "aisle": "Fruits",
+  "kcal": 45.0,
+  "p": 1.0,
+  "c": 7.0,
+  "f": 0.4,
+  "portion": {
+   "g": 100.0,
+   "label": "1 portion"
+  }
+ },
+ {
+  "id": "myrtilles",
+  "name": "Myrtilles",
+  "aisle": "Fruits",
+  "kcal": 57.0,
+  "p": 0.7,
+  "c": 12.0,
+  "f": 0.3,
+  "portion": {
+   "g": 100.0,
+   "label": "1 portion"
+  }
+ },
+ {
+  "id": "kiwi",
+  "name": "Kiwi",
+  "aisle": "Fruits",
+  "kcal": 60.0,
+  "p": 1.1,
+  "c": 11.0,
+  "f": 0.6,
+  "portion": {
+   "g": 75.0,
+   "label": "1 kiwi"
+  }
+ },
+ {
+  "id": "fraises",
+  "name": "Fraises",
+  "aisle": "Fruits",
+  "kcal": 33.0,
+  "p": 0.7,
+  "c": 6.0,
+  "f": 0.3,
+  "portion": {
+   "g": 150.0,
+   "label": "1 barquette"
+  }
+ },
+ {
+  "id": "ananas",
+  "name": "Ananas",
+  "aisle": "Fruits",
+  "kcal": 50.0,
+  "p": 0.5,
+  "c": 11.0,
+  "f": 0.1,
+  "portion": {
+   "g": 150.0,
+   "label": "1 portion"
+  }
+ },
+ {
+  "id": "mangue",
+  "name": "Mangue",
+  "aisle": "Fruits",
+  "kcal": 65.0,
+  "p": 0.6,
+  "c": 14.0,
+  "f": 0.3,
+  "portion": {
+   "g": 150.0,
+   "label": "1/2 mangue"
+  }
+ },
+ {
+  "id": "dattes",
+  "name": "Dattes",
+  "aisle": "Fruits",
+  "kcal": 300.0,
+  "p": 2.5,
+  "c": 66.0,
+  "f": 0.4,
+  "portion": {
+   "g": 8.0,
+   "label": "1 datte"
+  }
+ },
+ {
+  "id": "raisins-secs",
+  "name": "Raisins secs",
+  "aisle": "Fruits",
+  "kcal": 300.0,
+  "p": 3.0,
+  "c": 70.0,
+  "f": 0.5,
+  "portion": {
+   "g": 30.0,
+   "label": "1 poignée"
+  }
+ },
+ {
+  "id": "citron",
+  "name": "Citron",
+  "aisle": "Fruits",
+  "kcal": 30.0,
+  "p": 0.7,
+  "c": 3.0,
+  "f": 0.3,
+  "portion": {
+   "g": 50.0,
+   "label": "1/2 citron"
+  }
+ },
+ {
+  "id": "huile-olive",
+  "name": "Huile d'olive",
+  "aisle": "Huiles & oléagineux",
+  "kcal": 900.0,
+  "p": 0.0,
+  "c": 0.0,
+  "f": 100.0,
+  "portion": {
+   "g": 10.0,
+   "label": "1 cuillère à soupe"
+  }
+ },
+ {
+  "id": "huile-colza",
+  "name": "Huile de colza",
+  "aisle": "Huiles & oléagineux",
+  "kcal": 900.0,
+  "p": 0.0,
+  "c": 0.0,
+  "f": 100.0,
+  "portion": {
+   "g": 10.0,
+   "label": "1 cuillère à soupe"
+  }
+ },
+ {
+  "id": "amandes",
+  "name": "Amandes",
+  "aisle": "Huiles & oléagineux",
+  "kcal": 610.0,
+  "p": 22.0,
+  "c": 8.0,
+  "f": 52.0,
+  "portion": {
+   "g": 30.0,
+   "label": "1 poignée"
+  }
+ },
+ {
+  "id": "noix",
+  "name": "Noix",
+  "aisle": "Huiles & oléagineux",
+  "kcal": 690.0,
+  "p": 15.0,
+  "c": 7.0,
+  "f": 64.0,
+  "portion": {
+   "g": 30.0,
+   "label": "1 poignée"
+  }
+ },
+ {
+  "id": "cajou",
+  "name": "Noix de cajou",
+  "aisle": "Huiles & oléagineux",
+  "kcal": 590.0,
+  "p": 18.0,
+  "c": 27.0,
+  "f": 46.0,
+  "portion": {
+   "g": 30.0,
+   "label": "1 poignée"
+  }
+ },
+ {
+  "id": "beurre-cacahuete",
+  "name": "Beurre de cacahuète",
+  "aisle": "Huiles & oléagineux",
+  "kcal": 620.0,
+  "p": 25.0,
+  "c": 13.0,
+  "f": 50.0,
+  "portion": {
+   "g": 15.0,
+   "label": "1 cuillère à soupe"
+  }
+ },
+ {
+  "id": "chia",
+  "name": "Graines de chia",
+  "aisle": "Huiles & oléagineux",
+  "kcal": 490.0,
+  "p": 17.0,
+  "c": 8.0,
+  "f": 31.0,
+  "portion": {
+   "g": 10.0,
+   "label": "1 cuillère à soupe"
+  }
+ },
+ {
+  "id": "miel",
+  "name": "Miel",
+  "aisle": "Épicerie & sauces",
+  "kcal": 320.0,
+  "p": 0.4,
+  "c": 80.0,
+  "f": 0.0,
+  "portion": {
+   "g": 10.0,
+   "label": "1 cuillère à café"
+  }
+ },
+ {
+  "id": "sucre",
+  "name": "Sucre",
+  "aisle": "Épicerie & sauces",
+  "kcal": 400.0,
+  "p": 0.0,
+  "c": 100.0,
+  "f": 0.0,
+  "portion": {
+   "g": 5.0,
+   "label": "1 morceau"
+  }
+ },
+ {
+  "id": "chocolat-noir",
+  "name": "Chocolat noir 70 %",
+  "aisle": "Épicerie & sauces",
+  "kcal": 570.0,
+  "p": 8.0,
+  "c": 33.0,
+  "f": 43.0,
+  "portion": {
+   "g": 10.0,
+   "label": "1 carré"
+  }
+ },
+ {
+  "id": "confiture",
+  "name": "Confiture",
+  "aisle": "Épicerie & sauces",
+  "kcal": 240.0,
+  "p": 0.4,
+  "c": 60.0,
+  "f": 0.1,
+  "portion": {
+   "g": 15.0,
+   "label": "1 cuillère"
+  }
+ },
+ {
+  "id": "sauce-tomate",
+  "name": "Sauce tomate (coulis)",
+  "aisle": "Épicerie & sauces",
+  "kcal": 50.0,
+  "p": 1.5,
+  "c": 8.0,
+  "f": 1.0,
+  "portion": {
+   "g": 100.0,
+   "label": "1 portion"
+  }
+ },
+ {
+  "id": "pesto",
+  "name": "Pesto",
+  "aisle": "Épicerie & sauces",
+  "kcal": 450.0,
+  "p": 5.0,
+  "c": 6.0,
+  "f": 45.0,
+  "portion": {
+   "g": 15.0,
+   "label": "1 cuillère"
+  }
+ },
+ {
+  "id": "sauce-soja",
+  "name": "Sauce soja",
+  "aisle": "Épicerie & sauces",
+  "kcal": 60.0,
+  "p": 6.0,
+  "c": 7.0,
+  "f": 0.1,
+  "portion": {
+   "g": 10.0,
+   "label": "1 cuillère"
+  }
+ },
+ {
+  "id": "lait-coco",
+  "name": "Lait de coco",
+  "aisle": "Épicerie & sauces",
+  "kcal": 200.0,
+  "p": 2.0,
+  "c": 3.0,
+  "f": 20.0,
+  "portion": {
+   "g": 100.0,
+   "label": "1/4 boîte"
+  }
+ },
+ {
+  "id": "cacao",
+  "name": "Cacao en poudre non sucré",
+  "aisle": "Épicerie & sauces",
+  "kcal": 380.0,
+  "p": 20.0,
+  "c": 13.0,
+  "f": 21.0,
+  "portion": {
+   "g": 5.0,
+   "label": "1 cuillère à café"
+  }
+ },
+ {
+  "id": "curry",
+  "name": "Épices (curry, paprika…)",
+  "aisle": "Épicerie & sauces",
+  "kcal": 300.0,
+  "p": 12.0,
+  "c": 40.0,
+  "f": 10.0,
+  "portion": {
+   "g": 2.0,
+   "label": "1 pincée"
+  }
+ },
+ {
+  "id": "bouillon",
+  "name": "Bouillon de légumes (préparé)",
+  "aisle": "Épicerie & sauces",
+  "kcal": 5.0,
+  "p": 0.3,
+  "c": 0.6,
+  "f": 0.1,
+  "portion": {
+   "g": 250.0,
+   "label": "1 bol"
+  }
+ },
+ {
+  "id": "whey",
+  "name": "Whey protéine",
+  "aisle": "Compléments & boissons",
+  "kcal": 380.0,
+  "p": 78.0,
+  "c": 7.0,
+  "f": 5.0,
+  "portion": {
+   "g": 30.0,
+   "label": "1 dose"
+  }
+ },
+ {
+  "id": "caseine",
+  "name": "Caséine",
+  "aisle": "Compléments & boissons",
+  "kcal": 360.0,
+  "p": 80.0,
+  "c": 5.0,
+  "f": 2.0,
+  "portion": {
+   "g": 30.0,
+   "label": "1 dose"
+  }
+ },
+ {
+  "id": "jus-orange",
+  "name": "Jus d'orange",
+  "aisle": "Compléments & boissons",
+  "kcal": 45.0,
+  "p": 0.6,
+  "c": 10.0,
+  "f": 0.1,
+  "portion": {
+   "g": 200.0,
+   "label": "1 verre"
+  }
+ },
+ {
+  "id": "lait-amande",
+  "name": "Boisson amande",
+  "aisle": "Compléments & boissons",
+  "kcal": 24.0,
+  "p": 0.5,
+  "c": 2.5,
+  "f": 1.1,
+  "portion": {
+   "g": 250.0,
+   "label": "1 verre"
+  }
+ },
+ {
+  "id": "soda",
+  "name": "Soda sucré",
+  "aisle": "Compléments & boissons",
+  "kcal": 42.0,
+  "p": 0.0,
+  "c": 10.6,
+  "f": 0.0,
+  "portion": {
+   "g": 330.0,
+   "label": "1 canette"
+  }
+ },
+ {
+  "id": "biere",
+  "name": "Bière",
+  "aisle": "Compléments & boissons",
+  "kcal": 43.0,
+  "p": 0.4,
+  "c": 3.6,
+  "f": 0.0,
+  "portion": {
+   "g": 250.0,
+   "label": "1 demi"
+  }
+ }
+]

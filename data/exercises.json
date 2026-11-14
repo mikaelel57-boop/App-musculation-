@@ -1,70 +1,5620 @@
 {
-  "muscles": [
-    {
-      "id": "pecs",
-      "label": "Pectoraux",
-      "exercises": [
-        {
-          "id": "bench",
-          "name": "Développé couché",
-          "equipment": "Barre",
-          "video": null,
-          "image": null,
-          "tips": "Omoplates serrées, barre à hauteur du bas des pecs, pieds ancrés."
-        },
-        {
-          "id": "fly",
-          "name": "Écarté poulie",
-          "equipment": "Poulie",
-          "video": null,
-          "image": null,
-          "tips": "Légère flexion des coudes, mouvement en arc, contrôle à la descente."
-        }
-      ]
-    },
-    {
-      "id": "back",
-      "label": "Dos",
-      "exercises": [
-        {
-          "id": "pullup",
-          "name": "Tractions",
-          "equipment": "Barre fixe",
-          "video": null,
-          "image": null,
-          "tips": "Tire les coudes vers les hanches, menton au-dessus de la barre."
-        },
-        {
-          "id": "row",
-          "name": "Rowing barre",
-          "equipment": "Barre",
-          "video": null,
-          "image": null,
-          "tips": "Dos plat, buste incliné à 45°, tirage vers le nombril."
-        }
-      ]
-    },
-    {
-      "id": "legs",
-      "label": "Jambes",
-      "exercises": [
-        {
-          "id": "squat",
-          "name": "Squat",
-          "equipment": "Barre",
-          "video": null,
-          "image": null,
-          "tips": "Genoux dans l'axe des pieds, descente sous la parallèle si possible."
-        },
-        {
-          "id": "legpress",
-          "name": "Presse à cuisses",
-          "equipment": "Machine",
-          "video": null,
-          "image": null,
-          "tips": "Ne verrouille pas les genoux en haut, bassin collé au dossier."
-        }
-      ]
-    }
-  ]
+ "groups": [
+  {
+   "id": "pecs",
+   "label": "Pectoraux"
+  },
+  {
+   "id": "dos",
+   "label": "Dos"
+  },
+  {
+   "id": "lombaires",
+   "label": "Lombaires"
+  },
+  {
+   "id": "trapezes",
+   "label": "Trapèzes"
+  },
+  {
+   "id": "epaules",
+   "label": "Épaules"
+  },
+  {
+   "id": "biceps",
+   "label": "Biceps"
+  },
+  {
+   "id": "triceps",
+   "label": "Triceps"
+  },
+  {
+   "id": "avantbras",
+   "label": "Avant-bras"
+  },
+  {
+   "id": "abdos",
+   "label": "Abdos"
+  },
+  {
+   "id": "fessiers",
+   "label": "Fessiers"
+  },
+  {
+   "id": "quadriceps",
+   "label": "Quadriceps"
+  },
+  {
+   "id": "ischios",
+   "label": "Ischios"
+  },
+  {
+   "id": "adducteurs",
+   "label": "Adducteurs"
+  },
+  {
+   "id": "abducteurs",
+   "label": "Abducteurs"
+  },
+  {
+   "id": "mollets",
+   "label": "Mollets"
+  },
+  {
+   "id": "cou",
+   "label": "Cou"
+  }
+ ],
+ "exercises": [
+  {
+   "id": "barbell-bench-press-medium-grip",
+   "name": "Développé couché barre",
+   "group": "pecs",
+   "primary": [
+    "pectoraux"
+   ],
+   "secondary": [
+    "épaules",
+    "triceps"
+   ],
+   "equipment": "Barre",
+   "level": "Débutant",
+   "steps": [
+    "Allongé sur le banc, pieds ancrés au sol, saisis la barre un peu plus large que les épaules",
+    "Descends la barre contrôlée jusqu'au bas des pectoraux, coudes à environ 45° du buste",
+    "Pousse la barre vers le haut jusqu'à tendre les bras sans verrouiller brutalement"
+   ],
+   "errors": [
+    "Décoller les fesses du banc",
+    "Faire rebondir la barre sur la poitrine"
+   ],
+   "tip": "Serre les omoplates et garde-les collées au banc pendant toute la série.",
+   "media": "barbell-bench-press-medium-grip"
+  },
+  {
+   "id": "barbell-incline-bench-press-medium-grip",
+   "name": "Développé incliné barre",
+   "group": "pecs",
+   "primary": [
+    "pectoraux"
+   ],
+   "secondary": [
+    "épaules",
+    "triceps"
+   ],
+   "equipment": "Barre",
+   "level": "Débutant",
+   "steps": [
+    "Règle le banc à 30-45°, saisis la barre un peu plus large que les épaules",
+    "Descends la barre vers le haut des pectoraux, sous les clavicules",
+    "Pousse vers le haut en gardant les poignets au-dessus des coudes"
+   ],
+   "errors": [
+    "Banc trop incliné (ça devient un exercice d'épaules)",
+    "Coudes trop écartés à 90°"
+   ],
+   "tip": "Un angle de 30° suffit pour cibler le haut des pecs.",
+   "media": "barbell-incline-bench-press-medium-grip"
+  },
+  {
+   "id": "decline-barbell-bench-press",
+   "name": "Développé décliné barre",
+   "group": "pecs",
+   "primary": [
+    "pectoraux"
+   ],
+   "secondary": [
+    "épaules",
+    "triceps"
+   ],
+   "equipment": "Barre",
+   "level": "Débutant",
+   "steps": [
+    "Allongé tête en bas sur le banc décliné, jambes bloquées, saisis la barre",
+    "Descends la barre vers le bas des pectoraux",
+    "Pousse jusqu'à bras tendus"
+   ],
+   "errors": [
+    "Descendre trop vite",
+    "Mal bloquer les jambes"
+   ],
+   "tip": "Fais-toi aider pour sortir la barre du rack.",
+   "media": "decline-barbell-bench-press"
+  },
+  {
+   "id": "wide-grip-barbell-bench-press",
+   "name": "Développé couché prise large",
+   "group": "pecs",
+   "primary": [
+    "pectoraux"
+   ],
+   "secondary": [
+    "épaules",
+    "triceps"
+   ],
+   "equipment": "Barre",
+   "level": "Intermédiaire",
+   "steps": [
+    "Allongé sur le banc, saisis la barre nettement plus large que les épaules",
+    "Descends la barre jusqu'à la poitrine en contrôlant",
+    "Pousse vers le haut sans verrouiller les coudes"
+   ],
+   "errors": [
+    "Charger trop lourd (risque pour les épaules)",
+    "Amplitude incomplète"
+   ],
+   "tip": "Garde une charge modérée : la prise large sollicite beaucoup l'épaule.",
+   "media": "wide-grip-barbell-bench-press"
+  },
+  {
+   "id": "dumbbell-bench-press",
+   "name": "Développé couché haltères",
+   "group": "pecs",
+   "primary": [
+    "pectoraux"
+   ],
+   "secondary": [
+    "épaules",
+    "triceps"
+   ],
+   "equipment": "Haltères",
+   "level": "Débutant",
+   "steps": [
+    "Allongé sur le banc, haltères au-dessus de la poitrine, paumes vers les pieds",
+    "Descends les haltères sur les côtés jusqu'à sentir l'étirement des pecs",
+    "Pousse en rapprochant légèrement les haltères en haut"
+   ],
+   "errors": [
+    "Descendre trop bas et forcer l'épaule",
+    "Laisser les poignets se casser"
+   ],
+   "tip": "Pose les haltères sur les cuisses puis bascule en arrière pour te mettre en place.",
+   "media": "dumbbell-bench-press"
+  },
+  {
+   "id": "incline-dumbbell-press",
+   "name": "Développé incliné haltères",
+   "group": "pecs",
+   "primary": [
+    "pectoraux"
+   ],
+   "secondary": [
+    "épaules",
+    "triceps"
+   ],
+   "equipment": "Haltères",
+   "level": "Débutant",
+   "steps": [
+    "Banc à 30-45°, haltères à hauteur des épaules",
+    "Pousse les haltères au-dessus du haut de la poitrine",
+    "Redescends lentement jusqu'à l'étirement"
+   ],
+   "errors": [
+    "Cambrer fortement le dos",
+    "Choc des haltères en haut"
+   ],
+   "tip": "Contrôle la descente sur 2 à 3 secondes.",
+   "media": "incline-dumbbell-press"
+  },
+  {
+   "id": "decline-dumbbell-bench-press",
+   "name": "Développé décliné haltères",
+   "group": "pecs",
+   "primary": [
+    "pectoraux"
+   ],
+   "secondary": [
+    "épaules",
+    "triceps"
+   ],
+   "equipment": "Haltères",
+   "level": "Débutant",
+   "steps": [
+    "Allongé sur le banc décliné, jambes bloquées, haltères tendus au-dessus de la poitrine",
+    "Descends les haltères vers le bas des pecs",
+    "Pousse jusqu'à bras tendus"
+   ],
+   "errors": [
+    "Perdre l'équilibre en se plaçant",
+    "Amplitude trop courte"
+   ],
+   "tip": "Idéal pour le bas des pectoraux avec moins de contrainte sur l'épaule.",
+   "media": "decline-dumbbell-bench-press"
+  },
+  {
+   "id": "dumbbell-flyes",
+   "name": "Écarté couché haltères",
+   "group": "pecs",
+   "primary": [
+    "pectoraux"
+   ],
+   "secondary": [],
+   "equipment": "Haltères",
+   "level": "Débutant",
+   "steps": [
+    "Allongé, haltères au-dessus de la poitrine, paumes face à face, coudes légèrement fléchis",
+    "Ouvre les bras en arc de cercle jusqu'à sentir l'étirement",
+    "Referme en « serrant » les pecs comme pour enlacer un arbre"
+   ],
+   "errors": [
+    "Plier les coudes (ça devient un développé)",
+    "Descendre trop bas"
+   ],
+   "tip": "Garde le même angle de coude du début à la fin.",
+   "media": "dumbbell-flyes"
+  },
+  {
+   "id": "incline-dumbbell-flyes",
+   "name": "Écarté incliné haltères",
+   "group": "pecs",
+   "primary": [
+    "pectoraux"
+   ],
+   "secondary": [
+    "épaules"
+   ],
+   "equipment": "Haltères",
+   "level": "Débutant",
+   "steps": [
+    "Banc incliné à 30°, haltères au-dessus du haut de la poitrine",
+    "Ouvre les bras en arc, coudes légèrement fléchis",
+    "Referme lentement en contractant le haut des pecs"
+   ],
+   "errors": [
+    "Charger trop lourd",
+    "Bras tendus verrouillés"
+   ],
+   "tip": "Pense « étirement puis contraction » plutôt que charge.",
+   "media": "incline-dumbbell-flyes"
+  },
+  {
+   "id": "straight-arm-dumbbell-pullover",
+   "name": "Pull-over haltère",
+   "group": "pecs",
+   "primary": [
+    "pectoraux"
+   ],
+   "secondary": [
+    "grand dorsal",
+    "épaules",
+    "triceps"
+   ],
+   "equipment": "Haltères",
+   "level": "Intermédiaire",
+   "steps": [
+    "Allongé en travers ou sur le banc, un haltère tenu à deux mains au-dessus de la poitrine",
+    "Descends l'haltère derrière la tête, bras presque tendus",
+    "Ramène-le au-dessus de la poitrine"
+   ],
+   "errors": [
+    "Cambrer le bas du dos",
+    "Descendre trop loin derrière la tête"
+   ],
+   "tip": "Expire en remontant l'haltère et garde le bassin bas.",
+   "media": "straight-arm-dumbbell-pullover"
+  },
+  {
+   "id": "cable-crossover",
+   "name": "Écarté à la poulie vis-à-vis",
+   "group": "pecs",
+   "primary": [
+    "pectoraux"
+   ],
+   "secondary": [
+    "épaules"
+   ],
+   "equipment": "Poulie",
+   "level": "Débutant",
+   "steps": [
+    "Debout entre deux poulies hautes, une poignée dans chaque main, buste légèrement penché",
+    "Ramène les mains devant toi en arc de cercle jusqu'à ce qu'elles se croisent",
+    "Reviens lentement en gardant les coudes légèrement fléchis"
+   ],
+   "errors": [
+    "Tirer avec les bras au lieu des pecs",
+    "Se pencher trop en avant"
+   ],
+   "tip": "Marque une pause d'une seconde mains jointes.",
+   "media": "cable-crossover"
+  },
+  {
+   "id": "low-cable-crossover",
+   "name": "Écarté poulie basse",
+   "group": "pecs",
+   "primary": [
+    "pectoraux"
+   ],
+   "secondary": [
+    "épaules"
+   ],
+   "equipment": "Poulie",
+   "level": "Débutant",
+   "steps": [
+    "Poulies réglées en bas, poignées en main, un pied en avant",
+    "Monte les mains en arc vers le haut de la poitrine",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Utiliser l'élan",
+    "Hausser les épaules"
+   ],
+   "tip": "Parfait pour le haut des pectoraux.",
+   "media": "low-cable-crossover"
+  },
+  {
+   "id": "incline-cable-flye",
+   "name": "Écarté incliné à la poulie",
+   "group": "pecs",
+   "primary": [
+    "pectoraux"
+   ],
+   "secondary": [
+    "épaules"
+   ],
+   "equipment": "Poulie",
+   "level": "Intermédiaire",
+   "steps": [
+    "Banc incliné entre deux poulies basses, poignées en main",
+    "Ramène les mains au-dessus de la poitrine en arc",
+    "Ouvre lentement jusqu'à l'étirement"
+   ],
+   "errors": [
+    "Bras tendus verrouillés",
+    "Charge trop lourde"
+   ],
+   "tip": "La poulie garde la tension tout au long du mouvement.",
+   "media": "incline-cable-flye"
+  },
+  {
+   "id": "butterfly",
+   "name": "Pec deck (butterfly)",
+   "group": "pecs",
+   "primary": [
+    "pectoraux"
+   ],
+   "secondary": [],
+   "equipment": "Machine",
+   "level": "Débutant",
+   "steps": [
+    "Assis, dos collé au dossier, avant-bras ou mains sur les poignées",
+    "Ramène les bras devant toi en contractant les pecs",
+    "Reviens lentement sans laisser la charge retomber"
+   ],
+   "errors": [
+    "Décoller le dos",
+    "Aller trop loin en arrière à l'ouverture"
+   ],
+   "tip": "Règle le siège pour que les poignées soient à hauteur de poitrine.",
+   "media": "butterfly"
+  },
+  {
+   "id": "machine-bench-press",
+   "name": "Développé machine",
+   "group": "pecs",
+   "primary": [
+    "pectoraux"
+   ],
+   "secondary": [
+    "épaules",
+    "triceps"
+   ],
+   "equipment": "Machine",
+   "level": "Débutant",
+   "steps": [
+    "Assis, poignées à hauteur de poitrine",
+    "Pousse jusqu'à bras presque tendus",
+    "Reviens lentement"
+   ],
+   "errors": [
+    "Décoller le dos du dossier",
+    "Verrouiller les coudes"
+   ],
+   "tip": "Bonne option pour débuter ou finir une séance en sécurité.",
+   "media": "machine-bench-press"
+  },
+  {
+   "id": "leverage-incline-chest-press",
+   "name": "Développé incliné machine",
+   "group": "pecs",
+   "primary": [
+    "pectoraux"
+   ],
+   "secondary": [
+    "épaules",
+    "triceps"
+   ],
+   "equipment": "Machine",
+   "level": "Débutant",
+   "steps": [
+    "Assis, règle le siège pour avoir les poignées au niveau du haut de la poitrine",
+    "Pousse vers le haut et l'avant",
+    "Reviens lentement jusqu'à l'étirement"
+   ],
+   "errors": [
+    "Hausser les épaules",
+    "Amplitude trop courte"
+   ],
+   "tip": "Garde les omoplates serrées contre le dossier.",
+   "media": "leverage-incline-chest-press"
+  },
+  {
+   "id": "smith-machine-bench-press",
+   "name": "Développé couché à la Smith machine",
+   "group": "pecs",
+   "primary": [
+    "pectoraux"
+   ],
+   "secondary": [
+    "épaules",
+    "triceps"
+   ],
+   "equipment": "Machine",
+   "level": "Débutant",
+   "steps": [
+    "Banc placé sous la barre, barre au-dessus du milieu de la poitrine",
+    "Déverrouille et descends la barre vers la poitrine",
+    "Pousse jusqu'à bras tendus"
+   ],
+   "errors": [
+    "Banc mal placé",
+    "Rebond sur la poitrine"
+   ],
+   "tip": "Pratique pour s'entraîner seul en sécurité.",
+   "media": "smith-machine-bench-press"
+  },
+  {
+   "id": "pushups",
+   "name": "Pompes",
+   "group": "pecs",
+   "primary": [
+    "pectoraux"
+   ],
+   "secondary": [
+    "épaules",
+    "triceps"
+   ],
+   "equipment": "Poids du corps",
+   "level": "Débutant",
+   "steps": [
+    "Mains au sol un peu plus larges que les épaules, corps gainé de la tête aux pieds",
+    "Descends la poitrine près du sol en gardant les coudes à 45°",
+    "Pousse pour revenir bras tendus"
+   ],
+   "errors": [
+    "Bassin qui s'affaisse",
+    "Tête qui pique vers le sol"
+   ],
+   "tip": "Trop dur ? Fais-les sur les genoux ou mains surélevées.",
+   "media": "pushups"
+  },
+  {
+   "id": "push-up-wide",
+   "name": "Pompes prise large",
+   "group": "pecs",
+   "primary": [
+    "pectoraux"
+   ],
+   "secondary": [
+    "abdos",
+    "épaules",
+    "triceps"
+   ],
+   "equipment": "Poids du corps",
+   "level": "Débutant",
+   "steps": [
+    "Mains nettement plus larges que les épaules, corps gainé",
+    "Descends la poitrine vers le sol",
+    "Remonte en poussant fort"
+   ],
+   "errors": [
+    "Amplitude incomplète",
+    "Fesses en l'air"
+   ],
+   "tip": "Cible davantage l'extérieur des pectoraux.",
+   "media": "push-up-wide"
+  },
+  {
+   "id": "incline-push-up",
+   "name": "Pompes inclinées (mains surélevées)",
+   "group": "pecs",
+   "primary": [
+    "pectoraux"
+   ],
+   "secondary": [
+    "épaules",
+    "triceps"
+   ],
+   "equipment": "Poids du corps",
+   "level": "Débutant",
+   "steps": [
+    "Mains sur un banc ou une marche, corps droit",
+    "Descends la poitrine vers le banc",
+    "Pousse pour revenir"
+   ],
+   "errors": [
+    "Cambrer le dos",
+    "Coudes trop ouverts"
+   ],
+   "tip": "Version idéale pour débuter les pompes.",
+   "media": "incline-push-up"
+  },
+  {
+   "id": "push-ups-with-feet-elevated",
+   "name": "Pompes pieds surélevés",
+   "group": "pecs",
+   "primary": [
+    "pectoraux"
+   ],
+   "secondary": [
+    "épaules",
+    "triceps"
+   ],
+   "equipment": "Poids du corps",
+   "level": "Débutant",
+   "steps": [
+    "Pieds sur un banc, mains au sol, corps gainé",
+    "Descends la poitrine vers le sol",
+    "Pousse jusqu'à bras tendus"
+   ],
+   "errors": [
+    "Bassin qui tombe",
+    "Descente trop rapide"
+   ],
+   "tip": "Plus les pieds sont hauts, plus le haut des pecs travaille.",
+   "media": "push-ups-with-feet-elevated"
+  },
+  {
+   "id": "dips-chest-version",
+   "name": "Dips (version pectoraux)",
+   "group": "pecs",
+   "primary": [
+    "pectoraux"
+   ],
+   "secondary": [
+    "épaules",
+    "triceps"
+   ],
+   "equipment": "Autre",
+   "level": "Intermédiaire",
+   "steps": [
+    "En appui sur les barres parallèles, bras tendus",
+    "Penche le buste en avant et descends en pliant les coudes",
+    "Remonte en poussant"
+   ],
+   "errors": [
+    "Descendre trop bas (épaules)",
+    "Rester trop droit"
+   ],
+   "tip": "Penche-toi vers l'avant pour cibler les pecs plutôt que les triceps.",
+   "media": "dips-chest-version"
+  },
+  {
+   "id": "bench-press-with-bands",
+   "name": "Développé couché à l'élastique",
+   "group": "pecs",
+   "primary": [
+    "pectoraux"
+   ],
+   "secondary": [
+    "épaules",
+    "triceps"
+   ],
+   "equipment": "Élastique",
+   "level": "Débutant",
+   "steps": [
+    "Allongé, l'élastique passé derrière le dos ou sous le banc, une poignée dans chaque main",
+    "Pousse les mains vers le plafond",
+    "Reviens lentement"
+   ],
+   "errors": [
+    "Laisser l'élastique claquer",
+    "Bras désaxés"
+   ],
+   "tip": "Parfait pour s'entraîner à la maison.",
+   "media": "bench-press-with-bands"
+  },
+  {
+   "id": "svend-press",
+   "name": "Svend press (disque)",
+   "group": "pecs",
+   "primary": [
+    "pectoraux"
+   ],
+   "secondary": [
+    "avant-bras",
+    "épaules",
+    "triceps"
+   ],
+   "equipment": "Autre",
+   "level": "Débutant",
+   "steps": [
+    "Debout, un ou deux disques pressés entre les paumes devant la poitrine",
+    "Tends les bras devant toi en serrant fort les disques",
+    "Reviens vers la poitrine"
+   ],
+   "errors": [
+    "Relâcher la pression des mains",
+    "Hausser les épaules"
+   ],
+   "tip": "Serre les disques le plus fort possible tout le long.",
+   "media": "svend-press"
+  },
+  {
+   "id": "pullups",
+   "name": "Tractions pronation",
+   "group": "dos",
+   "primary": [
+    "grand dorsal"
+   ],
+   "secondary": [
+    "biceps",
+    "milieu du dos"
+   ],
+   "equipment": "Poids du corps",
+   "level": "Débutant",
+   "steps": [
+    "Suspendu à la barre, mains en pronation un peu plus larges que les épaules",
+    "Tire en amenant la poitrine vers la barre, menton au-dessus",
+    "Redescends lentement bras presque tendus"
+   ],
+   "errors": [
+    "Se balancer",
+    "Demi-amplitude"
+   ],
+   "tip": "Pense à tirer les coudes vers les hanches.",
+   "media": "pullups"
+  },
+  {
+   "id": "chin-up",
+   "name": "Tractions supination",
+   "group": "dos",
+   "primary": [
+    "grand dorsal"
+   ],
+   "secondary": [
+    "biceps",
+    "avant-bras",
+    "milieu du dos"
+   ],
+   "equipment": "Poids du corps",
+   "level": "Débutant",
+   "steps": [
+    "Suspendu à la barre, paumes vers toi, mains largeur d'épaules",
+    "Tire jusqu'à passer le menton au-dessus de la barre",
+    "Redescends en contrôlant"
+   ],
+   "errors": [
+    "Élan des jambes",
+    "Ne pas redescendre complètement"
+   ],
+   "tip": "Plus facile que la pronation et sollicite aussi les biceps.",
+   "media": "chin-up"
+  },
+  {
+   "id": "weighted-pull-ups",
+   "name": "Tractions lestées",
+   "group": "dos",
+   "primary": [
+    "grand dorsal"
+   ],
+   "secondary": [
+    "biceps",
+    "milieu du dos"
+   ],
+   "equipment": "Autre",
+   "level": "Intermédiaire",
+   "steps": [
+    "Ceinture de lest ou haltère entre les pieds, suspendu à la barre",
+    "Tire jusqu'au menton au-dessus de la barre",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Ajouter du poids trop tôt",
+    "Amplitude réduite"
+   ],
+   "tip": "À faire seulement quand tu enchaînes 10 tractions propres.",
+   "media": "weighted-pull-ups"
+  },
+  {
+   "id": "band-assisted-pull-up",
+   "name": "Tractions assistées à l'élastique",
+   "group": "dos",
+   "primary": [
+    "grand dorsal"
+   ],
+   "secondary": [
+    "abdos",
+    "avant-bras",
+    "milieu du dos"
+   ],
+   "equipment": "Autre",
+   "level": "Débutant",
+   "steps": [
+    "Accroche un élastique à la barre et place un pied ou un genou dedans",
+    "Tire jusqu'à passer le menton au-dessus de la barre",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Laisser l'élastique faire tout le travail",
+    "Rebondir en bas"
+   ],
+   "tip": "Prends un élastique de plus en plus fin au fil des semaines.",
+   "media": "band-assisted-pull-up"
+  },
+  {
+   "id": "wide-grip-lat-pulldown",
+   "name": "Tirage vertical prise large",
+   "group": "dos",
+   "primary": [
+    "grand dorsal"
+   ],
+   "secondary": [
+    "biceps",
+    "milieu du dos",
+    "épaules"
+   ],
+   "equipment": "Poulie",
+   "level": "Débutant",
+   "steps": [
+    "Assis, cuisses bloquées, barre saisie large en pronation",
+    "Tire la barre vers le haut de la poitrine en bombant le torse",
+    "Remonte lentement bras tendus"
+   ],
+   "errors": [
+    "Tirer derrière la nuque",
+    "Se pencher très en arrière"
+   ],
+   "tip": "Initie le mouvement en abaissant les épaules.",
+   "media": "wide-grip-lat-pulldown"
+  },
+  {
+   "id": "close-grip-front-lat-pulldown",
+   "name": "Tirage vertical prise serrée",
+   "group": "dos",
+   "primary": [
+    "grand dorsal"
+   ],
+   "secondary": [
+    "biceps",
+    "milieu du dos",
+    "épaules"
+   ],
+   "equipment": "Poulie",
+   "level": "Débutant",
+   "steps": [
+    "Assis, barre saisie mains rapprochées",
+    "Tire vers le haut de la poitrine",
+    "Remonte en contrôlant"
+   ],
+   "errors": [
+    "Tirer avec les biceps seulement",
+    "Élan du buste"
+   ],
+   "tip": "Concentre-toi sur les coudes qui descendent.",
+   "media": "close-grip-front-lat-pulldown"
+  },
+  {
+   "id": "underhand-cable-pulldowns",
+   "name": "Tirage vertical supination",
+   "group": "dos",
+   "primary": [
+    "grand dorsal"
+   ],
+   "secondary": [
+    "biceps",
+    "milieu du dos",
+    "épaules"
+   ],
+   "equipment": "Poulie",
+   "level": "Débutant",
+   "steps": [
+    "Assis, barre saisie paumes vers toi, largeur d'épaules",
+    "Tire la barre vers le haut de la poitrine",
+    "Remonte lentement"
+   ],
+   "errors": [
+    "Cambrer excessivement",
+    "Remonter trop vite"
+   ],
+   "tip": "Excellente alternative aux tractions supination.",
+   "media": "underhand-cable-pulldowns"
+  },
+  {
+   "id": "v-bar-pulldown",
+   "name": "Tirage vertical poignée triangle",
+   "group": "dos",
+   "primary": [
+    "grand dorsal"
+   ],
+   "secondary": [
+    "biceps",
+    "milieu du dos",
+    "épaules"
+   ],
+   "equipment": "Poulie",
+   "level": "Intermédiaire",
+   "steps": [
+    "Assis, poignée en V en main",
+    "Tire vers le haut de la poitrine, buste légèrement incliné",
+    "Remonte bras tendus"
+   ],
+   "errors": [
+    "Arrondir le dos",
+    "Tirer jusqu'au ventre"
+   ],
+   "tip": "Bombe le torse en fin de mouvement.",
+   "media": "v-bar-pulldown"
+  },
+  {
+   "id": "one-arm-lat-pulldown",
+   "name": "Tirage vertical unilatéral",
+   "group": "dos",
+   "primary": [
+    "grand dorsal"
+   ],
+   "secondary": [
+    "biceps",
+    "milieu du dos"
+   ],
+   "equipment": "Poulie",
+   "level": "Débutant",
+   "steps": [
+    "Assis, une poignée simple en main",
+    "Tire le coude vers la hanche",
+    "Remonte lentement en étirant le dos"
+   ],
+   "errors": [
+    "Tourner le buste",
+    "Tirer avec le bras seulement"
+   ],
+   "tip": "Idéal pour corriger un déséquilibre gauche/droite.",
+   "media": "one-arm-lat-pulldown"
+  },
+  {
+   "id": "straight-arm-pulldown",
+   "name": "Pull-over à la poulie haute",
+   "group": "dos",
+   "primary": [
+    "grand dorsal"
+   ],
+   "secondary": [],
+   "equipment": "Poulie",
+   "level": "Débutant",
+   "steps": [
+    "Debout face à la poulie haute, barre en main, bras tendus",
+    "Abaisse la barre jusqu'aux cuisses en gardant les bras tendus",
+    "Remonte lentement"
+   ],
+   "errors": [
+    "Plier les coudes",
+    "Bouger le buste"
+   ],
+   "tip": "Isole bien le grand dorsal, parfait en échauffement.",
+   "media": "straight-arm-pulldown"
+  },
+  {
+   "id": "rope-straight-arm-pulldown",
+   "name": "Pull-over poulie à la corde",
+   "group": "dos",
+   "primary": [
+    "grand dorsal"
+   ],
+   "secondary": [],
+   "equipment": "Poulie",
+   "level": "Débutant",
+   "steps": [
+    "Debout face à la poulie haute, corde en main, bras tendus",
+    "Tire la corde vers les hanches en écartant les extrémités",
+    "Remonte en contrôlant"
+   ],
+   "errors": [
+    "Plier les bras",
+    "Élan du corps"
+   ],
+   "tip": "Serre les dorsaux une seconde en bas.",
+   "media": "rope-straight-arm-pulldown"
+  },
+  {
+   "id": "bent-over-barbell-row",
+   "name": "Rowing barre",
+   "group": "dos",
+   "primary": [
+    "milieu du dos"
+   ],
+   "secondary": [
+    "biceps",
+    "grand dorsal",
+    "épaules"
+   ],
+   "equipment": "Barre",
+   "level": "Débutant",
+   "steps": [
+    "Debout, buste penché à 45° dos plat, barre en main bras tendus",
+    "Tire la barre vers le nombril en serrant les omoplates",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Dos rond",
+    "Se redresser pendant le tirage"
+   ],
+   "tip": "Garde le dos plat et les genoux légèrement fléchis.",
+   "media": "bent-over-barbell-row"
+  },
+  {
+   "id": "reverse-grip-bent-over-rows",
+   "name": "Rowing barre supination",
+   "group": "dos",
+   "primary": [
+    "milieu du dos"
+   ],
+   "secondary": [
+    "biceps",
+    "grand dorsal",
+    "épaules"
+   ],
+   "equipment": "Barre",
+   "level": "Intermédiaire",
+   "steps": [
+    "Buste penché, barre saisie paumes vers l'avant",
+    "Tire vers le bas du ventre",
+    "Redescends en contrôlant"
+   ],
+   "errors": [
+    "Dos rond",
+    "Utiliser l'élan"
+   ],
+   "tip": "Cible bien le bas des dorsaux.",
+   "media": "reverse-grip-bent-over-rows"
+  },
+  {
+   "id": "t-bar-row-with-handle",
+   "name": "Rowing T-bar",
+   "group": "dos",
+   "primary": [
+    "milieu du dos"
+   ],
+   "secondary": [
+    "biceps",
+    "grand dorsal"
+   ],
+   "equipment": "Barre",
+   "level": "Débutant",
+   "steps": [
+    "Jambes de part et d'autre de la barre, buste penché, poignée en main",
+    "Tire la charge vers la poitrine",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Arrondir le dos",
+    "Se relever à chaque répétition"
+   ],
+   "tip": "Pousse la poitrine vers l'avant pendant le tirage.",
+   "media": "t-bar-row-with-handle"
+  },
+  {
+   "id": "one-arm-dumbbell-row",
+   "name": "Rowing haltère un bras",
+   "group": "dos",
+   "primary": [
+    "milieu du dos"
+   ],
+   "secondary": [
+    "biceps",
+    "grand dorsal",
+    "épaules"
+   ],
+   "equipment": "Haltères",
+   "level": "Débutant",
+   "steps": [
+    "Un genou et une main sur le banc, haltère dans l'autre main",
+    "Tire l'haltère vers la hanche, coude près du corps",
+    "Redescends jusqu'à l'étirement"
+   ],
+   "errors": [
+    "Tourner le buste",
+    "Tirer vers l'épaule"
+   ],
+   "tip": "Imagine que tu démarres une tondeuse, sans à-coups.",
+   "media": "one-arm-dumbbell-row"
+  },
+  {
+   "id": "bent-over-two-dumbbell-row",
+   "name": "Rowing deux haltères",
+   "group": "dos",
+   "primary": [
+    "milieu du dos"
+   ],
+   "secondary": [
+    "biceps",
+    "grand dorsal",
+    "épaules"
+   ],
+   "equipment": "Haltères",
+   "level": "Débutant",
+   "steps": [
+    "Buste penché dos plat, un haltère dans chaque main",
+    "Tire les haltères vers les hanches",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Dos rond",
+    "Hausser les épaules"
+   ],
+   "tip": "Garde la nuque dans l'alignement du dos.",
+   "media": "bent-over-two-dumbbell-row"
+  },
+  {
+   "id": "dumbbell-incline-row",
+   "name": "Rowing haltères sur banc incliné",
+   "group": "dos",
+   "primary": [
+    "milieu du dos"
+   ],
+   "secondary": [
+    "biceps",
+    "avant-bras",
+    "grand dorsal",
+    "épaules"
+   ],
+   "equipment": "Haltères",
+   "level": "Débutant",
+   "steps": [
+    "Allongé ventre sur un banc incliné, haltères en main",
+    "Tire les haltères en serrant les omoplates",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Décoller la poitrine du banc",
+    "Hausser les épaules"
+   ],
+   "tip": "Le banc protège le bas du dos : parfait si tu as mal aux lombaires.",
+   "media": "dumbbell-incline-row"
+  },
+  {
+   "id": "seated-cable-rows",
+   "name": "Tirage horizontal poulie basse",
+   "group": "dos",
+   "primary": [
+    "milieu du dos"
+   ],
+   "secondary": [
+    "biceps",
+    "grand dorsal",
+    "épaules"
+   ],
+   "equipment": "Poulie",
+   "level": "Débutant",
+   "steps": [
+    "Assis, pieds sur les cales, poignée en main, dos droit",
+    "Tire la poignée vers le ventre en serrant les omoplates",
+    "Reviens bras tendus en laissant le dos s'étirer légèrement"
+   ],
+   "errors": [
+    "Balancer le buste d'avant en arrière",
+    "Hausser les épaules"
+   ],
+   "tip": "Bombe le torse au moment où la poignée touche le ventre.",
+   "media": "seated-cable-rows"
+  },
+  {
+   "id": "seated-one-arm-cable-pulley-rows",
+   "name": "Tirage horizontal unilatéral",
+   "group": "dos",
+   "primary": [
+    "milieu du dos"
+   ],
+   "secondary": [
+    "biceps",
+    "grand dorsal",
+    "trapèzes"
+   ],
+   "equipment": "Poulie",
+   "level": "Intermédiaire",
+   "steps": [
+    "Assis à la poulie basse, une poignée en main",
+    "Tire le coude vers l'arrière",
+    "Reviens lentement"
+   ],
+   "errors": [
+    "Tourner le buste",
+    "Tirer avec le biceps"
+   ],
+   "tip": "Travaille un côté puis l'autre avec la même charge.",
+   "media": "seated-one-arm-cable-pulley-rows"
+  },
+  {
+   "id": "leverage-high-row",
+   "name": "Rowing haut machine",
+   "group": "dos",
+   "primary": [
+    "milieu du dos"
+   ],
+   "secondary": [
+    "grand dorsal"
+   ],
+   "equipment": "Machine",
+   "level": "Débutant",
+   "steps": [
+    "Assis, poitrine contre l'appui, poignées en main",
+    "Tire les poignées vers toi en serrant les omoplates",
+    "Reviens lentement"
+   ],
+   "errors": [
+    "Décoller la poitrine",
+    "Hausser les épaules"
+   ],
+   "tip": "Bonne machine pour le haut du dos.",
+   "media": "leverage-high-row"
+  },
+  {
+   "id": "leverage-iso-row",
+   "name": "Rowing machine convergente",
+   "group": "dos",
+   "primary": [
+    "grand dorsal"
+   ],
+   "secondary": [
+    "biceps",
+    "milieu du dos"
+   ],
+   "equipment": "Machine",
+   "level": "Débutant",
+   "steps": [
+    "Assis, poitrine contre l'appui, poignées en main",
+    "Tire vers les côtes",
+    "Reviens lentement bras tendus"
+   ],
+   "errors": [
+    "Élan du buste",
+    "Amplitude courte"
+   ],
+   "tip": "Tu peux travailler un bras à la fois.",
+   "media": "leverage-iso-row"
+  },
+  {
+   "id": "inverted-row",
+   "name": "Rowing inversé",
+   "group": "dos",
+   "primary": [
+    "milieu du dos"
+   ],
+   "secondary": [
+    "grand dorsal"
+   ],
+   "equipment": "Poids du corps",
+   "level": "Débutant",
+   "steps": [
+    "Allongé sous une barre basse, mains sur la barre, corps gainé",
+    "Tire la poitrine vers la barre",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Bassin qui tombe",
+    "Demi-amplitude"
+   ],
+   "tip": "Plus tu es à l'horizontale, plus c'est difficile.",
+   "media": "inverted-row"
+  },
+  {
+   "id": "smith-machine-bent-over-row",
+   "name": "Rowing à la Smith machine",
+   "group": "dos",
+   "primary": [
+    "milieu du dos"
+   ],
+   "secondary": [
+    "biceps",
+    "grand dorsal",
+    "épaules"
+   ],
+   "equipment": "Machine",
+   "level": "Débutant",
+   "steps": [
+    "Buste penché, barre de la Smith en main",
+    "Tire la barre vers le nombril",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Dos rond",
+    "Mouvement trop court"
+   ],
+   "tip": "La trajectoire guidée aide à rester stable.",
+   "media": "smith-machine-bent-over-row"
+  },
+  {
+   "id": "one-arm-kettlebell-row",
+   "name": "Rowing kettlebell un bras",
+   "group": "dos",
+   "primary": [
+    "milieu du dos"
+   ],
+   "secondary": [
+    "biceps",
+    "grand dorsal"
+   ],
+   "equipment": "Kettlebell",
+   "level": "Intermédiaire",
+   "steps": [
+    "Buste penché, une main en appui, kettlebell dans l'autre main",
+    "Tire la kettlebell vers la hanche",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Tourner le buste",
+    "Tirer vers l'épaule"
+   ],
+   "tip": "Garde le coude près du corps.",
+   "media": "one-arm-kettlebell-row"
+  },
+  {
+   "id": "bent-arm-barbell-pullover",
+   "name": "Pull-over barre bras fléchis",
+   "group": "dos",
+   "primary": [
+    "grand dorsal"
+   ],
+   "secondary": [
+    "pectoraux",
+    "grand dorsal",
+    "épaules",
+    "triceps"
+   ],
+   "equipment": "Barre",
+   "level": "Intermédiaire",
+   "steps": [
+    "Allongé sur un banc, barre tenue au-dessus de la poitrine, coudes fléchis",
+    "Descends la barre derrière la tête",
+    "Ramène-la au-dessus de la poitrine"
+   ],
+   "errors": [
+    "Cambrer le dos",
+    "Descendre trop loin"
+   ],
+   "tip": "Mouvement lent et contrôlé, charge légère.",
+   "media": "bent-arm-barbell-pullover"
+  },
+  {
+   "id": "barbell-deadlift",
+   "name": "Soulevé de terre",
+   "group": "lombaires",
+   "primary": [
+    "lombaires"
+   ],
+   "secondary": [
+    "mollets",
+    "avant-bras",
+    "fessiers",
+    "ischios",
+    "grand dorsal",
+    "milieu du dos",
+    "quadriceps",
+    "trapèzes"
+   ],
+   "equipment": "Barre",
+   "level": "Intermédiaire",
+   "steps": [
+    "Pieds largeur de hanches sous la barre, saisis-la juste à l'extérieur des jambes",
+    "Dos plat, pousse dans le sol et redresse-toi en gardant la barre contre les jambes",
+    "Redescends en poussant les hanches vers l'arrière"
+   ],
+   "errors": [
+    "Dos rond",
+    "Barre qui s'éloigne des jambes"
+   ],
+   "tip": "Gaine fort le ventre avant chaque répétition.",
+   "media": "barbell-deadlift"
+  },
+  {
+   "id": "rack-pulls",
+   "name": "Soulevé de terre partiel (rack pull)",
+   "group": "lombaires",
+   "primary": [
+    "lombaires"
+   ],
+   "secondary": [
+    "avant-bras",
+    "fessiers",
+    "ischios",
+    "trapèzes"
+   ],
+   "equipment": "Barre",
+   "level": "Intermédiaire",
+   "steps": [
+    "Barre posée sur les sécurités à hauteur des genoux",
+    "Dos plat, redresse-toi en poussant les hanches vers l'avant",
+    "Repose la barre en contrôlant"
+   ],
+   "errors": [
+    "Hyper-extension en haut",
+    "Dos rond"
+   ],
+   "tip": "Permet de travailler la fin du mouvement avec plus de charge.",
+   "media": "rack-pulls"
+  },
+  {
+   "id": "deficit-deadlift",
+   "name": "Soulevé de terre en déficit",
+   "group": "lombaires",
+   "primary": [
+    "lombaires"
+   ],
+   "secondary": [
+    "avant-bras",
+    "fessiers",
+    "ischios",
+    "milieu du dos",
+    "quadriceps",
+    "trapèzes"
+   ],
+   "equipment": "Barre",
+   "level": "Intermédiaire",
+   "steps": [
+    "Debout sur un disque ou une petite marche, barre au sol",
+    "Dos plat, tire la barre en poussant dans le sol",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Dos rond au départ",
+    "Genoux qui rentrent"
+   ],
+   "tip": "Charge réduite : l'amplitude est plus grande.",
+   "media": "deficit-deadlift"
+  },
+  {
+   "id": "hyperextensions-back-extensions",
+   "name": "Extensions lombaires (banc à lombaires)",
+   "group": "lombaires",
+   "primary": [
+    "lombaires"
+   ],
+   "secondary": [
+    "fessiers",
+    "ischios"
+   ],
+   "equipment": "Autre",
+   "level": "Débutant",
+   "steps": [
+    "Calé sur le banc, hanches juste au bord du coussin, mains croisées sur la poitrine",
+    "Descends le buste en gardant le dos plat",
+    "Remonte jusqu'à l'alignement jambes-buste"
+   ],
+   "errors": [
+    "Monter trop haut en cambrant",
+    "Mouvement rapide"
+   ],
+   "tip": "Arrête-toi quand le corps forme une ligne droite.",
+   "media": "hyperextensions-back-extensions"
+  },
+  {
+   "id": "stiff-leg-barbell-good-morning",
+   "name": "Good morning jambes tendues",
+   "group": "lombaires",
+   "primary": [
+    "lombaires"
+   ],
+   "secondary": [
+    "fessiers",
+    "ischios"
+   ],
+   "equipment": "Barre",
+   "level": "Débutant",
+   "steps": [
+    "Barre sur les trapèzes, jambes presque tendues",
+    "Penche le buste vers l'avant en poussant les fesses en arrière, dos plat",
+    "Redresse-toi"
+   ],
+   "errors": [
+    "Dos rond",
+    "Charge trop lourde"
+   ],
+   "tip": "Commence très léger, même à vide.",
+   "media": "stiff-leg-barbell-good-morning"
+  },
+  {
+   "id": "barbell-shrug",
+   "name": "Shrug barre",
+   "group": "trapezes",
+   "primary": [
+    "trapèzes"
+   ],
+   "secondary": [],
+   "equipment": "Barre",
+   "level": "Débutant",
+   "steps": [
+    "Debout, barre tenue devant les cuisses, bras tendus",
+    "Monte les épaules vers les oreilles",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Rouler les épaules",
+    "Plier les coudes"
+   ],
+   "tip": "Marque une pause d'une seconde en haut.",
+   "media": "barbell-shrug"
+  },
+  {
+   "id": "dumbbell-shrug",
+   "name": "Shrug haltères",
+   "group": "trapezes",
+   "primary": [
+    "trapèzes"
+   ],
+   "secondary": [],
+   "equipment": "Haltères",
+   "level": "Débutant",
+   "steps": [
+    "Debout, un haltère dans chaque main le long du corps",
+    "Hausse les épaules le plus haut possible",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Faire des rotations d'épaules",
+    "Avancer la tête"
+   ],
+   "tip": "Mouvement purement vertical.",
+   "media": "dumbbell-shrug"
+  },
+  {
+   "id": "barbell-shrug-behind-the-back",
+   "name": "Shrug barre derrière le dos",
+   "group": "trapezes",
+   "primary": [
+    "trapèzes"
+   ],
+   "secondary": [
+    "avant-bras",
+    "milieu du dos"
+   ],
+   "equipment": "Barre",
+   "level": "Débutant",
+   "steps": [
+    "Barre tenue derrière les cuisses, bras tendus",
+    "Hausse les épaules",
+    "Redescends en contrôlant"
+   ],
+   "errors": [
+    "Plier les coudes",
+    "Pencher le buste"
+   ],
+   "tip": "Cible un peu plus le milieu des trapèzes.",
+   "media": "barbell-shrug-behind-the-back"
+  },
+  {
+   "id": "cable-shrugs",
+   "name": "Shrug à la poulie basse",
+   "group": "trapezes",
+   "primary": [
+    "trapèzes"
+   ],
+   "secondary": [],
+   "equipment": "Poulie",
+   "level": "Débutant",
+   "steps": [
+    "Face à la poulie basse, barre en main bras tendus",
+    "Monte les épaules vers les oreilles",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Tirer avec les bras",
+    "Élan"
+   ],
+   "tip": "La poulie garde une tension constante.",
+   "media": "cable-shrugs"
+  },
+  {
+   "id": "leverage-shrug",
+   "name": "Shrug machine",
+   "group": "trapezes",
+   "primary": [
+    "trapèzes"
+   ],
+   "secondary": [
+    "avant-bras"
+   ],
+   "equipment": "Machine",
+   "level": "Débutant",
+   "steps": [
+    "Placé dans la machine, poignées en main",
+    "Hausse les épaules",
+    "Redescends en contrôlant"
+   ],
+   "errors": [
+    "Amplitude trop courte",
+    "Rouler les épaules"
+   ],
+   "tip": "Pratique pour charger lourd en sécurité.",
+   "media": "leverage-shrug"
+  },
+  {
+   "id": "standing-dumbbell-upright-row",
+   "name": "Tirage menton haltères",
+   "group": "trapezes",
+   "primary": [
+    "trapèzes"
+   ],
+   "secondary": [
+    "biceps",
+    "épaules"
+   ],
+   "equipment": "Haltères",
+   "level": "Débutant",
+   "steps": [
+    "Debout, haltères devant les cuisses",
+    "Tire les haltères le long du corps jusqu'à la poitrine, coudes au-dessus des mains",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Monter trop haut (épaules)",
+    "Charge trop lourde"
+   ],
+   "tip": "Arrête-toi à hauteur de poitrine si l'épaule gêne.",
+   "media": "standing-dumbbell-upright-row"
+  },
+  {
+   "id": "upright-cable-row",
+   "name": "Tirage menton à la poulie",
+   "group": "trapezes",
+   "primary": [
+    "trapèzes"
+   ],
+   "secondary": [
+    "épaules"
+   ],
+   "equipment": "Poulie",
+   "level": "Intermédiaire",
+   "steps": [
+    "Face à la poulie basse, barre en main",
+    "Tire la barre vers la poitrine, coudes hauts",
+    "Redescends en contrôlant"
+   ],
+   "errors": [
+    "Se pencher en arrière",
+    "Poignets cassés"
+   ],
+   "tip": "Prise un peu plus large que les épaules = plus confortable.",
+   "media": "upright-cable-row"
+  },
+  {
+   "id": "kettlebell-sumo-high-pull",
+   "name": "Tirage haut sumo kettlebell",
+   "group": "trapezes",
+   "primary": [
+    "trapèzes"
+   ],
+   "secondary": [
+    "adducteurs",
+    "fessiers",
+    "ischios",
+    "quadriceps",
+    "épaules"
+   ],
+   "equipment": "Kettlebell",
+   "level": "Intermédiaire",
+   "steps": [
+    "Pieds écartés, kettlebell au sol entre les pieds",
+    "Pousse avec les jambes et tire la kettlebell jusqu'à la poitrine, coudes hauts",
+    "Redescends en contrôlant"
+   ],
+   "errors": [
+    "Dos rond",
+    "Tirer uniquement avec les bras"
+   ],
+   "tip": "Le mouvement part des jambes.",
+   "media": "kettlebell-sumo-high-pull"
+  },
+  {
+   "id": "standing-military-press",
+   "name": "Développé militaire debout",
+   "group": "epaules",
+   "primary": [
+    "épaules"
+   ],
+   "secondary": [
+    "triceps"
+   ],
+   "equipment": "Barre",
+   "level": "Débutant",
+   "steps": [
+    "Debout, barre sur le haut de la poitrine, mains un peu plus larges que les épaules",
+    "Pousse la barre au-dessus de la tête en passant la tête légèrement en arrière",
+    "Redescends à la poitrine"
+   ],
+   "errors": [
+    "Cambrer le bas du dos",
+    "Plier les genoux pour s'aider"
+   ],
+   "tip": "Serre fessiers et abdos pour protéger le dos.",
+   "media": "standing-military-press"
+  },
+  {
+   "id": "seated-barbell-military-press",
+   "name": "Développé militaire assis",
+   "group": "epaules",
+   "primary": [
+    "épaules"
+   ],
+   "secondary": [
+    "triceps"
+   ],
+   "equipment": "Barre",
+   "level": "Intermédiaire",
+   "steps": [
+    "Assis, dos droit, barre au niveau du haut de la poitrine",
+    "Pousse la barre au-dessus de la tête",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Décoller le dos du dossier",
+    "Amplitude courte"
+   ],
+   "tip": "Règle le dossier presque vertical.",
+   "media": "seated-barbell-military-press"
+  },
+  {
+   "id": "dumbbell-shoulder-press",
+   "name": "Développé épaules haltères",
+   "group": "epaules",
+   "primary": [
+    "épaules"
+   ],
+   "secondary": [
+    "triceps"
+   ],
+   "equipment": "Haltères",
+   "level": "Intermédiaire",
+   "steps": [
+    "Assis, haltères à hauteur des oreilles, paumes vers l'avant",
+    "Pousse au-dessus de la tête en rapprochant les haltères",
+    "Redescends à hauteur des oreilles"
+   ],
+   "errors": [
+    "Cambrer le dos",
+    "Choc des haltères en haut"
+   ],
+   "tip": "Garde les avant-bras verticaux.",
+   "media": "dumbbell-shoulder-press"
+  },
+  {
+   "id": "seated-dumbbell-press",
+   "name": "Développé assis haltères",
+   "group": "epaules",
+   "primary": [
+    "épaules"
+   ],
+   "secondary": [
+    "triceps"
+   ],
+   "equipment": "Haltères",
+   "level": "Débutant",
+   "steps": [
+    "Assis sur un banc à dossier droit, haltères aux épaules",
+    "Pousse vers le haut jusqu'à bras presque tendus",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Pousser vers l'avant",
+    "Hausser les épaules"
+   ],
+   "tip": "Expire en poussant.",
+   "media": "seated-dumbbell-press"
+  },
+  {
+   "id": "arnold-dumbbell-press",
+   "name": "Développé Arnold",
+   "group": "epaules",
+   "primary": [
+    "épaules"
+   ],
+   "secondary": [
+    "triceps"
+   ],
+   "equipment": "Haltères",
+   "level": "Intermédiaire",
+   "steps": [
+    "Assis, haltères devant le visage, paumes vers toi",
+    "Pousse vers le haut en tournant les paumes vers l'avant",
+    "Redescends en refaisant la rotation inverse"
+   ],
+   "errors": [
+    "Rotation trop rapide",
+    "Cambrer"
+   ],
+   "tip": "Travaille les trois faisceaux de l'épaule.",
+   "media": "arnold-dumbbell-press"
+  },
+  {
+   "id": "standing-dumbbell-press",
+   "name": "Développé haltères debout",
+   "group": "epaules",
+   "primary": [
+    "épaules"
+   ],
+   "secondary": [
+    "triceps"
+   ],
+   "equipment": "Haltères",
+   "level": "Débutant",
+   "steps": [
+    "Debout, haltères à hauteur des épaules",
+    "Pousse au-dessus de la tête",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Cambrer le dos",
+    "Élan des jambes"
+   ],
+   "tip": "Gaine bien le ventre.",
+   "media": "standing-dumbbell-press"
+  },
+  {
+   "id": "machine-shoulder-military-press",
+   "name": "Développé épaules machine",
+   "group": "epaules",
+   "primary": [
+    "épaules"
+   ],
+   "secondary": [
+    "triceps"
+   ],
+   "equipment": "Machine",
+   "level": "Débutant",
+   "steps": [
+    "Assis, poignées à hauteur des épaules",
+    "Pousse vers le haut",
+    "Redescends en contrôlant"
+   ],
+   "errors": [
+    "Décoller le dos",
+    "Verrouiller les coudes"
+   ],
+   "tip": "Bonne option pour débuter en sécurité.",
+   "media": "machine-shoulder-military-press"
+  },
+  {
+   "id": "smith-machine-overhead-shoulder-press",
+   "name": "Développé épaules à la Smith machine",
+   "group": "epaules",
+   "primary": [
+    "épaules"
+   ],
+   "secondary": [
+    "triceps"
+   ],
+   "equipment": "Machine",
+   "level": "Débutant",
+   "steps": [
+    "Assis sous la barre, barre à hauteur du menton",
+    "Pousse au-dessus de la tête",
+    "Redescends au niveau du menton"
+   ],
+   "errors": [
+    "Barre trop en avant",
+    "Cambrer"
+   ],
+   "tip": "Place le banc pour que la barre passe juste devant le visage.",
+   "media": "smith-machine-overhead-shoulder-press"
+  },
+  {
+   "id": "side-lateral-raise",
+   "name": "Élévations latérales",
+   "group": "epaules",
+   "primary": [
+    "épaules"
+   ],
+   "secondary": [],
+   "equipment": "Haltères",
+   "level": "Débutant",
+   "steps": [
+    "Debout, haltères le long du corps, coudes légèrement fléchis",
+    "Monte les bras sur les côtés jusqu'à hauteur d'épaules",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Élan du corps",
+    "Monter au-dessus des épaules"
+   ],
+   "tip": "Imagine que tu verses de l'eau d'une carafe en haut.",
+   "media": "side-lateral-raise"
+  },
+  {
+   "id": "seated-side-lateral-raise",
+   "name": "Élévations latérales assis",
+   "group": "epaules",
+   "primary": [
+    "épaules"
+   ],
+   "secondary": [],
+   "equipment": "Haltères",
+   "level": "Débutant",
+   "steps": [
+    "Assis au bord du banc, haltères le long du corps",
+    "Monte les bras sur les côtés jusqu'à l'horizontale",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Hausser les épaules",
+    "Charge trop lourde"
+   ],
+   "tip": "Assis, impossible de tricher avec les jambes.",
+   "media": "seated-side-lateral-raise"
+  },
+  {
+   "id": "cable-seated-lateral-raise",
+   "name": "Élévation latérale à la poulie",
+   "group": "epaules",
+   "primary": [
+    "épaules"
+   ],
+   "secondary": [
+    "milieu du dos",
+    "trapèzes"
+   ],
+   "equipment": "Poulie",
+   "level": "Débutant",
+   "steps": [
+    "De profil à la poulie basse, poignée dans la main opposée",
+    "Monte le bras sur le côté jusqu'à hauteur d'épaule",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Pencher le buste",
+    "Plier le coude"
+   ],
+   "tip": "La poulie garde la tension en bas du mouvement.",
+   "media": "cable-seated-lateral-raise"
+  },
+  {
+   "id": "lateral-raise-with-bands",
+   "name": "Élévations latérales à l'élastique",
+   "group": "epaules",
+   "primary": [
+    "épaules"
+   ],
+   "secondary": [],
+   "equipment": "Élastique",
+   "level": "Débutant",
+   "steps": [
+    "Debout sur l'élastique, une poignée dans chaque main",
+    "Monte les bras sur les côtés",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Laisser l'élastique tirer brusquement",
+    "Hausser les épaules"
+   ],
+   "tip": "Parfait à la maison.",
+   "media": "lateral-raise-with-bands"
+  },
+  {
+   "id": "front-dumbbell-raise",
+   "name": "Élévations frontales haltères",
+   "group": "epaules",
+   "primary": [
+    "épaules"
+   ],
+   "secondary": [],
+   "equipment": "Haltères",
+   "level": "Débutant",
+   "steps": [
+    "Debout, haltères devant les cuisses",
+    "Monte un bras devant toi jusqu'à hauteur d'yeux, puis l'autre",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Balancer le buste",
+    "Monter trop haut"
+   ],
+   "tip": "Garde le coude très légèrement fléchi.",
+   "media": "front-dumbbell-raise"
+  },
+  {
+   "id": "front-cable-raise",
+   "name": "Élévation frontale à la poulie",
+   "group": "epaules",
+   "primary": [
+    "épaules"
+   ],
+   "secondary": [],
+   "equipment": "Poulie",
+   "level": "Débutant",
+   "steps": [
+    "Dos à la poulie basse, poignée entre les jambes",
+    "Monte le bras devant toi jusqu'à hauteur d'épaule",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Élan",
+    "Cambrer"
+   ],
+   "tip": "Fais un bras puis l'autre.",
+   "media": "front-cable-raise"
+  },
+  {
+   "id": "front-plate-raise",
+   "name": "Élévation frontale avec disque",
+   "group": "epaules",
+   "primary": [
+    "épaules"
+   ],
+   "secondary": [],
+   "equipment": "Autre",
+   "level": "Intermédiaire",
+   "steps": [
+    "Debout, un disque tenu à deux mains devant les cuisses",
+    "Monte le disque devant toi jusqu'à hauteur des yeux",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Cambrer le dos",
+    "Plier les bras"
+   ],
+   "tip": "Un disque de 5 à 10 kg suffit.",
+   "media": "front-plate-raise"
+  },
+  {
+   "id": "reverse-flyes",
+   "name": "Oiseau haltères",
+   "group": "epaules",
+   "primary": [
+    "épaules"
+   ],
+   "secondary": [],
+   "equipment": "Haltères",
+   "level": "Débutant",
+   "steps": [
+    "Buste penché vers l'avant, dos plat, haltères sous la poitrine",
+    "Écarte les bras sur les côtés jusqu'à hauteur d'épaules",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Tirer avec le dos",
+    "Charge trop lourde"
+   ],
+   "tip": "Pense « ouvrir les bras », pas « tirer ».",
+   "media": "reverse-flyes"
+  },
+  {
+   "id": "seated-bent-over-rear-delt-raise",
+   "name": "Oiseau assis",
+   "group": "epaules",
+   "primary": [
+    "épaules"
+   ],
+   "secondary": [],
+   "equipment": "Haltères",
+   "level": "Intermédiaire",
+   "steps": [
+    "Assis au bord du banc, buste penché sur les cuisses, haltères sous les jambes",
+    "Écarte les bras sur les côtés",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Se redresser",
+    "Élan"
+   ],
+   "tip": "Version stricte : idéale pour l'arrière d'épaule.",
+   "media": "seated-bent-over-rear-delt-raise"
+  },
+  {
+   "id": "reverse-machine-flyes",
+   "name": "Oiseau machine (reverse pec deck)",
+   "group": "epaules",
+   "primary": [
+    "épaules"
+   ],
+   "secondary": [],
+   "equipment": "Machine",
+   "level": "Débutant",
+   "steps": [
+    "Assis face au dossier, poignées en main bras tendus",
+    "Écarte les bras vers l'arrière",
+    "Reviens lentement"
+   ],
+   "errors": [
+    "Hausser les épaules",
+    "Plier les bras"
+   ],
+   "tip": "Règle les poignées à hauteur d'épaules.",
+   "media": "reverse-machine-flyes"
+  },
+  {
+   "id": "cable-rear-delt-fly",
+   "name": "Oiseau à la poulie",
+   "group": "epaules",
+   "primary": [
+    "épaules"
+   ],
+   "secondary": [],
+   "equipment": "Poulie",
+   "level": "Débutant",
+   "steps": [
+    "Debout entre deux poulies hautes, câbles croisés en main",
+    "Écarte les bras vers l'arrière à hauteur d'épaules",
+    "Reviens lentement"
+   ],
+   "errors": [
+    "Tirer avec le dos",
+    "Plier les coudes"
+   ],
+   "tip": "Mouvement court et contrôlé.",
+   "media": "cable-rear-delt-fly"
+  },
+  {
+   "id": "face-pull",
+   "name": "Face pull",
+   "group": "epaules",
+   "primary": [
+    "épaules"
+   ],
+   "secondary": [
+    "milieu du dos"
+   ],
+   "equipment": "Poulie",
+   "level": "Intermédiaire",
+   "steps": [
+    "Face à la poulie haute, corde en main",
+    "Tire la corde vers le visage en écartant les mains",
+    "Reviens lentement bras tendus"
+   ],
+   "errors": [
+    "Tirer vers le cou",
+    "Se pencher en arrière"
+   ],
+   "tip": "Excellent pour la santé des épaules : à faire à chaque séance haut du corps.",
+   "media": "face-pull"
+  },
+  {
+   "id": "band-pull-apart",
+   "name": "Écartement d'élastique",
+   "group": "epaules",
+   "primary": [
+    "épaules"
+   ],
+   "secondary": [
+    "milieu du dos",
+    "trapèzes"
+   ],
+   "equipment": "Élastique",
+   "level": "Débutant",
+   "steps": [
+    "Debout, élastique tenu bras tendus devant toi",
+    "Écarte les bras sur les côtés jusqu'à toucher la poitrine",
+    "Reviens lentement"
+   ],
+   "errors": [
+    "Plier les coudes",
+    "Hausser les épaules"
+   ],
+   "tip": "Parfait en échauffement avant le développé couché.",
+   "media": "band-pull-apart"
+  },
+  {
+   "id": "upright-barbell-row",
+   "name": "Tirage menton barre",
+   "group": "epaules",
+   "primary": [
+    "épaules"
+   ],
+   "secondary": [
+    "trapèzes"
+   ],
+   "equipment": "Barre",
+   "level": "Débutant",
+   "steps": [
+    "Debout, barre devant les cuisses, prise largeur d'épaules",
+    "Tire la barre jusqu'à la poitrine, coudes au-dessus des mains",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Monter jusqu'au menton (épaules)",
+    "Prise trop serrée"
+   ],
+   "tip": "Si l'épaule pince, arrête-toi plus bas.",
+   "media": "upright-barbell-row"
+  },
+  {
+   "id": "external-rotation-with-cable",
+   "name": "Rotation externe à la poulie",
+   "group": "epaules",
+   "primary": [
+    "épaules"
+   ],
+   "secondary": [],
+   "equipment": "Poulie",
+   "level": "Débutant",
+   "steps": [
+    "De profil à la poulie, coude collé au corps plié à 90°",
+    "Tourne l'avant-bras vers l'extérieur",
+    "Reviens lentement"
+   ],
+   "errors": [
+    "Décoller le coude",
+    "Charge trop lourde"
+   ],
+   "tip": "Exercice de prévention : charge très légère.",
+   "media": "external-rotation-with-cable"
+  },
+  {
+   "id": "handstand-push-ups",
+   "name": "Pompes en équilibre (contre un mur)",
+   "group": "epaules",
+   "primary": [
+    "épaules"
+   ],
+   "secondary": [
+    "triceps"
+   ],
+   "equipment": "Poids du corps",
+   "level": "Confirmé",
+   "steps": [
+    "En équilibre sur les mains, pieds contre le mur",
+    "Descends la tête vers le sol en pliant les bras",
+    "Pousse pour revenir bras tendus"
+   ],
+   "errors": [
+    "Cambrer fortement",
+    "Descendre trop vite"
+   ],
+   "tip": "Exercice avancé : commence par les pompes pieds surélevés.",
+   "media": "handstand-push-ups"
+  },
+  {
+   "id": "two-arm-kettlebell-military-press",
+   "name": "Développé militaire kettlebells",
+   "group": "epaules",
+   "primary": [
+    "épaules"
+   ],
+   "secondary": [
+    "triceps"
+   ],
+   "equipment": "Kettlebell",
+   "level": "Intermédiaire",
+   "steps": [
+    "Debout, kettlebells en position rack (contre les épaules)",
+    "Pousse les deux kettlebells au-dessus de la tête",
+    "Redescends en contrôlant"
+   ],
+   "errors": [
+    "Cambrer",
+    "Poignets cassés"
+   ],
+   "tip": "Serre fessiers et abdos.",
+   "media": "two-arm-kettlebell-military-press"
+  },
+  {
+   "id": "shoulder-press-with-bands",
+   "name": "Développé épaules à l'élastique",
+   "group": "epaules",
+   "primary": [
+    "épaules"
+   ],
+   "secondary": [
+    "triceps"
+   ],
+   "equipment": "Élastique",
+   "level": "Débutant",
+   "steps": [
+    "Debout sur l'élastique, poignées à hauteur des épaules",
+    "Pousse au-dessus de la tête",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Cambrer",
+    "Relâcher brusquement"
+   ],
+   "tip": "Parfait pour s'entraîner chez soi.",
+   "media": "shoulder-press-with-bands"
+  },
+  {
+   "id": "clean-and-press",
+   "name": "Épaulé-développé",
+   "group": "epaules",
+   "primary": [
+    "épaules"
+   ],
+   "secondary": [
+    "abdos",
+    "mollets",
+    "fessiers",
+    "ischios",
+    "lombaires",
+    "milieu du dos",
+    "quadriceps",
+    "épaules",
+    "trapèzes",
+    "triceps"
+   ],
+   "equipment": "Barre",
+   "level": "Intermédiaire",
+   "steps": [
+    "Barre au sol, pieds largeur de hanches",
+    "Monte la barre d'un mouvement explosif jusqu'aux épaules en fléchissant les jambes",
+    "Pousse-la au-dessus de la tête puis redescends en contrôlant"
+   ],
+   "errors": [
+    "Tirer avec les bras",
+    "Dos rond"
+   ],
+   "tip": "Mouvement technique : apprends-le avec une barre légère.",
+   "media": "clean-and-press"
+  },
+  {
+   "id": "barbell-curl",
+   "name": "Curl barre",
+   "group": "biceps",
+   "primary": [
+    "biceps"
+   ],
+   "secondary": [
+    "avant-bras"
+   ],
+   "equipment": "Barre",
+   "level": "Débutant",
+   "steps": [
+    "Debout, barre en supination largeur d'épaules, bras tendus",
+    "Plie les coudes pour monter la barre vers les épaules",
+    "Redescends lentement jusqu'à bras tendus"
+   ],
+   "errors": [
+    "Balancer le buste",
+    "Avancer les coudes"
+   ],
+   "tip": "Coudes collés au corps du début à la fin.",
+   "media": "barbell-curl"
+  },
+  {
+   "id": "ez-bar-curl",
+   "name": "Curl barre EZ",
+   "group": "biceps",
+   "primary": [
+    "biceps"
+   ],
+   "secondary": [],
+   "equipment": "Barre EZ",
+   "level": "Débutant",
+   "steps": [
+    "Debout, barre EZ saisie sur les parties inclinées",
+    "Monte la barre en pliant les coudes",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Élan",
+    "Amplitude incomplète"
+   ],
+   "tip": "La barre EZ soulage les poignets.",
+   "media": "ez-bar-curl"
+  },
+  {
+   "id": "preacher-curl",
+   "name": "Curl au pupitre barre",
+   "group": "biceps",
+   "primary": [
+    "biceps"
+   ],
+   "secondary": [],
+   "equipment": "Barre",
+   "level": "Débutant",
+   "steps": [
+    "Assis au pupitre, bras posés sur le coussin, barre en main",
+    "Monte la barre vers les épaules",
+    "Redescends jusqu'à bras presque tendus"
+   ],
+   "errors": [
+    "Décoller les coudes",
+    "Lâcher la descente"
+   ],
+   "tip": "Ne verrouille pas complètement en bas pour protéger le coude.",
+   "media": "preacher-curl"
+  },
+  {
+   "id": "dumbbell-bicep-curl",
+   "name": "Curl haltères",
+   "group": "biceps",
+   "primary": [
+    "biceps"
+   ],
+   "secondary": [
+    "avant-bras"
+   ],
+   "equipment": "Haltères",
+   "level": "Débutant",
+   "steps": [
+    "Debout, haltères le long du corps, paumes vers l'avant",
+    "Plie les coudes pour monter les haltères",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Balancer le corps",
+    "Monter les coudes"
+   ],
+   "tip": "Contrôle la descente sur 2 secondes.",
+   "media": "dumbbell-bicep-curl"
+  },
+  {
+   "id": "dumbbell-alternate-bicep-curl",
+   "name": "Curl haltères alterné",
+   "group": "biceps",
+   "primary": [
+    "biceps"
+   ],
+   "secondary": [
+    "avant-bras"
+   ],
+   "equipment": "Haltères",
+   "level": "Débutant",
+   "steps": [
+    "Debout, haltères le long du corps, paumes face aux cuisses",
+    "Monte un haltère en tournant la paume vers le haut",
+    "Redescends puis enchaîne de l'autre côté"
+   ],
+   "errors": [
+    "Élan du buste",
+    "Aller trop vite"
+   ],
+   "tip": "La rotation du poignet renforce la contraction.",
+   "media": "dumbbell-alternate-bicep-curl"
+  },
+  {
+   "id": "hammer-curls",
+   "name": "Curl marteau",
+   "group": "biceps",
+   "primary": [
+    "biceps"
+   ],
+   "secondary": [],
+   "equipment": "Haltères",
+   "level": "Débutant",
+   "steps": [
+    "Debout, haltères le long du corps, paumes face à face",
+    "Monte les haltères en gardant les paumes face à face",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Coudes qui partent en avant",
+    "Élan"
+   ],
+   "tip": "Travaille aussi l'avant-bras (brachioradial).",
+   "media": "hammer-curls"
+  },
+  {
+   "id": "cross-body-hammer-curl",
+   "name": "Curl marteau croisé",
+   "group": "biceps",
+   "primary": [
+    "biceps"
+   ],
+   "secondary": [
+    "avant-bras"
+   ],
+   "equipment": "Haltères",
+   "level": "Débutant",
+   "steps": [
+    "Debout, haltères le long du corps, paumes vers toi",
+    "Monte un haltère en diagonale vers l'épaule opposée",
+    "Redescends et change de bras"
+   ],
+   "errors": [
+    "Tourner le buste",
+    "Élan"
+   ],
+   "tip": "Cible le brachial, sous le biceps.",
+   "media": "cross-body-hammer-curl"
+  },
+  {
+   "id": "incline-dumbbell-curl",
+   "name": "Curl incliné haltères",
+   "group": "biceps",
+   "primary": [
+    "biceps"
+   ],
+   "secondary": [],
+   "equipment": "Haltères",
+   "level": "Débutant",
+   "steps": [
+    "Assis sur un banc incliné à 45°, bras pendants",
+    "Monte les haltères en gardant les coudes immobiles",
+    "Redescends jusqu'à l'étirement complet"
+   ],
+   "errors": [
+    "Avancer les coudes",
+    "Décoller la tête"
+   ],
+   "tip": "L'étirement en bas est la clé de cet exercice.",
+   "media": "incline-dumbbell-curl"
+  },
+  {
+   "id": "concentration-curls",
+   "name": "Curl concentré",
+   "group": "biceps",
+   "primary": [
+    "biceps"
+   ],
+   "secondary": [
+    "avant-bras"
+   ],
+   "equipment": "Haltères",
+   "level": "Débutant",
+   "steps": [
+    "Assis, coude calé contre l'intérieur de la cuisse, haltère en main",
+    "Monte l'haltère vers l'épaule",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Bouger le haut du bras",
+    "Tricher avec l'épaule"
+   ],
+   "tip": "Serre le biceps une seconde en haut.",
+   "media": "concentration-curls"
+  },
+  {
+   "id": "spider-curl",
+   "name": "Spider curl",
+   "group": "biceps",
+   "primary": [
+    "biceps"
+   ],
+   "secondary": [],
+   "equipment": "Barre EZ",
+   "level": "Débutant",
+   "steps": [
+    "Allongé ventre sur un banc incliné, bras pendants verticaux, barre EZ en main",
+    "Monte la barre en pliant les coudes",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Balancer les bras",
+    "Amplitude courte"
+   ],
+   "tip": "Impossible de tricher : parfait pour la contraction.",
+   "media": "spider-curl"
+  },
+  {
+   "id": "zottman-curl",
+   "name": "Curl Zottman",
+   "group": "biceps",
+   "primary": [
+    "biceps"
+   ],
+   "secondary": [
+    "avant-bras"
+   ],
+   "equipment": "Haltères",
+   "level": "Intermédiaire",
+   "steps": [
+    "Debout, haltères paumes vers l'avant",
+    "Monte en supination, tourne les paumes vers le bas en haut",
+    "Redescends lentement en pronation"
+   ],
+   "errors": [
+    "Rotation bâclée",
+    "Descente rapide"
+   ],
+   "tip": "Travaille biceps et avant-bras en un seul exercice.",
+   "media": "zottman-curl"
+  },
+  {
+   "id": "drag-curl",
+   "name": "Drag curl",
+   "group": "biceps",
+   "primary": [
+    "biceps"
+   ],
+   "secondary": [
+    "avant-bras"
+   ],
+   "equipment": "Barre",
+   "level": "Intermédiaire",
+   "steps": [
+    "Debout, barre contre les cuisses",
+    "Monte la barre en la faisant glisser le long du corps, coudes vers l'arrière",
+    "Redescends en gardant la barre près du corps"
+   ],
+   "errors": [
+    "Avancer les coudes",
+    "Élan"
+   ],
+   "tip": "Les coudes reculent pendant que la barre monte.",
+   "media": "drag-curl"
+  },
+  {
+   "id": "standing-biceps-cable-curl",
+   "name": "Curl à la poulie basse",
+   "group": "biceps",
+   "primary": [
+    "biceps"
+   ],
+   "secondary": [],
+   "equipment": "Poulie",
+   "level": "Débutant",
+   "steps": [
+    "Face à la poulie basse, barre en main paumes vers le haut",
+    "Monte la barre vers les épaules",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Se pencher en arrière",
+    "Coudes mobiles"
+   ],
+   "tip": "Tension constante grâce à la poulie.",
+   "media": "standing-biceps-cable-curl"
+  },
+  {
+   "id": "cable-hammer-curls-rope-attachment",
+   "name": "Curl marteau à la corde",
+   "group": "biceps",
+   "primary": [
+    "biceps"
+   ],
+   "secondary": [],
+   "equipment": "Poulie",
+   "level": "Débutant",
+   "steps": [
+    "Face à la poulie basse, corde en main paumes face à face",
+    "Monte la corde vers les épaules",
+    "Redescends en contrôlant"
+   ],
+   "errors": [
+    "Élan",
+    "Coudes qui partent"
+   ],
+   "tip": "Écarte légèrement la corde en haut.",
+   "media": "cable-hammer-curls-rope-attachment"
+  },
+  {
+   "id": "cable-preacher-curl",
+   "name": "Curl pupitre à la poulie",
+   "group": "biceps",
+   "primary": [
+    "biceps"
+   ],
+   "secondary": [
+    "avant-bras"
+   ],
+   "equipment": "Poulie",
+   "level": "Débutant",
+   "steps": [
+    "Pupitre devant la poulie basse, bras posés, barre en main",
+    "Monte la barre",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Décoller les coudes",
+    "Verrouiller en bas"
+   ],
+   "tip": "Excellente tension en fin de mouvement.",
+   "media": "cable-preacher-curl"
+  },
+  {
+   "id": "high-cable-curls",
+   "name": "Curl poulie haute (double biceps)",
+   "group": "biceps",
+   "primary": [
+    "biceps"
+   ],
+   "secondary": [],
+   "equipment": "Poulie",
+   "level": "Intermédiaire",
+   "steps": [
+    "Entre deux poulies hautes, bras écartés à hauteur d'épaules",
+    "Plie les coudes pour amener les mains vers les oreilles",
+    "Reviens lentement"
+   ],
+   "errors": [
+    "Baisser les coudes",
+    "Charge trop lourde"
+   ],
+   "tip": "Garde les coudes à hauteur d'épaules.",
+   "media": "high-cable-curls"
+  },
+  {
+   "id": "machine-bicep-curl",
+   "name": "Curl machine",
+   "group": "biceps",
+   "primary": [
+    "biceps"
+   ],
+   "secondary": [],
+   "equipment": "Machine",
+   "level": "Débutant",
+   "steps": [
+    "Assis, bras posés sur le coussin, poignées en main",
+    "Plie les coudes",
+    "Reviens lentement"
+   ],
+   "errors": [
+    "Décoller les fesses",
+    "Amplitude courte"
+   ],
+   "tip": "Idéal pour finir les biceps en sécurité.",
+   "media": "machine-bicep-curl"
+  },
+  {
+   "id": "reverse-barbell-curl",
+   "name": "Curl barre prise inversée",
+   "group": "biceps",
+   "primary": [
+    "biceps"
+   ],
+   "secondary": [
+    "avant-bras"
+   ],
+   "equipment": "Barre",
+   "level": "Débutant",
+   "steps": [
+    "Debout, barre saisie en pronation (paumes vers le bas)",
+    "Monte la barre en pliant les coudes",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Poignets qui se cassent",
+    "Élan"
+   ],
+   "tip": "Travaille surtout l'avant-bras et le brachial.",
+   "media": "reverse-barbell-curl"
+  },
+  {
+   "id": "close-grip-ez-bar-curl-with-band",
+   "name": "Curl à l'élastique",
+   "group": "biceps",
+   "primary": [
+    "biceps"
+   ],
+   "secondary": [
+    "avant-bras"
+   ],
+   "equipment": "Barre EZ",
+   "level": "Débutant",
+   "steps": [
+    "Debout sur l'élastique, poignées en main",
+    "Monte les mains vers les épaules",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Laisser l'élastique tirer",
+    "Coudes mobiles"
+   ],
+   "tip": "Idéal à la maison.",
+   "media": "close-grip-ez-bar-curl-with-band"
+  },
+  {
+   "id": "close-grip-barbell-bench-press",
+   "name": "Développé couché prise serrée",
+   "group": "triceps",
+   "primary": [
+    "triceps"
+   ],
+   "secondary": [
+    "pectoraux",
+    "épaules"
+   ],
+   "equipment": "Barre",
+   "level": "Débutant",
+   "steps": [
+    "Allongé, barre saisie mains largeur d'épaules",
+    "Descends la barre vers le bas de la poitrine, coudes près du corps",
+    "Pousse jusqu'à bras tendus"
+   ],
+   "errors": [
+    "Prise trop serrée (poignets)",
+    "Coudes écartés"
+   ],
+   "tip": "Excellent pour prendre de la force aux triceps.",
+   "media": "close-grip-barbell-bench-press"
+  },
+  {
+   "id": "ez-bar-skullcrusher",
+   "name": "Barre au front (barre EZ)",
+   "group": "triceps",
+   "primary": [
+    "triceps"
+   ],
+   "secondary": [
+    "avant-bras"
+   ],
+   "equipment": "Barre EZ",
+   "level": "Débutant",
+   "steps": [
+    "Allongé, barre EZ tenue bras tendus au-dessus de la poitrine",
+    "Plie les coudes pour descendre la barre vers le front",
+    "Tends les bras sans bouger les coudes"
+   ],
+   "errors": [
+    "Écarter les coudes",
+    "Bouger les épaules"
+   ],
+   "tip": "Descends la barre légèrement derrière la tête pour plus d'étirement.",
+   "media": "ez-bar-skullcrusher"
+  },
+  {
+   "id": "lying-dumbbell-tricep-extension",
+   "name": "Extension triceps couché haltères",
+   "group": "triceps",
+   "primary": [
+    "triceps"
+   ],
+   "secondary": [
+    "pectoraux",
+    "épaules"
+   ],
+   "equipment": "Haltères",
+   "level": "Intermédiaire",
+   "steps": [
+    "Allongé, haltères tendus au-dessus de la poitrine, paumes face à face",
+    "Plie les coudes pour descendre les haltères près des oreilles",
+    "Tends les bras"
+   ],
+   "errors": [
+    "Coudes qui s'ouvrent",
+    "Descente rapide"
+   ],
+   "tip": "Garde les bras perpendiculaires au sol.",
+   "media": "lying-dumbbell-tricep-extension"
+  },
+  {
+   "id": "standing-dumbbell-triceps-extension",
+   "name": "Extension triceps au-dessus de la tête",
+   "group": "triceps",
+   "primary": [
+    "triceps"
+   ],
+   "secondary": [],
+   "equipment": "Haltères",
+   "level": "Débutant",
+   "steps": [
+    "Debout, un haltère tenu à deux mains au-dessus de la tête",
+    "Descends l'haltère derrière la tête en pliant les coudes",
+    "Remonte bras tendus"
+   ],
+   "errors": [
+    "Cambrer",
+    "Coudes qui s'écartent"
+   ],
+   "tip": "Serre les abdos pour garder le dos droit.",
+   "media": "standing-dumbbell-triceps-extension"
+  },
+  {
+   "id": "seated-triceps-press",
+   "name": "Extension triceps assis",
+   "group": "triceps",
+   "primary": [
+    "triceps"
+   ],
+   "secondary": [],
+   "equipment": "Haltères",
+   "level": "Débutant",
+   "steps": [
+    "Assis, dos droit, haltère tenu à deux mains au-dessus de la tête",
+    "Descends derrière la tête",
+    "Remonte jusqu'à bras tendus"
+   ],
+   "errors": [
+    "Écarter les coudes",
+    "Cambrer"
+   ],
+   "tip": "Version stable de l'extension au-dessus de la tête.",
+   "media": "seated-triceps-press"
+  },
+  {
+   "id": "tricep-dumbbell-kickback",
+   "name": "Kickback haltère",
+   "group": "triceps",
+   "primary": [
+    "triceps"
+   ],
+   "secondary": [],
+   "equipment": "Haltères",
+   "level": "Débutant",
+   "steps": [
+    "Buste penché, un genou sur le banc, coude collé au corps plié à 90°",
+    "Tends le bras vers l'arrière",
+    "Reviens lentement"
+   ],
+   "errors": [
+    "Laisser descendre le coude",
+    "Élan"
+   ],
+   "tip": "Serre le triceps une seconde bras tendu.",
+   "media": "tricep-dumbbell-kickback"
+  },
+  {
+   "id": "triceps-pushdown",
+   "name": "Extension triceps poulie haute (barre)",
+   "group": "triceps",
+   "primary": [
+    "triceps"
+   ],
+   "secondary": [],
+   "equipment": "Poulie",
+   "level": "Débutant",
+   "steps": [
+    "Face à la poulie haute, barre en main, coudes collés au corps",
+    "Pousse la barre vers le bas jusqu'à bras tendus",
+    "Remonte jusqu'à 90°"
+   ],
+   "errors": [
+    "Coudes qui bougent",
+    "Se pencher sur la barre"
+   ],
+   "tip": "Seuls les avant-bras bougent.",
+   "media": "triceps-pushdown"
+  },
+  {
+   "id": "triceps-pushdown-rope-attachment",
+   "name": "Extension triceps à la corde",
+   "group": "triceps",
+   "primary": [
+    "triceps"
+   ],
+   "secondary": [],
+   "equipment": "Poulie",
+   "level": "Débutant",
+   "steps": [
+    "Face à la poulie haute, corde en main, coudes collés",
+    "Pousse vers le bas en écartant la corde en fin de mouvement",
+    "Remonte lentement"
+   ],
+   "errors": [
+    "Coudes qui avancent",
+    "Élan du buste"
+   ],
+   "tip": "Écarte bien la corde en bas pour une meilleure contraction.",
+   "media": "triceps-pushdown-rope-attachment"
+  },
+  {
+   "id": "reverse-grip-triceps-pushdown",
+   "name": "Extension triceps poulie prise inversée",
+   "group": "triceps",
+   "primary": [
+    "triceps"
+   ],
+   "secondary": [],
+   "equipment": "Poulie",
+   "level": "Débutant",
+   "steps": [
+    "Face à la poulie haute, barre saisie paumes vers le haut",
+    "Pousse vers le bas jusqu'à bras tendus",
+    "Remonte lentement"
+   ],
+   "errors": [
+    "Charge trop lourde",
+    "Poignets cassés"
+   ],
+   "tip": "Cible davantage le chef interne du triceps.",
+   "media": "reverse-grip-triceps-pushdown"
+  },
+  {
+   "id": "triceps-overhead-extension-with-rope",
+   "name": "Extension triceps corde au-dessus de la tête",
+   "group": "triceps",
+   "primary": [
+    "triceps"
+   ],
+   "secondary": [],
+   "equipment": "Poulie",
+   "level": "Débutant",
+   "steps": [
+    "Dos à la poulie, corde tenue derrière la tête, buste penché",
+    "Tends les bras vers l'avant et le haut",
+    "Reviens lentement"
+   ],
+   "errors": [
+    "Coudes qui s'écartent",
+    "Cambrer"
+   ],
+   "tip": "Excellent étirement du chef long du triceps.",
+   "media": "triceps-overhead-extension-with-rope"
+  },
+  {
+   "id": "cable-one-arm-tricep-extension",
+   "name": "Extension triceps unilatérale poulie",
+   "group": "triceps",
+   "primary": [
+    "triceps"
+   ],
+   "secondary": [],
+   "equipment": "Poulie",
+   "level": "Débutant",
+   "steps": [
+    "Face à la poulie haute, poignée dans une main, coude collé",
+    "Pousse jusqu'à bras tendu",
+    "Remonte lentement"
+   ],
+   "errors": [
+    "Tourner le buste",
+    "Coude qui bouge"
+   ],
+   "tip": "Idéal pour corriger un déséquilibre.",
+   "media": "cable-one-arm-tricep-extension"
+  },
+  {
+   "id": "dips-triceps-version",
+   "name": "Dips (version triceps)",
+   "group": "triceps",
+   "primary": [
+    "triceps"
+   ],
+   "secondary": [
+    "pectoraux",
+    "épaules"
+   ],
+   "equipment": "Poids du corps",
+   "level": "Débutant",
+   "steps": [
+    "En appui sur les barres parallèles, corps droit",
+    "Descends en pliant les coudes vers l'arrière",
+    "Remonte jusqu'à bras tendus"
+   ],
+   "errors": [
+    "Se pencher en avant",
+    "Descendre trop bas"
+   ],
+   "tip": "Reste bien droit pour cibler les triceps.",
+   "media": "dips-triceps-version"
+  },
+  {
+   "id": "bench-dips",
+   "name": "Dips entre deux bancs",
+   "group": "triceps",
+   "primary": [
+    "triceps"
+   ],
+   "secondary": [
+    "pectoraux",
+    "épaules"
+   ],
+   "equipment": "Poids du corps",
+   "level": "Débutant",
+   "steps": [
+    "Mains sur le bord d'un banc derrière toi, jambes tendues devant",
+    "Descends en pliant les coudes",
+    "Remonte en poussant"
+   ],
+   "errors": [
+    "Coudes qui s'écartent",
+    "Descendre trop bas"
+   ],
+   "tip": "Plie les genoux pour faciliter l'exercice.",
+   "media": "bench-dips"
+  },
+  {
+   "id": "push-ups-close-triceps-position",
+   "name": "Pompes prise serrée",
+   "group": "triceps",
+   "primary": [
+    "triceps"
+   ],
+   "secondary": [
+    "pectoraux",
+    "épaules"
+   ],
+   "equipment": "Poids du corps",
+   "level": "Intermédiaire",
+   "steps": [
+    "Mains rapprochées sous la poitrine, corps gainé",
+    "Descends en gardant les coudes près du corps",
+    "Pousse jusqu'à bras tendus"
+   ],
+   "errors": [
+    "Coudes écartés",
+    "Bassin qui tombe"
+   ],
+   "tip": "Fais-les sur les genoux si c'est trop dur.",
+   "media": "push-ups-close-triceps-position"
+  },
+  {
+   "id": "machine-triceps-extension",
+   "name": "Extension triceps machine",
+   "group": "triceps",
+   "primary": [
+    "triceps"
+   ],
+   "secondary": [],
+   "equipment": "Machine",
+   "level": "Débutant",
+   "steps": [
+    "Assis, bras posés sur le coussin, poignées en main",
+    "Tends les bras",
+    "Reviens lentement"
+   ],
+   "errors": [
+    "Décoller les coudes",
+    "Élan"
+   ],
+   "tip": "Simple et sûr pour terminer les triceps.",
+   "media": "machine-triceps-extension"
+  },
+  {
+   "id": "dip-machine",
+   "name": "Dips machine",
+   "group": "triceps",
+   "primary": [
+    "triceps"
+   ],
+   "secondary": [
+    "pectoraux",
+    "épaules"
+   ],
+   "equipment": "Machine",
+   "level": "Débutant",
+   "steps": [
+    "Assis dans la machine, poignées en main",
+    "Pousse vers le bas jusqu'à bras tendus",
+    "Remonte lentement"
+   ],
+   "errors": [
+    "Hausser les épaules",
+    "Amplitude courte"
+   ],
+   "tip": "Bonne étape avant les dips aux barres.",
+   "media": "dip-machine"
+  },
+  {
+   "id": "jm-press",
+   "name": "JM press",
+   "group": "triceps",
+   "primary": [
+    "triceps"
+   ],
+   "secondary": [
+    "pectoraux",
+    "épaules"
+   ],
+   "equipment": "Barre",
+   "level": "Débutant",
+   "steps": [
+    "Allongé, barre en main prise serrée au-dessus de la poitrine",
+    "Descends la barre vers le menton en pliant les coudes vers l'avant",
+    "Pousse jusqu'à bras tendus"
+   ],
+   "errors": [
+    "Charge trop lourde",
+    "Coudes écartés"
+   ],
+   "tip": "Hybride entre développé serré et barre au front.",
+   "media": "jm-press"
+  },
+  {
+   "id": "close-grip-dumbbell-press",
+   "name": "Développé haltères prise neutre serrée",
+   "group": "triceps",
+   "primary": [
+    "triceps"
+   ],
+   "secondary": [
+    "pectoraux",
+    "épaules"
+   ],
+   "equipment": "Haltères",
+   "level": "Débutant",
+   "steps": [
+    "Allongé, haltères collés l'un à l'autre au-dessus de la poitrine",
+    "Descends-les vers la poitrine, coudes près du corps",
+    "Pousse jusqu'à bras tendus"
+   ],
+   "errors": [
+    "Séparer les haltères",
+    "Coudes ouverts"
+   ],
+   "tip": "Garde les haltères en contact tout le long.",
+   "media": "close-grip-dumbbell-press"
+  },
+  {
+   "id": "band-skull-crusher",
+   "name": "Barre au front à l'élastique",
+   "group": "triceps",
+   "primary": [
+    "triceps"
+   ],
+   "secondary": [],
+   "equipment": "Élastique",
+   "level": "Débutant",
+   "steps": [
+    "Allongé, élastique fixé derrière la tête, extrémités en main",
+    "Tends les bras vers le plafond",
+    "Reviens lentement en pliant les coudes"
+   ],
+   "errors": [
+    "Écarter les coudes",
+    "Relâcher trop vite"
+   ],
+   "tip": "Idéal à la maison.",
+   "media": "band-skull-crusher"
+  },
+  {
+   "id": "floor-press",
+   "name": "Développé au sol",
+   "group": "triceps",
+   "primary": [
+    "triceps"
+   ],
+   "secondary": [
+    "pectoraux",
+    "épaules"
+   ],
+   "equipment": "Barre",
+   "level": "Intermédiaire",
+   "steps": [
+    "Allongé au sol, barre en main au-dessus de la poitrine",
+    "Descends jusqu'à ce que les bras touchent le sol",
+    "Pousse jusqu'à bras tendus"
+   ],
+   "errors": [
+    "Rebondir avec les coudes",
+    "Prise trop large"
+   ],
+   "tip": "Le sol limite l'amplitude et protège les épaules.",
+   "media": "floor-press"
+  },
+  {
+   "id": "palms-up-barbell-wrist-curl-over-a-bench",
+   "name": "Curl poignets barre (supination)",
+   "group": "avantbras",
+   "primary": [
+    "avant-bras"
+   ],
+   "secondary": [],
+   "equipment": "Barre",
+   "level": "Débutant",
+   "steps": [
+    "À genoux, avant-bras posés sur un banc, poignets dépassant, barre en main paumes vers le haut",
+    "Laisse descendre la barre en ouvrant les doigts puis remonte en fléchissant les poignets",
+    "Contrôle la descente"
+   ],
+   "errors": [
+    "Bouger les avant-bras",
+    "Charge trop lourde"
+   ],
+   "tip": "Fais des séries longues (15-20 reps).",
+   "media": "palms-up-barbell-wrist-curl-over-a-bench"
+  },
+  {
+   "id": "palms-down-wrist-curl-over-a-bench",
+   "name": "Curl poignets barre (pronation)",
+   "group": "avantbras",
+   "primary": [
+    "avant-bras"
+   ],
+   "secondary": [],
+   "equipment": "Barre",
+   "level": "Débutant",
+   "steps": [
+    "Avant-bras posés sur un banc, barre en main paumes vers le bas",
+    "Relève les poignets le plus haut possible",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Charge trop lourde",
+    "Mouvement rapide"
+   ],
+   "tip": "Renforce les extenseurs : utile contre les douleurs au coude.",
+   "media": "palms-down-wrist-curl-over-a-bench"
+  },
+  {
+   "id": "seated-dumbbell-palms-up-wrist-curl",
+   "name": "Curl poignets haltères assis",
+   "group": "avantbras",
+   "primary": [
+    "avant-bras"
+   ],
+   "secondary": [],
+   "equipment": "Haltères",
+   "level": "Débutant",
+   "steps": [
+    "Assis, avant-bras sur les cuisses, haltères en main paumes vers le haut",
+    "Fléchis les poignets vers le haut",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Décoller les avant-bras",
+    "Élan"
+   ],
+   "tip": "Version facile à faire n'importe où.",
+   "media": "seated-dumbbell-palms-up-wrist-curl"
+  },
+  {
+   "id": "seated-dumbbell-palms-down-wrist-curl",
+   "name": "Extension poignets haltères assis",
+   "group": "avantbras",
+   "primary": [
+    "avant-bras"
+   ],
+   "secondary": [],
+   "equipment": "Haltères",
+   "level": "Débutant",
+   "steps": [
+    "Assis, avant-bras sur les cuisses, paumes vers le bas",
+    "Relève les poignets",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Charge trop lourde",
+    "Bouger les bras"
+   ],
+   "tip": "Utilise des haltères légers.",
+   "media": "seated-dumbbell-palms-down-wrist-curl"
+  },
+  {
+   "id": "wrist-roller",
+   "name": "Rouleau de poignet",
+   "group": "avantbras",
+   "primary": [
+    "avant-bras"
+   ],
+   "secondary": [
+    "épaules"
+   ],
+   "equipment": "Autre",
+   "level": "Débutant",
+   "steps": [
+    "Debout, bras tendus devant toi, rouleau en main avec un poids suspendu",
+    "Enroule la corde en tournant les poignets",
+    "Déroule lentement"
+   ],
+   "errors": [
+    "Baisser les bras",
+    "Aller trop vite"
+   ],
+   "tip": "Ça brûle vite : c'est normal !",
+   "media": "wrist-roller"
+  },
+  {
+   "id": "plate-pinch",
+   "name": "Pince de disques",
+   "group": "avantbras",
+   "primary": [
+    "avant-bras"
+   ],
+   "secondary": [],
+   "equipment": "Autre",
+   "level": "Intermédiaire",
+   "steps": [
+    "Deux disques lisses face contre face, pincés entre les doigts et le pouce",
+    "Tiens-les le plus longtemps possible, bras le long du corps",
+    "Repose-les doucement"
+   ],
+   "errors": [
+    "Disques trop lourds",
+    "Lâcher brusquement"
+   ],
+   "tip": "Excellent pour la force de préhension.",
+   "media": "plate-pinch"
+  },
+  {
+   "id": "cable-wrist-curl",
+   "name": "Curl poignets à la poulie",
+   "group": "avantbras",
+   "primary": [
+    "avant-bras"
+   ],
+   "secondary": [],
+   "equipment": "Poulie",
+   "level": "Débutant",
+   "steps": [
+    "Assis face à la poulie basse, avant-bras sur les cuisses, barre en main",
+    "Fléchis les poignets vers le haut",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Bouger les avant-bras",
+    "Élan"
+   ],
+   "tip": "Tension constante grâce à la poulie.",
+   "media": "cable-wrist-curl"
+  },
+  {
+   "id": "crunches",
+   "name": "Crunch",
+   "group": "abdos",
+   "primary": [
+    "abdos"
+   ],
+   "secondary": [],
+   "equipment": "Poids du corps",
+   "level": "Débutant",
+   "steps": [
+    "Allongé sur le dos, genoux pliés, mains derrière la tête",
+    "Enroule le haut du dos en décollant les omoplates du sol",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Tirer sur la nuque",
+    "Remonter jusqu'en position assise"
+   ],
+   "tip": "Expire en montant, regarde le plafond.",
+   "media": "crunches"
+  },
+  {
+   "id": "sit-up",
+   "name": "Sit-up (redressement assis)",
+   "group": "abdos",
+   "primary": [
+    "abdos"
+   ],
+   "secondary": [],
+   "equipment": "Poids du corps",
+   "level": "Débutant",
+   "steps": [
+    "Allongé, genoux pliés, pieds bloqués, mains derrière la tête",
+    "Redresse-toi jusqu'en position assise",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Tirer sur la nuque",
+    "Élan"
+   ],
+   "tip": "Contrôle surtout la descente.",
+   "media": "sit-up"
+  },
+  {
+   "id": "reverse-crunch",
+   "name": "Crunch inversé",
+   "group": "abdos",
+   "primary": [
+    "abdos"
+   ],
+   "secondary": [],
+   "equipment": "Poids du corps",
+   "level": "Débutant",
+   "steps": [
+    "Allongé, jambes pliées en l'air, mains au sol",
+    "Enroule le bassin pour ramener les genoux vers la poitrine",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Balancer les jambes",
+    "Décoller le dos d'un coup"
+   ],
+   "tip": "Cible bien le bas des abdos.",
+   "media": "reverse-crunch"
+  },
+  {
+   "id": "plank",
+   "name": "Gainage (planche)",
+   "group": "abdos",
+   "primary": [
+    "abdos"
+   ],
+   "secondary": [],
+   "equipment": "Poids du corps",
+   "level": "Débutant",
+   "steps": [
+    "Sur les avant-bras et la pointe des pieds, corps aligné",
+    "Gaine fort ventre et fessiers",
+    "Tiens la position en respirant normalement"
+   ],
+   "errors": [
+    "Fesses trop hautes",
+    "Dos qui se creuse"
+   ],
+   "tip": "Mieux vaut 30 s parfaites que 2 min mal faites.",
+   "media": "plank"
+  },
+  {
+   "id": "side-bridge",
+   "name": "Gainage latéral",
+   "group": "abdos",
+   "primary": [
+    "abdos"
+   ],
+   "secondary": [
+    "épaules"
+   ],
+   "equipment": "Poids du corps",
+   "level": "Débutant",
+   "steps": [
+    "Allongé sur le côté, en appui sur l'avant-bras, jambes tendues",
+    "Soulève le bassin pour aligner le corps",
+    "Tiens la position puis change de côté"
+   ],
+   "errors": [
+    "Bassin qui descend",
+    "Épaule au-dessus du coude mal placée"
+   ],
+   "tip": "Coude bien sous l'épaule.",
+   "media": "side-bridge"
+  },
+  {
+   "id": "hanging-leg-raise",
+   "name": "Relevé de jambes suspendu",
+   "group": "abdos",
+   "primary": [
+    "abdos"
+   ],
+   "secondary": [],
+   "equipment": "Poids du corps",
+   "level": "Confirmé",
+   "steps": [
+    "Suspendu à une barre, bras tendus",
+    "Monte les jambes tendues jusqu'à l'horizontale ou plus",
+    "Redescends lentement sans te balancer"
+   ],
+   "errors": [
+    "Se balancer",
+    "Descendre trop vite"
+   ],
+   "tip": "Plie les genoux pour une version plus facile.",
+   "media": "hanging-leg-raise"
+  },
+  {
+   "id": "knee-hip-raise-on-parallel-bars",
+   "name": "Relevé de genoux à la chaise romaine",
+   "group": "abdos",
+   "primary": [
+    "abdos"
+   ],
+   "secondary": [],
+   "equipment": "Autre",
+   "level": "Débutant",
+   "steps": [
+    "En appui sur les avant-bras, dos contre le dossier",
+    "Monte les genoux vers la poitrine en enroulant le bassin",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Balancer les jambes",
+    "Cambrer"
+   ],
+   "tip": "Enroule le bassin en haut pour bien travailler.",
+   "media": "knee-hip-raise-on-parallel-bars"
+  },
+  {
+   "id": "flat-bench-lying-leg-raise",
+   "name": "Relevé de jambes sur banc",
+   "group": "abdos",
+   "primary": [
+    "abdos"
+   ],
+   "secondary": [],
+   "equipment": "Poids du corps",
+   "level": "Débutant",
+   "steps": [
+    "Allongé sur un banc, mains agrippées derrière la tête, jambes tendues",
+    "Monte les jambes jusqu'à la verticale",
+    "Redescends sans toucher le banc"
+   ],
+   "errors": [
+    "Cambrer le bas du dos",
+    "Élan"
+   ],
+   "tip": "Garde le bas du dos plaqué.",
+   "media": "flat-bench-lying-leg-raise"
+  },
+  {
+   "id": "russian-twist",
+   "name": "Rotations russes",
+   "group": "abdos",
+   "primary": [
+    "abdos"
+   ],
+   "secondary": [
+    "lombaires"
+   ],
+   "equipment": "Poids du corps",
+   "level": "Intermédiaire",
+   "steps": [
+    "Assis, buste incliné en arrière, pieds décollés, mains jointes",
+    "Tourne le buste d'un côté puis de l'autre",
+    "Garde le dos droit"
+   ],
+   "errors": [
+    "Dos rond",
+    "Bouger seulement les bras"
+   ],
+   "tip": "Ajoute un disque ou un haltère pour progresser.",
+   "media": "russian-twist"
+  },
+  {
+   "id": "air-bike",
+   "name": "Crunch vélo",
+   "group": "abdos",
+   "primary": [
+    "abdos"
+   ],
+   "secondary": [],
+   "equipment": "Poids du corps",
+   "level": "Débutant",
+   "steps": [
+    "Allongé, mains derrière la tête, jambes en l'air",
+    "Amène un coude vers le genou opposé en tendant l'autre jambe",
+    "Alterne comme un pédalage"
+   ],
+   "errors": [
+    "Tirer sur la nuque",
+    "Aller trop vite"
+   ],
+   "tip": "Lentement : c'est plus efficace.",
+   "media": "air-bike"
+  },
+  {
+   "id": "dead-bug",
+   "name": "Dead bug",
+   "group": "abdos",
+   "primary": [
+    "abdos"
+   ],
+   "secondary": [],
+   "equipment": "Poids du corps",
+   "level": "Débutant",
+   "steps": [
+    "Allongé, bras tendus vers le plafond, genoux à 90°",
+    "Descends un bras et la jambe opposée vers le sol",
+    "Reviens et alterne"
+   ],
+   "errors": [
+    "Dos qui se creuse",
+    "Mouvement rapide"
+   ],
+   "tip": "Bas du dos collé au sol en permanence.",
+   "media": "dead-bug"
+  },
+  {
+   "id": "cross-body-crunch",
+   "name": "Crunch croisé",
+   "group": "abdos",
+   "primary": [
+    "abdos"
+   ],
+   "secondary": [],
+   "equipment": "Poids du corps",
+   "level": "Débutant",
+   "steps": [
+    "Allongé, genoux pliés, mains derrière la tête",
+    "Enroule le buste en amenant un coude vers le genou opposé",
+    "Alterne les côtés"
+   ],
+   "errors": [
+    "Tirer sur la nuque",
+    "Élan"
+   ],
+   "tip": "Cible les obliques.",
+   "media": "cross-body-crunch"
+  },
+  {
+   "id": "oblique-crunches-on-the-floor",
+   "name": "Crunch obliques au sol",
+   "group": "abdos",
+   "primary": [
+    "abdos"
+   ],
+   "secondary": [],
+   "equipment": "Poids du corps",
+   "level": "Débutant",
+   "steps": [
+    "Allongé sur le côté, genoux pliés, main derrière la tête",
+    "Monte le buste sur le côté",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Tirer sur la nuque",
+    "Amplitude courte"
+   ],
+   "tip": "Petit mouvement, grosse contraction.",
+   "media": "oblique-crunches-on-the-floor"
+  },
+  {
+   "id": "ab-roller",
+   "name": "Roue abdominale",
+   "group": "abdos",
+   "primary": [
+    "abdos"
+   ],
+   "secondary": [
+    "épaules"
+   ],
+   "equipment": "Autre",
+   "level": "Intermédiaire",
+   "steps": [
+    "À genoux, mains sur la roue",
+    "Roule vers l'avant en gardant le dos droit",
+    "Reviens en contractant les abdos"
+   ],
+   "errors": [
+    "Creuser le dos",
+    "Aller trop loin"
+   ],
+   "tip": "Commence avec une petite amplitude.",
+   "media": "ab-roller"
+  },
+  {
+   "id": "barbell-ab-rollout-on-knees",
+   "name": "Rollout barre à genoux",
+   "group": "abdos",
+   "primary": [
+    "abdos"
+   ],
+   "secondary": [
+    "lombaires",
+    "épaules"
+   ],
+   "equipment": "Barre",
+   "level": "Confirmé",
+   "steps": [
+    "À genoux, mains sur une barre chargée de petits disques",
+    "Roule vers l'avant en gardant le dos plat",
+    "Reviens en contractant les abdos"
+   ],
+   "errors": [
+    "Cambrer",
+    "Fesses qui reculent en premier"
+   ],
+   "tip": "Alternative à la roue abdominale.",
+   "media": "barbell-ab-rollout-on-knees"
+  },
+  {
+   "id": "cable-crunch",
+   "name": "Crunch à la poulie haute",
+   "group": "abdos",
+   "primary": [
+    "abdos"
+   ],
+   "secondary": [],
+   "equipment": "Poulie",
+   "level": "Débutant",
+   "steps": [
+    "À genoux face à la poulie haute, corde derrière la tête",
+    "Enroule le buste vers les genoux",
+    "Remonte lentement"
+   ],
+   "errors": [
+    "Tirer avec les bras",
+    "Bouger les hanches"
+   ],
+   "tip": "Pense à rapprocher les côtes du bassin.",
+   "media": "cable-crunch"
+  },
+  {
+   "id": "pallof-press",
+   "name": "Pallof press",
+   "group": "abdos",
+   "primary": [
+    "abdos"
+   ],
+   "secondary": [
+    "pectoraux",
+    "épaules",
+    "triceps"
+   ],
+   "equipment": "Poulie",
+   "level": "Débutant",
+   "steps": [
+    "De profil à la poulie, poignée contre la poitrine",
+    "Tends les bras devant toi sans laisser le buste tourner",
+    "Ramène les mains"
+   ],
+   "errors": [
+    "Tourner le buste",
+    "Charge trop lourde"
+   ],
+   "tip": "Exercice anti-rotation : excellent pour le gainage.",
+   "media": "pallof-press"
+  },
+  {
+   "id": "standing-cable-wood-chop",
+   "name": "Bûcheron à la poulie",
+   "group": "abdos",
+   "primary": [
+    "abdos"
+   ],
+   "secondary": [
+    "épaules"
+   ],
+   "equipment": "Poulie",
+   "level": "Débutant",
+   "steps": [
+    "De profil à la poulie haute, poignée à deux mains",
+    "Tire en diagonale vers le genou opposé en pivotant le buste",
+    "Reviens lentement"
+   ],
+   "errors": [
+    "Tirer avec les bras",
+    "Dos rond"
+   ],
+   "tip": "Le mouvement part du tronc.",
+   "media": "standing-cable-wood-chop"
+  },
+  {
+   "id": "dumbbell-side-bend",
+   "name": "Flexion latérale haltère",
+   "group": "abdos",
+   "primary": [
+    "abdos"
+   ],
+   "secondary": [],
+   "equipment": "Haltères",
+   "level": "Débutant",
+   "steps": [
+    "Debout, un haltère dans une main",
+    "Penche-toi sur le côté de l'haltère",
+    "Remonte en contractant l'oblique opposé"
+   ],
+   "errors": [
+    "Pencher vers l'avant",
+    "Haltère dans chaque main"
+   ],
+   "tip": "Un seul haltère à la fois.",
+   "media": "dumbbell-side-bend"
+  },
+  {
+   "id": "exercise-ball-crunch",
+   "name": "Crunch sur ballon",
+   "group": "abdos",
+   "primary": [
+    "abdos"
+   ],
+   "secondary": [],
+   "equipment": "Ballon",
+   "level": "Débutant",
+   "steps": [
+    "Allongé dos sur un ballon, pieds au sol",
+    "Enroule le buste vers le haut",
+    "Redescends en étirant les abdos"
+   ],
+   "errors": [
+    "Tirer sur la nuque",
+    "Rouler sur le ballon"
+   ],
+   "tip": "Plus d'amplitude qu'au sol.",
+   "media": "exercise-ball-crunch"
+  },
+  {
+   "id": "ab-crunch-machine",
+   "name": "Crunch machine",
+   "group": "abdos",
+   "primary": [
+    "abdos"
+   ],
+   "secondary": [],
+   "equipment": "Machine",
+   "level": "Intermédiaire",
+   "steps": [
+    "Assis dans la machine, poignées en main",
+    "Enroule le buste vers l'avant",
+    "Reviens lentement"
+   ],
+   "errors": [
+    "Tirer avec les bras",
+    "Élan"
+   ],
+   "tip": "Règle une charge modérée.",
+   "media": "ab-crunch-machine"
+  },
+  {
+   "id": "decline-crunch",
+   "name": "Crunch décliné",
+   "group": "abdos",
+   "primary": [
+    "abdos"
+   ],
+   "secondary": [],
+   "equipment": "Poids du corps",
+   "level": "Intermédiaire",
+   "steps": [
+    "Allongé sur un banc décliné, pieds bloqués",
+    "Enroule le buste vers le haut",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Tirer sur la nuque",
+    "Élan"
+   ],
+   "tip": "Plus difficile que le crunch au sol.",
+   "media": "decline-crunch"
+  },
+  {
+   "id": "jackknife-sit-up",
+   "name": "Crunch jackknife (V-up)",
+   "group": "abdos",
+   "primary": [
+    "abdos"
+   ],
+   "secondary": [],
+   "equipment": "Poids du corps",
+   "level": "Débutant",
+   "steps": [
+    "Allongé, bras tendus derrière la tête",
+    "Monte en même temps bras et jambes tendus pour les rejoindre",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Plier les jambes",
+    "Retomber"
+   ],
+   "tip": "Exercice intense : commence par 8 reps.",
+   "media": "jackknife-sit-up"
+  },
+  {
+   "id": "weighted-crunches",
+   "name": "Crunch lesté",
+   "group": "abdos",
+   "primary": [
+    "abdos"
+   ],
+   "secondary": [],
+   "equipment": "Médecine-ball",
+   "level": "Débutant",
+   "steps": [
+    "Allongé, genoux pliés, médecine-ball ou disque contre la poitrine",
+    "Enroule le buste",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Tirer sur la nuque",
+    "Charge trop lourde"
+   ],
+   "tip": "Progresse en ajoutant du poids.",
+   "media": "weighted-crunches"
+  },
+  {
+   "id": "hanging-pike",
+   "name": "Relevé de jambes pieds à la barre",
+   "group": "abdos",
+   "primary": [
+    "abdos"
+   ],
+   "secondary": [],
+   "equipment": "Poids du corps",
+   "level": "Confirmé",
+   "steps": [
+    "Suspendu à la barre",
+    "Monte les jambes tendues jusqu'à toucher la barre",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Balancement",
+    "Plier les bras"
+   ],
+   "tip": "Exercice avancé.",
+   "media": "hanging-pike"
+  },
+  {
+   "id": "barbell-hip-thrust",
+   "name": "Hip thrust barre",
+   "group": "fessiers",
+   "primary": [
+    "fessiers"
+   ],
+   "secondary": [
+    "mollets",
+    "ischios"
+   ],
+   "equipment": "Barre",
+   "level": "Intermédiaire",
+   "steps": [
+    "Haut du dos appuyé sur un banc, barre sur les hanches (avec une mousse), pieds au sol",
+    "Pousse les hanches vers le haut jusqu'à aligner genoux, hanches et épaules",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Cambrer le bas du dos en haut",
+    "Pousser sur la pointe des pieds"
+   ],
+   "tip": "Serre fort les fessiers une seconde en haut.",
+   "media": "barbell-hip-thrust"
+  },
+  {
+   "id": "barbell-glute-bridge",
+   "name": "Pont fessier barre",
+   "group": "fessiers",
+   "primary": [
+    "fessiers"
+   ],
+   "secondary": [
+    "mollets",
+    "ischios"
+   ],
+   "equipment": "Barre",
+   "level": "Intermédiaire",
+   "steps": [
+    "Allongé au sol, barre sur les hanches, genoux pliés",
+    "Monte les hanches en serrant les fessiers",
+    "Redescends sans poser complètement"
+   ],
+   "errors": [
+    "Cambrer",
+    "Pousser avec les orteils"
+   ],
+   "tip": "Pousse dans les talons.",
+   "media": "barbell-glute-bridge"
+  },
+  {
+   "id": "butt-lift-bridge",
+   "name": "Pont fessier",
+   "group": "fessiers",
+   "primary": [
+    "fessiers"
+   ],
+   "secondary": [
+    "ischios"
+   ],
+   "equipment": "Poids du corps",
+   "level": "Débutant",
+   "steps": [
+    "Allongé sur le dos, genoux pliés, pieds au sol",
+    "Monte les hanches jusqu'à aligner genoux et épaules",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Cambrer le dos",
+    "Écarter les genoux"
+   ],
+   "tip": "Parfait en échauffement ou à la maison.",
+   "media": "butt-lift-bridge"
+  },
+  {
+   "id": "single-leg-glute-bridge",
+   "name": "Pont fessier une jambe",
+   "group": "fessiers",
+   "primary": [
+    "fessiers"
+   ],
+   "secondary": [
+    "ischios"
+   ],
+   "equipment": "Poids du corps",
+   "level": "Débutant",
+   "steps": [
+    "Allongé, une jambe pliée pied au sol, l'autre tendue en l'air",
+    "Monte les hanches en poussant dans le talon",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Bassin qui bascule",
+    "Pousser avec le dos"
+   ],
+   "tip": "Garde le bassin bien horizontal.",
+   "media": "single-leg-glute-bridge"
+  },
+  {
+   "id": "glute-kickback",
+   "name": "Kickback fessier au sol",
+   "group": "fessiers",
+   "primary": [
+    "fessiers"
+   ],
+   "secondary": [
+    "ischios"
+   ],
+   "equipment": "Poids du corps",
+   "level": "Débutant",
+   "steps": [
+    "À quatre pattes, dos plat",
+    "Monte une jambe pliée vers le plafond",
+    "Redescends sans poser le genou"
+   ],
+   "errors": [
+    "Cambrer le dos",
+    "Élan"
+   ],
+   "tip": "Petite amplitude contrôlée.",
+   "media": "glute-kickback"
+  },
+  {
+   "id": "one-legged-cable-kickback",
+   "name": "Kickback à la poulie",
+   "group": "fessiers",
+   "primary": [
+    "fessiers"
+   ],
+   "secondary": [
+    "ischios"
+   ],
+   "equipment": "Poulie",
+   "level": "Intermédiaire",
+   "steps": [
+    "Face à la poulie basse, sangle à la cheville",
+    "Tends la jambe vers l'arrière en serrant le fessier",
+    "Reviens lentement"
+   ],
+   "errors": [
+    "Cambrer",
+    "Pencher le buste"
+   ],
+   "tip": "Garde le buste immobile.",
+   "media": "one-legged-cable-kickback"
+  },
+  {
+   "id": "pull-through",
+   "name": "Pull-through à la poulie",
+   "group": "fessiers",
+   "primary": [
+    "fessiers"
+   ],
+   "secondary": [
+    "ischios",
+    "lombaires"
+   ],
+   "equipment": "Poulie",
+   "level": "Débutant",
+   "steps": [
+    "Dos à la poulie basse, corde entre les jambes",
+    "Penche-toi en poussant les fesses en arrière",
+    "Redresse-toi en poussant les hanches vers l'avant"
+   ],
+   "errors": [
+    "Tirer avec les bras",
+    "Dos rond"
+   ],
+   "tip": "Le mouvement vient des hanches.",
+   "media": "pull-through"
+  },
+  {
+   "id": "hip-lift-with-band",
+   "name": "Pont fessier à l'élastique",
+   "group": "fessiers",
+   "primary": [
+    "fessiers"
+   ],
+   "secondary": [
+    "mollets",
+    "ischios"
+   ],
+   "equipment": "Élastique",
+   "level": "Débutant",
+   "steps": [
+    "Allongé, élastique autour des genoux",
+    "Monte les hanches en écartant légèrement les genoux",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Laisser les genoux rentrer",
+    "Cambrer"
+   ],
+   "tip": "L'élastique active le moyen fessier.",
+   "media": "hip-lift-with-band"
+  },
+  {
+   "id": "step-up-with-knee-raise",
+   "name": "Montée sur banc avec genou",
+   "group": "fessiers",
+   "primary": [
+    "fessiers"
+   ],
+   "secondary": [
+    "ischios",
+    "quadriceps"
+   ],
+   "equipment": "Poids du corps",
+   "level": "Débutant",
+   "steps": [
+    "Face à un banc, un pied posé dessus",
+    "Monte sur le banc et lève l'autre genou devant toi",
+    "Redescends et alterne"
+   ],
+   "errors": [
+    "Pousser avec la jambe au sol",
+    "Banc trop haut"
+   ],
+   "tip": "Pousse dans le talon du pied posé sur le banc.",
+   "media": "step-up-with-knee-raise"
+  },
+  {
+   "id": "flutter-kicks",
+   "name": "Battements de jambes",
+   "group": "fessiers",
+   "primary": [
+    "fessiers"
+   ],
+   "secondary": [
+    "ischios"
+   ],
+   "equipment": "Poids du corps",
+   "level": "Débutant",
+   "steps": [
+    "Allongé sur le ventre, mains sous le front",
+    "Monte les jambes tendues en alternant de petits battements",
+    "Garde les fessiers serrés"
+   ],
+   "errors": [
+    "Cambrer fort",
+    "Plier les genoux"
+   ],
+   "tip": "Mouvement court et rapide.",
+   "media": "flutter-kicks"
+  },
+  {
+   "id": "physioball-hip-bridge",
+   "name": "Pont fessier sur ballon",
+   "group": "fessiers",
+   "primary": [
+    "fessiers"
+   ],
+   "secondary": [
+    "ischios"
+   ],
+   "equipment": "Ballon",
+   "level": "Débutant",
+   "steps": [
+    "Haut du dos sur un ballon, pieds au sol",
+    "Monte les hanches jusqu'à l'alignement",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Perdre l'équilibre",
+    "Cambrer"
+   ],
+   "tip": "Travaille aussi la stabilité.",
+   "media": "physioball-hip-bridge"
+  },
+  {
+   "id": "barbell-squat",
+   "name": "Squat barre",
+   "group": "quadriceps",
+   "primary": [
+    "quadriceps"
+   ],
+   "secondary": [
+    "mollets",
+    "fessiers",
+    "ischios",
+    "lombaires"
+   ],
+   "equipment": "Barre",
+   "level": "Débutant",
+   "steps": [
+    "Barre sur les trapèzes, pieds largeur d'épaules",
+    "Descends en poussant les fesses en arrière, genoux dans l'axe des pieds",
+    "Remonte en poussant dans le sol"
+   ],
+   "errors": [
+    "Genoux qui rentrent",
+    "Dos rond"
+   ],
+   "tip": "Descends au moins jusqu'à ce que les cuisses soient parallèles au sol.",
+   "media": "barbell-squat"
+  },
+  {
+   "id": "barbell-full-squat",
+   "name": "Squat complet",
+   "group": "quadriceps",
+   "primary": [
+    "quadriceps"
+   ],
+   "secondary": [
+    "mollets",
+    "fessiers",
+    "ischios",
+    "lombaires"
+   ],
+   "equipment": "Barre",
+   "level": "Intermédiaire",
+   "steps": [
+    "Barre sur les trapèzes, pieds largeur d'épaules",
+    "Descends le plus bas possible en gardant le dos droit",
+    "Remonte en poussant dans le sol"
+   ],
+   "errors": [
+    "Talons qui décollent",
+    "Dos qui s'arrondit en bas"
+   ],
+   "tip": "Travaille ta mobilité de chevilles pour descendre plus bas.",
+   "media": "barbell-full-squat"
+  },
+  {
+   "id": "front-barbell-squat",
+   "name": "Squat avant",
+   "group": "quadriceps",
+   "primary": [
+    "quadriceps"
+   ],
+   "secondary": [
+    "mollets",
+    "fessiers",
+    "ischios"
+   ],
+   "equipment": "Barre",
+   "level": "Confirmé",
+   "steps": [
+    "Barre posée sur l'avant des épaules, coudes hauts",
+    "Descends en gardant le buste très droit",
+    "Remonte en poussant dans le sol"
+   ],
+   "errors": [
+    "Coudes qui tombent",
+    "Buste qui penche"
+   ],
+   "tip": "Cible davantage les quadriceps.",
+   "media": "front-barbell-squat"
+  },
+  {
+   "id": "box-squat",
+   "name": "Box squat",
+   "group": "quadriceps",
+   "primary": [
+    "quadriceps"
+   ],
+   "secondary": [
+    "adducteurs",
+    "mollets",
+    "fessiers",
+    "ischios",
+    "lombaires"
+   ],
+   "equipment": "Barre",
+   "level": "Intermédiaire",
+   "steps": [
+    "Barre sur les trapèzes, un banc ou une box derrière toi",
+    "Descends jusqu'à t'asseoir brièvement sur la box",
+    "Remonte de façon explosive"
+   ],
+   "errors": [
+    "Se laisser tomber sur la box",
+    "Relâcher le gainage"
+   ],
+   "tip": "Super pour apprendre la bonne profondeur.",
+   "media": "box-squat"
+  },
+  {
+   "id": "bodyweight-squat",
+   "name": "Squat au poids du corps",
+   "group": "quadriceps",
+   "primary": [
+    "quadriceps"
+   ],
+   "secondary": [
+    "fessiers",
+    "ischios"
+   ],
+   "equipment": "Poids du corps",
+   "level": "Débutant",
+   "steps": [
+    "Debout, pieds largeur d'épaules, bras devant toi",
+    "Descends comme pour t'asseoir sur une chaise",
+    "Remonte en poussant dans les talons"
+   ],
+   "errors": [
+    "Genoux qui rentrent",
+    "Talons qui décollent"
+   ],
+   "tip": "Base de tous les squats : maîtrise-le d'abord.",
+   "media": "bodyweight-squat"
+  },
+  {
+   "id": "goblet-squat",
+   "name": "Goblet squat",
+   "group": "quadriceps",
+   "primary": [
+    "quadriceps"
+   ],
+   "secondary": [
+    "mollets",
+    "fessiers",
+    "ischios",
+    "épaules"
+   ],
+   "equipment": "Kettlebell",
+   "level": "Débutant",
+   "steps": [
+    "Kettlebell ou haltère tenu contre la poitrine",
+    "Descends entre tes genoux en gardant le buste droit",
+    "Remonte en poussant dans le sol"
+   ],
+   "errors": [
+    "Dos rond",
+    "Genoux qui rentrent"
+   ],
+   "tip": "Le meilleur squat pour apprendre la technique.",
+   "media": "goblet-squat"
+  },
+  {
+   "id": "dumbbell-squat",
+   "name": "Squat haltères",
+   "group": "quadriceps",
+   "primary": [
+    "quadriceps"
+   ],
+   "secondary": [
+    "mollets",
+    "fessiers",
+    "ischios",
+    "lombaires"
+   ],
+   "equipment": "Haltères",
+   "level": "Débutant",
+   "steps": [
+    "Debout, un haltère dans chaque main le long du corps",
+    "Descends en poussant les fesses en arrière",
+    "Remonte"
+   ],
+   "errors": [
+    "Dos rond",
+    "Genoux vers l'intérieur"
+   ],
+   "tip": "Parfait à la maison.",
+   "media": "dumbbell-squat"
+  },
+  {
+   "id": "plie-dumbbell-squat",
+   "name": "Squat sumo haltère",
+   "group": "quadriceps",
+   "primary": [
+    "quadriceps"
+   ],
+   "secondary": [
+    "abdos",
+    "mollets",
+    "fessiers",
+    "ischios"
+   ],
+   "equipment": "Haltères",
+   "level": "Débutant",
+   "steps": [
+    "Pieds très écartés, pointes vers l'extérieur, haltère tenu entre les jambes",
+    "Descends en gardant le buste droit",
+    "Remonte en serrant les fessiers"
+   ],
+   "errors": [
+    "Genoux qui rentrent",
+    "Pencher le buste"
+   ],
+   "tip": "Cible aussi les adducteurs et les fessiers.",
+   "media": "plie-dumbbell-squat"
+  },
+  {
+   "id": "dumbbell-lunges",
+   "name": "Fentes avant haltères",
+   "group": "quadriceps",
+   "primary": [
+    "quadriceps"
+   ],
+   "secondary": [
+    "mollets",
+    "fessiers",
+    "ischios"
+   ],
+   "equipment": "Haltères",
+   "level": "Débutant",
+   "steps": [
+    "Debout, haltères en main",
+    "Fais un grand pas en avant et descends le genou arrière près du sol",
+    "Pousse sur la jambe avant pour revenir"
+   ],
+   "errors": [
+    "Genou avant qui dépasse beaucoup",
+    "Buste penché"
+   ],
+   "tip": "Garde le buste droit et le genou dans l'axe du pied.",
+   "media": "dumbbell-lunges"
+  },
+  {
+   "id": "dumbbell-rear-lunge",
+   "name": "Fentes arrière haltères",
+   "group": "quadriceps",
+   "primary": [
+    "quadriceps"
+   ],
+   "secondary": [
+    "mollets",
+    "fessiers",
+    "ischios"
+   ],
+   "equipment": "Haltères",
+   "level": "Intermédiaire",
+   "steps": [
+    "Debout, haltères en main",
+    "Fais un grand pas en arrière et descends le genou près du sol",
+    "Reviens en poussant sur la jambe avant"
+   ],
+   "errors": [
+    "Perdre l'équilibre",
+    "Pas trop court"
+   ],
+   "tip": "Plus douce pour les genoux que la fente avant.",
+   "media": "dumbbell-rear-lunge"
+  },
+  {
+   "id": "barbell-walking-lunge",
+   "name": "Fentes marchées barre",
+   "group": "quadriceps",
+   "primary": [
+    "quadriceps"
+   ],
+   "secondary": [
+    "mollets",
+    "fessiers",
+    "ischios"
+   ],
+   "equipment": "Barre",
+   "level": "Débutant",
+   "steps": [
+    "Barre sur les trapèzes",
+    "Avance en enchaînant les fentes, genou arrière près du sol",
+    "Continue en alternant les jambes"
+   ],
+   "errors": [
+    "Pas trop courts",
+    "Buste qui penche"
+   ],
+   "tip": "Garde le regard droit devant.",
+   "media": "barbell-walking-lunge"
+  },
+  {
+   "id": "bodyweight-walking-lunge",
+   "name": "Fentes marchées",
+   "group": "quadriceps",
+   "primary": [
+    "quadriceps"
+   ],
+   "secondary": [
+    "mollets",
+    "fessiers",
+    "ischios"
+   ],
+   "equipment": "Poids du corps",
+   "level": "Débutant",
+   "steps": [
+    "Debout, mains sur les hanches",
+    "Avance en enchaînant les fentes",
+    "Alterne les jambes à chaque pas"
+   ],
+   "errors": [
+    "Genou qui tape le sol",
+    "Buste penché"
+   ],
+   "tip": "Excellent finisher pour les jambes.",
+   "media": "bodyweight-walking-lunge"
+  },
+  {
+   "id": "split-squat-with-dumbbells",
+   "name": "Squat bulgare haltères",
+   "group": "quadriceps",
+   "primary": [
+    "quadriceps"
+   ],
+   "secondary": [
+    "fessiers",
+    "ischios"
+   ],
+   "equipment": "Haltères",
+   "level": "Débutant",
+   "steps": [
+    "Un pied posé derrière toi sur un banc, haltères en main",
+    "Descends en pliant la jambe avant",
+    "Remonte en poussant dans le talon avant"
+   ],
+   "errors": [
+    "Pied avant trop proche",
+    "Buste qui s'effondre"
+   ],
+   "tip": "Un des meilleurs exercices pour les jambes et les fessiers.",
+   "media": "split-squat-with-dumbbells"
+  },
+  {
+   "id": "dumbbell-step-ups",
+   "name": "Montées sur banc haltères",
+   "group": "quadriceps",
+   "primary": [
+    "quadriceps"
+   ],
+   "secondary": [
+    "mollets",
+    "fessiers",
+    "ischios"
+   ],
+   "equipment": "Haltères",
+   "level": "Intermédiaire",
+   "steps": [
+    "Face à un banc, haltères en main",
+    "Monte en posant un pied sur le banc et pousse dessus",
+    "Redescends en contrôlant"
+   ],
+   "errors": [
+    "Pousser avec la jambe au sol",
+    "Banc trop haut"
+   ],
+   "tip": "Choisis un banc à hauteur du genou.",
+   "media": "dumbbell-step-ups"
+  },
+  {
+   "id": "barbell-step-ups",
+   "name": "Montées sur banc barre",
+   "group": "quadriceps",
+   "primary": [
+    "quadriceps"
+   ],
+   "secondary": [
+    "mollets",
+    "fessiers",
+    "ischios",
+    "quadriceps"
+   ],
+   "equipment": "Barre",
+   "level": "Intermédiaire",
+   "steps": [
+    "Barre sur les trapèzes, face à un banc",
+    "Monte sur le banc en poussant avec la jambe avant",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Perdre l'équilibre",
+    "Élan"
+   ],
+   "tip": "Commence sans charge pour trouver ton équilibre.",
+   "media": "barbell-step-ups"
+  },
+  {
+   "id": "leg-press",
+   "name": "Presse à cuisses",
+   "group": "quadriceps",
+   "primary": [
+    "quadriceps"
+   ],
+   "secondary": [
+    "mollets",
+    "fessiers",
+    "ischios"
+   ],
+   "equipment": "Machine",
+   "level": "Débutant",
+   "steps": [
+    "Assis, dos collé, pieds largeur d'épaules sur la plateforme",
+    "Descends en pliant les genoux vers la poitrine",
+    "Pousse sans verrouiller les genoux"
+   ],
+   "errors": [
+    "Décoller le bas du dos",
+    "Verrouiller les genoux en haut"
+   ],
+   "tip": "Ne descends pas au point de décoller les fesses.",
+   "media": "leg-press"
+  },
+  {
+   "id": "narrow-stance-leg-press",
+   "name": "Presse à cuisses pieds serrés",
+   "group": "quadriceps",
+   "primary": [
+    "quadriceps"
+   ],
+   "secondary": [
+    "mollets",
+    "fessiers",
+    "ischios"
+   ],
+   "equipment": "Machine",
+   "level": "Intermédiaire",
+   "steps": [
+    "Assis, pieds rapprochés au centre de la plateforme",
+    "Descends en contrôlant",
+    "Pousse sans verrouiller"
+   ],
+   "errors": [
+    "Genoux qui rentrent",
+    "Amplitude courte"
+   ],
+   "tip": "Cible davantage l'extérieur des quadriceps.",
+   "media": "narrow-stance-leg-press"
+  },
+  {
+   "id": "hack-squat",
+   "name": "Hack squat (machine)",
+   "group": "quadriceps",
+   "primary": [
+    "quadriceps"
+   ],
+   "secondary": [
+    "mollets",
+    "fessiers",
+    "ischios"
+   ],
+   "equipment": "Machine",
+   "level": "Débutant",
+   "steps": [
+    "Dos contre le dossier, épaules sous les appuis",
+    "Descends en pliant les genoux",
+    "Remonte en poussant dans les talons"
+   ],
+   "errors": [
+    "Talons qui décollent",
+    "Remonter trop vite"
+   ],
+   "tip": "Pieds plus bas = plus de quadriceps.",
+   "media": "hack-squat"
+  },
+  {
+   "id": "leg-extensions",
+   "name": "Leg extension",
+   "group": "quadriceps",
+   "primary": [
+    "quadriceps"
+   ],
+   "secondary": [],
+   "equipment": "Machine",
+   "level": "Débutant",
+   "steps": [
+    "Assis dans la machine, chevilles sous le boudin",
+    "Tends les jambes jusqu'à l'horizontale",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Élan",
+    "Décoller les fesses"
+   ],
+   "tip": "Marque une pause jambes tendues.",
+   "media": "leg-extensions"
+  },
+  {
+   "id": "single-leg-leg-extension",
+   "name": "Leg extension une jambe",
+   "group": "quadriceps",
+   "primary": [
+    "quadriceps"
+   ],
+   "secondary": [],
+   "equipment": "Machine",
+   "level": "Débutant",
+   "steps": [
+    "Assis dans la machine, une cheville sous le boudin",
+    "Tends la jambe",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Charge trop lourde",
+    "Élan"
+   ],
+   "tip": "Travaille chaque jambe séparément.",
+   "media": "single-leg-leg-extension"
+  },
+  {
+   "id": "smith-machine-squat",
+   "name": "Squat à la Smith machine",
+   "group": "quadriceps",
+   "primary": [
+    "quadriceps"
+   ],
+   "secondary": [
+    "mollets",
+    "fessiers",
+    "ischios",
+    "lombaires"
+   ],
+   "equipment": "Machine",
+   "level": "Débutant",
+   "steps": [
+    "Barre sur les trapèzes, pieds légèrement devant toi",
+    "Descends en pliant les genoux",
+    "Remonte en poussant dans le sol"
+   ],
+   "errors": [
+    "Pieds trop en arrière",
+    "Dos rond"
+   ],
+   "tip": "Trajectoire guidée : bien pour débuter.",
+   "media": "smith-machine-squat"
+  },
+  {
+   "id": "smith-single-leg-split-squat",
+   "name": "Fente à la Smith machine",
+   "group": "quadriceps",
+   "primary": [
+    "quadriceps"
+   ],
+   "secondary": [
+    "mollets",
+    "fessiers",
+    "ischios"
+   ],
+   "equipment": "Machine",
+   "level": "Débutant",
+   "steps": [
+    "Barre sur les trapèzes, une jambe en avant, l'autre en arrière",
+    "Descends le genou arrière vers le sol",
+    "Remonte en poussant sur la jambe avant"
+   ],
+   "errors": [
+    "Pas trop court",
+    "Genou avant qui rentre"
+   ],
+   "tip": "Stabilité assurée par la machine.",
+   "media": "smith-single-leg-split-squat"
+  },
+  {
+   "id": "freehand-jump-squat",
+   "name": "Squat sauté",
+   "group": "quadriceps",
+   "primary": [
+    "quadriceps"
+   ],
+   "secondary": [
+    "mollets",
+    "fessiers",
+    "ischios"
+   ],
+   "equipment": "Poids du corps",
+   "level": "Intermédiaire",
+   "steps": [
+    "Debout, pieds largeur d'épaules",
+    "Descends en squat puis saute le plus haut possible",
+    "Réceptionne-toi en douceur et enchaîne"
+   ],
+   "errors": [
+    "Réception jambes tendues",
+    "Genoux qui rentrent"
+   ],
+   "tip": "Atterris sur la pointe des pieds en amortissant.",
+   "media": "freehand-jump-squat"
+  },
+  {
+   "id": "trap-bar-deadlift",
+   "name": "Soulevé de terre trap bar",
+   "group": "quadriceps",
+   "primary": [
+    "quadriceps"
+   ],
+   "secondary": [
+    "fessiers",
+    "ischios"
+   ],
+   "equipment": "Autre",
+   "level": "Débutant",
+   "steps": [
+    "Debout au centre de la trap bar, poignées en main",
+    "Pousse dans le sol pour te redresser, dos plat",
+    "Redescends en contrôlant"
+   ],
+   "errors": [
+    "Dos rond",
+    "Genoux qui rentrent"
+   ],
+   "tip": "Plus facile et plus sûr pour le dos que le soulevé classique.",
+   "media": "trap-bar-deadlift"
+  },
+  {
+   "id": "kettlebell-pistol-squat",
+   "name": "Pistol squat kettlebell",
+   "group": "quadriceps",
+   "primary": [
+    "quadriceps"
+   ],
+   "secondary": [
+    "mollets",
+    "fessiers",
+    "ischios",
+    "épaules"
+   ],
+   "equipment": "Kettlebell",
+   "level": "Confirmé",
+   "steps": [
+    "Debout sur une jambe, kettlebell tenue devant toi, l'autre jambe tendue devant",
+    "Descends sur une jambe le plus bas possible",
+    "Remonte"
+   ],
+   "errors": [
+    "Talon qui décolle",
+    "Genou qui rentre"
+   ],
+   "tip": "Exercice avancé : commence en t'asseyant sur un banc.",
+   "media": "kettlebell-pistol-squat"
+  },
+  {
+   "id": "mountain-climbers",
+   "name": "Mountain climbers",
+   "group": "quadriceps",
+   "primary": [
+    "quadriceps"
+   ],
+   "secondary": [
+    "pectoraux",
+    "ischios",
+    "épaules"
+   ],
+   "equipment": "Poids du corps",
+   "level": "Débutant",
+   "steps": [
+    "En position de pompe, bras tendus",
+    "Ramène un genou vers la poitrine puis alterne rapidement",
+    "Garde le bassin bas"
+   ],
+   "errors": [
+    "Fesses en l'air",
+    "Épaules en arrière des mains"
+   ],
+   "tip": "Parfait pour le cardio et les abdos.",
+   "media": "mountain-climbers"
+  },
+  {
+   "id": "squats-with-bands",
+   "name": "Squat à l'élastique",
+   "group": "quadriceps",
+   "primary": [
+    "quadriceps"
+   ],
+   "secondary": [
+    "mollets",
+    "fessiers",
+    "ischios",
+    "lombaires"
+   ],
+   "equipment": "Élastique",
+   "level": "Débutant",
+   "steps": [
+    "Debout sur l'élastique, poignées aux épaules",
+    "Descends en squat",
+    "Remonte en poussant dans le sol"
+   ],
+   "errors": [
+    "Genoux qui rentrent",
+    "Dos rond"
+   ],
+   "tip": "Idéal à la maison.",
+   "media": "squats-with-bands"
+  },
+  {
+   "id": "romanian-deadlift",
+   "name": "Soulevé de terre roumain",
+   "group": "ischios",
+   "primary": [
+    "ischios"
+   ],
+   "secondary": [
+    "mollets",
+    "fessiers",
+    "lombaires"
+   ],
+   "equipment": "Barre",
+   "level": "Intermédiaire",
+   "steps": [
+    "Debout, barre devant les cuisses, genoux légèrement fléchis",
+    "Descends la barre le long des jambes en poussant les fesses en arrière, dos plat",
+    "Remonte en poussant les hanches vers l'avant"
+   ],
+   "errors": [
+    "Dos rond",
+    "Plier les genoux comme un squat"
+   ],
+   "tip": "Descends jusqu'à sentir l'étirement des ischios, pas plus.",
+   "media": "romanian-deadlift"
+  },
+  {
+   "id": "stiff-legged-barbell-deadlift",
+   "name": "Soulevé de terre jambes tendues",
+   "group": "ischios",
+   "primary": [
+    "ischios"
+   ],
+   "secondary": [
+    "fessiers",
+    "lombaires"
+   ],
+   "equipment": "Barre",
+   "level": "Intermédiaire",
+   "steps": [
+    "Debout, barre devant toi, jambes presque tendues",
+    "Descends la barre en gardant le dos plat",
+    "Remonte en contractant fessiers et ischios"
+   ],
+   "errors": [
+    "Dos rond",
+    "Charge trop lourde"
+   ],
+   "tip": "Commence léger pour sentir l'étirement.",
+   "media": "stiff-legged-barbell-deadlift"
+  },
+  {
+   "id": "stiff-legged-dumbbell-deadlift",
+   "name": "Soulevé de terre jambes tendues haltères",
+   "group": "ischios",
+   "primary": [
+    "ischios"
+   ],
+   "secondary": [
+    "fessiers",
+    "lombaires"
+   ],
+   "equipment": "Haltères",
+   "level": "Débutant",
+   "steps": [
+    "Debout, haltères devant les cuisses",
+    "Descends les haltères le long des jambes, dos plat",
+    "Remonte en poussant les hanches"
+   ],
+   "errors": [
+    "Dos rond",
+    "Haltères qui s'éloignent"
+   ],
+   "tip": "Parfait à la maison avec des haltères.",
+   "media": "stiff-legged-dumbbell-deadlift"
+  },
+  {
+   "id": "sumo-deadlift",
+   "name": "Soulevé de terre sumo",
+   "group": "ischios",
+   "primary": [
+    "ischios"
+   ],
+   "secondary": [
+    "adducteurs",
+    "avant-bras",
+    "fessiers",
+    "lombaires",
+    "milieu du dos",
+    "quadriceps",
+    "trapèzes"
+   ],
+   "equipment": "Barre",
+   "level": "Intermédiaire",
+   "steps": [
+    "Pieds très écartés, mains à l'intérieur des jambes",
+    "Pousse dans le sol pour te redresser, dos plat",
+    "Redescends en contrôlant"
+   ],
+   "errors": [
+    "Genoux qui rentrent",
+    "Hanches qui montent trop vite"
+   ],
+   "tip": "Pousse les genoux vers l'extérieur.",
+   "media": "sumo-deadlift"
+  },
+  {
+   "id": "good-morning",
+   "name": "Good morning",
+   "group": "ischios",
+   "primary": [
+    "ischios"
+   ],
+   "secondary": [
+    "abdos",
+    "fessiers",
+    "lombaires"
+   ],
+   "equipment": "Barre",
+   "level": "Intermédiaire",
+   "steps": [
+    "Barre sur les trapèzes, genoux légèrement fléchis",
+    "Penche le buste vers l'avant en poussant les fesses en arrière",
+    "Redresse-toi"
+   ],
+   "errors": [
+    "Dos rond",
+    "Charge trop lourde"
+   ],
+   "tip": "Garde une charge modérée.",
+   "media": "good-morning"
+  },
+  {
+   "id": "lying-leg-curls",
+   "name": "Leg curl allongé",
+   "group": "ischios",
+   "primary": [
+    "ischios"
+   ],
+   "secondary": [],
+   "equipment": "Machine",
+   "level": "Débutant",
+   "steps": [
+    "Allongé ventre sur la machine, chevilles sous le boudin",
+    "Ramène les talons vers les fesses",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Décoller les hanches",
+    "Élan"
+   ],
+   "tip": "Contrôle la descente sur 2-3 secondes.",
+   "media": "lying-leg-curls"
+  },
+  {
+   "id": "seated-leg-curl",
+   "name": "Leg curl assis",
+   "group": "ischios",
+   "primary": [
+    "ischios"
+   ],
+   "secondary": [],
+   "equipment": "Machine",
+   "level": "Débutant",
+   "steps": [
+    "Assis dans la machine, jambes sur le boudin",
+    "Ramène les talons sous le siège",
+    "Reviens lentement"
+   ],
+   "errors": [
+    "Décoller les fesses",
+    "Amplitude courte"
+   ],
+   "tip": "Excellent étirement des ischios.",
+   "media": "seated-leg-curl"
+  },
+  {
+   "id": "standing-leg-curl",
+   "name": "Leg curl debout",
+   "group": "ischios",
+   "primary": [
+    "ischios"
+   ],
+   "secondary": [],
+   "equipment": "Machine",
+   "level": "Débutant",
+   "steps": [
+    "Debout dans la machine, une jambe sous le boudin",
+    "Ramène le talon vers la fesse",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Pencher le buste",
+    "Élan"
+   ],
+   "tip": "Travaille une jambe à la fois.",
+   "media": "standing-leg-curl"
+  },
+  {
+   "id": "glute-ham-raise",
+   "name": "Glute ham raise",
+   "group": "ischios",
+   "primary": [
+    "ischios"
+   ],
+   "secondary": [
+    "mollets",
+    "fessiers"
+   ],
+   "equipment": "Machine",
+   "level": "Intermédiaire",
+   "steps": [
+    "Genoux sur le coussin, pieds bloqués, buste vertical",
+    "Descends le buste vers l'avant en contrôlant avec les ischios",
+    "Remonte en tirant avec les ischios"
+   ],
+   "errors": [
+    "Plier les hanches",
+    "Descendre trop vite"
+   ],
+   "tip": "Exercice exigeant : aide-toi des mains au début.",
+   "media": "glute-ham-raise"
+  },
+  {
+   "id": "natural-glute-ham-raise",
+   "name": "Nordic curl",
+   "group": "ischios",
+   "primary": [
+    "ischios"
+   ],
+   "secondary": [
+    "mollets",
+    "fessiers",
+    "lombaires"
+   ],
+   "equipment": "Poids du corps",
+   "level": "Intermédiaire",
+   "steps": [
+    "À genoux, chevilles bloquées par un partenaire ou un support",
+    "Descends le buste vers l'avant le plus lentement possible",
+    "Rattrape-toi avec les mains et remonte"
+   ],
+   "errors": [
+    "Plier les hanches",
+    "Tomber"
+   ],
+   "tip": "Très efficace pour prévenir les blessures des ischios.",
+   "media": "natural-glute-ham-raise"
+  },
+  {
+   "id": "ball-leg-curl",
+   "name": "Leg curl sur ballon",
+   "group": "ischios",
+   "primary": [
+    "ischios"
+   ],
+   "secondary": [
+    "mollets",
+    "fessiers"
+   ],
+   "equipment": "Ballon",
+   "level": "Débutant",
+   "steps": [
+    "Allongé sur le dos, talons sur un ballon, hanches levées",
+    "Ramène le ballon vers toi en pliant les genoux",
+    "Reviens lentement"
+   ],
+   "errors": [
+    "Hanches qui tombent",
+    "Mouvement rapide"
+   ],
+   "tip": "Garde les hanches hautes tout le long.",
+   "media": "ball-leg-curl"
+  },
+  {
+   "id": "kettlebell-one-legged-deadlift",
+   "name": "Soulevé de terre une jambe",
+   "group": "ischios",
+   "primary": [
+    "ischios"
+   ],
+   "secondary": [
+    "fessiers",
+    "lombaires"
+   ],
+   "equipment": "Kettlebell",
+   "level": "Intermédiaire",
+   "steps": [
+    "Debout sur une jambe, kettlebell dans la main opposée",
+    "Penche le buste en levant la jambe libre derrière toi",
+    "Remonte en contrôlant"
+   ],
+   "errors": [
+    "Dos rond",
+    "Bassin qui tourne"
+   ],
+   "tip": "Travaille aussi l'équilibre.",
+   "media": "kettlebell-one-legged-deadlift"
+  },
+  {
+   "id": "one-arm-kettlebell-swings",
+   "name": "Kettlebell swing un bras",
+   "group": "ischios",
+   "primary": [
+    "ischios"
+   ],
+   "secondary": [
+    "mollets",
+    "fessiers",
+    "lombaires",
+    "épaules"
+   ],
+   "equipment": "Kettlebell",
+   "level": "Intermédiaire",
+   "steps": [
+    "Pieds largeur d'épaules, kettlebell entre les jambes",
+    "Lance la kettlebell à hauteur de poitrine avec une poussée de hanches",
+    "Laisse-la redescendre entre les jambes"
+   ],
+   "errors": [
+    "Lever avec les bras",
+    "Dos rond"
+   ],
+   "tip": "La force vient des hanches, pas des bras.",
+   "media": "one-arm-kettlebell-swings"
+  },
+  {
+   "id": "band-good-morning",
+   "name": "Good morning à l'élastique",
+   "group": "ischios",
+   "primary": [
+    "ischios"
+   ],
+   "secondary": [
+    "fessiers",
+    "lombaires"
+   ],
+   "equipment": "Élastique",
+   "level": "Débutant",
+   "steps": [
+    "Debout sur l'élastique passé derrière la nuque",
+    "Penche le buste en poussant les fesses en arrière",
+    "Redresse-toi"
+   ],
+   "errors": [
+    "Dos rond",
+    "Genoux trop pliés"
+   ],
+   "tip": "Idéal pour apprendre la charnière de hanche.",
+   "media": "band-good-morning"
+  },
+  {
+   "id": "smith-machine-stiff-legged-deadlift",
+   "name": "Soulevé de terre jambes tendues à la Smith",
+   "group": "ischios",
+   "primary": [
+    "ischios"
+   ],
+   "secondary": [
+    "fessiers",
+    "lombaires"
+   ],
+   "equipment": "Machine",
+   "level": "Débutant",
+   "steps": [
+    "Debout, barre de la Smith devant les cuisses",
+    "Descends en gardant le dos plat",
+    "Remonte en poussant les hanches"
+   ],
+   "errors": [
+    "Dos rond",
+    "Descendre trop bas"
+   ],
+   "tip": "La machine aide à garder la trajectoire.",
+   "media": "smith-machine-stiff-legged-deadlift"
+  },
+  {
+   "id": "reverse-hyperextension",
+   "name": "Reverse hyperextension",
+   "group": "ischios",
+   "primary": [
+    "ischios"
+   ],
+   "secondary": [
+    "mollets",
+    "fessiers"
+   ],
+   "equipment": "Machine",
+   "level": "Intermédiaire",
+   "steps": [
+    "Allongé ventre sur la machine, hanches au bord",
+    "Monte les jambes tendues jusqu'à l'horizontale",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Élan",
+    "Monter trop haut"
+   ],
+   "tip": "Excellent pour les fessiers et le bas du dos.",
+   "media": "reverse-hyperextension"
+  },
+  {
+   "id": "thigh-adductor",
+   "name": "Adducteurs machine",
+   "group": "adducteurs",
+   "primary": [
+    "adducteurs"
+   ],
+   "secondary": [
+    "fessiers",
+    "ischios"
+   ],
+   "equipment": "Machine",
+   "level": "Débutant",
+   "steps": [
+    "Assis dans la machine, jambes écartées contre les coussins",
+    "Resserre les jambes",
+    "Reviens lentement"
+   ],
+   "errors": [
+    "Élan",
+    "Ouvrir trop loin"
+   ],
+   "tip": "Contrôle surtout le retour.",
+   "media": "thigh-adductor"
+  },
+  {
+   "id": "band-hip-adductions",
+   "name": "Adduction à l'élastique",
+   "group": "adducteurs",
+   "primary": [
+    "adducteurs"
+   ],
+   "secondary": [],
+   "equipment": "Élastique",
+   "level": "Débutant",
+   "steps": [
+    "Élastique attaché à la cheville, de profil au point d'ancrage",
+    "Ramène la jambe vers l'intérieur devant l'autre",
+    "Reviens lentement"
+   ],
+   "errors": [
+    "Pencher le buste",
+    "Élan"
+   ],
+   "tip": "Tiens-toi à un support pour l'équilibre.",
+   "media": "band-hip-adductions"
+  },
+  {
+   "id": "cable-hip-adduction",
+   "name": "Adduction à la poulie",
+   "group": "adducteurs",
+   "primary": [
+    "quadriceps"
+   ],
+   "secondary": [],
+   "equipment": "Poulie",
+   "level": "Débutant",
+   "steps": [
+    "Sangle à la cheville, de profil à la poulie basse",
+    "Ramène la jambe vers l'intérieur",
+    "Reviens lentement"
+   ],
+   "errors": [
+    "Tourner le buste",
+    "Charge trop lourde"
+   ],
+   "tip": "Mouvement lent et contrôlé.",
+   "media": "cable-hip-adduction"
+  },
+  {
+   "id": "thigh-abductor",
+   "name": "Abducteurs machine",
+   "group": "abducteurs",
+   "primary": [
+    "abducteurs"
+   ],
+   "secondary": [
+    "fessiers"
+   ],
+   "equipment": "Machine",
+   "level": "Débutant",
+   "steps": [
+    "Assis dans la machine, jambes serrées contre les coussins",
+    "Écarte les jambes",
+    "Reviens lentement"
+   ],
+   "errors": [
+    "Élan",
+    "Décoller le dos"
+   ],
+   "tip": "Penche-toi légèrement en avant pour cibler plus les fessiers.",
+   "media": "thigh-abductor"
+  },
+  {
+   "id": "monster-walk",
+   "name": "Marche latérale à l'élastique",
+   "group": "abducteurs",
+   "primary": [
+    "abducteurs"
+   ],
+   "secondary": [],
+   "equipment": "Élastique",
+   "level": "Débutant",
+   "steps": [
+    "Élastique autour des chevilles ou des genoux, demi-squat",
+    "Marche sur le côté à petits pas en gardant la tension",
+    "Reviens dans l'autre sens"
+   ],
+   "errors": [
+    "Pieds qui se rapprochent",
+    "Se redresser"
+   ],
+   "tip": "Excellent échauffement avant les jambes.",
+   "media": "monster-walk"
+  },
+  {
+   "id": "standing-calf-raises",
+   "name": "Mollets debout machine",
+   "group": "mollets",
+   "primary": [
+    "mollets"
+   ],
+   "secondary": [],
+   "equipment": "Machine",
+   "level": "Débutant",
+   "steps": [
+    "Épaules sous les appuis, pointe des pieds sur la marche",
+    "Monte sur la pointe des pieds le plus haut possible",
+    "Redescends lentement jusqu'à l'étirement"
+   ],
+   "errors": [
+    "Plier les genoux",
+    "Rebondir"
+   ],
+   "tip": "Marque une pause en haut et en bas.",
+   "media": "standing-calf-raises"
+  },
+  {
+   "id": "seated-calf-raise",
+   "name": "Mollets assis machine",
+   "group": "mollets",
+   "primary": [
+    "mollets"
+   ],
+   "secondary": [],
+   "equipment": "Machine",
+   "level": "Débutant",
+   "steps": [
+    "Assis, genoux sous le coussin, pointe des pieds sur la marche",
+    "Monte les talons le plus haut possible",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Amplitude courte",
+    "Rebondir"
+   ],
+   "tip": "Cible le soléaire, sous le mollet.",
+   "media": "seated-calf-raise"
+  },
+  {
+   "id": "standing-barbell-calf-raise",
+   "name": "Mollets debout barre",
+   "group": "mollets",
+   "primary": [
+    "mollets"
+   ],
+   "secondary": [],
+   "equipment": "Barre",
+   "level": "Débutant",
+   "steps": [
+    "Barre sur les trapèzes, pointe des pieds sur un disque",
+    "Monte sur la pointe des pieds",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Perdre l'équilibre",
+    "Plier les genoux"
+   ],
+   "tip": "Commence léger pour trouver l'équilibre.",
+   "media": "standing-barbell-calf-raise"
+  },
+  {
+   "id": "standing-dumbbell-calf-raise",
+   "name": "Mollets debout haltères",
+   "group": "mollets",
+   "primary": [
+    "mollets"
+   ],
+   "secondary": [],
+   "equipment": "Haltères",
+   "level": "Intermédiaire",
+   "steps": [
+    "Debout, haltères en main, pointe des pieds sur une marche",
+    "Monte sur la pointe des pieds",
+    "Redescends sous le niveau de la marche"
+   ],
+   "errors": [
+    "Rebondir",
+    "Amplitude courte"
+   ],
+   "tip": "Va chercher l'étirement complet en bas.",
+   "media": "standing-dumbbell-calf-raise"
+  },
+  {
+   "id": "dumbbell-seated-one-leg-calf-raise",
+   "name": "Mollet assis un pied haltère",
+   "group": "mollets",
+   "primary": [
+    "mollets"
+   ],
+   "secondary": [],
+   "equipment": "Haltères",
+   "level": "Débutant",
+   "steps": [
+    "Assis, pointe d'un pied sur un disque, haltère posé sur le genou",
+    "Monte le talon le plus haut possible",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Rebondir",
+    "Haltère qui glisse"
+   ],
+   "tip": "Alternative maison au mollet assis machine.",
+   "media": "dumbbell-seated-one-leg-calf-raise"
+  },
+  {
+   "id": "calf-press-on-the-leg-press-machine",
+   "name": "Mollets à la presse",
+   "group": "mollets",
+   "primary": [
+    "mollets"
+   ],
+   "secondary": [],
+   "equipment": "Machine",
+   "level": "Débutant",
+   "steps": [
+    "Assis à la presse, pointe des pieds au bas de la plateforme, jambes tendues",
+    "Pousse avec la pointe des pieds",
+    "Reviens lentement"
+   ],
+   "errors": [
+    "Plier les genoux",
+    "Pieds qui glissent"
+   ],
+   "tip": "Ne déverrouille pas les sécurités de la machine.",
+   "media": "calf-press-on-the-leg-press-machine"
+  },
+  {
+   "id": "smith-machine-calf-raise",
+   "name": "Mollets à la Smith machine",
+   "group": "mollets",
+   "primary": [
+    "mollets"
+   ],
+   "secondary": [],
+   "equipment": "Machine",
+   "level": "Débutant",
+   "steps": [
+    "Barre sur les trapèzes, pointe des pieds sur une marche",
+    "Monte sur la pointe des pieds",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Rebondir",
+    "Plier les genoux"
+   ],
+   "tip": "Stable et facile à charger.",
+   "media": "smith-machine-calf-raise"
+  },
+  {
+   "id": "donkey-calf-raises",
+   "name": "Mollets à l'âne",
+   "group": "mollets",
+   "primary": [
+    "mollets"
+   ],
+   "secondary": [],
+   "equipment": "Autre",
+   "level": "Intermédiaire",
+   "steps": [
+    "Buste penché, mains en appui, pointe des pieds sur une marche",
+    "Monte sur la pointe des pieds",
+    "Redescends lentement"
+   ],
+   "errors": [
+    "Plier les genoux",
+    "Amplitude courte"
+   ],
+   "tip": "Excellent étirement du mollet.",
+   "media": "donkey-calf-raises"
+  },
+  {
+   "id": "calf-raises-with-bands",
+   "name": "Mollets à l'élastique",
+   "group": "mollets",
+   "primary": [
+    "mollets"
+   ],
+   "secondary": [],
+   "equipment": "Élastique",
+   "level": "Débutant",
+   "steps": [
+    "Assis jambes tendues, élastique sous la pointe des pieds",
+    "Pousse la pointe des pieds vers l'avant",
+    "Reviens lentement"
+   ],
+   "errors": [
+    "Plier les genoux",
+    "Relâcher d'un coup"
+   ],
+   "tip": "Idéal à la maison.",
+   "media": "calf-raises-with-bands"
+  },
+  {
+   "id": "isometric-neck-exercise-front-and-back",
+   "name": "Renforcement du cou avant/arrière",
+   "group": "cou",
+   "primary": [
+    "cou"
+   ],
+   "secondary": [],
+   "equipment": "Poids du corps",
+   "level": "Débutant",
+   "steps": [
+    "Assis, main sur le front",
+    "Pousse la tête contre la main sans bouger pendant quelques secondes",
+    "Recommence avec les mains derrière la tête"
+   ],
+   "errors": [
+    "Pousser trop fort",
+    "Bouger la tête"
+   ],
+   "tip": "Pousse doucement, sans à-coups.",
+   "media": "isometric-neck-exercise-front-and-back"
+  },
+  {
+   "id": "isometric-neck-exercise-sides",
+   "name": "Renforcement du cou latéral",
+   "group": "cou",
+   "primary": [
+    "cou"
+   ],
+   "secondary": [],
+   "equipment": "Poids du corps",
+   "level": "Débutant",
+   "steps": [
+    "Assis, main sur le côté de la tête",
+    "Pousse la tête contre la main sans bouger",
+    "Recommence de l'autre côté"
+   ],
+   "errors": [
+    "Hausser les épaules",
+    "Pousser trop fort"
+   ],
+   "tip": "Quelques secondes de chaque côté suffisent.",
+   "media": "isometric-neck-exercise-sides"
+  }
+ ]
 }
